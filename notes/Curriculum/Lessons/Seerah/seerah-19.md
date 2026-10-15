@@ -1,0 +1,218 @@
+---
+track: seerah
+order: 19
+phase: null
+unit: null
+title: "Strangers from Yathrib"
+hook: "The people of Makkah turned him away. A handful of pilgrims from a farming town said yes."
+minutes: 6
+skills: [T2, B6]
+pain_points: [belonging, loneliness, family]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, Makkah, Hajj, Qur'an, zina, Quraysh, "'Aqabah"]
+sources: [Bukhari 18, Bukhari 3925, IslamQA 11575, Yaqeen (How Muhammad Confronted Hate)]
+format: 2
+---
+# seerah-19 · Strangers from Yathrib
+
+### 1 · hook
+```yaml
+pic: icon:Tent
+text: "**His own city had turned him away.** So at pilgrimage season, he walked from camp to camp, asking visitors to listen. Most didn't. Then a few men from a farming town did."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Tent
+text: "**A few strangers say yes.** During the **Hajj** season, when tribes came to Makkah, he invited them to Islam. A few men of the Khazraj tribe from Yathrib, a farming town to the north, accepted [IslamQA 11575]."
+bubbles:
+  - "Yathrib is the town we now call Madinah. Nobody in Makkah expected help to come from there."
+```
+
+### 3 · multi
+```yaml
+pic: icon:Handshake
+prompt: "The next year, about a dozen came back and made a pledge. What did they promise? Pick all that apply."
+options:
+  - text: "To worship nothing besides Allah"
+    correct: true
+    feedback: "Yes. That came first [Bukhari 18]."
+  - text: "Not to steal, commit zina, or kill their children"
+    correct: true
+    feedback: "Yes. The pledge was about how they would live, not only what they believed [Bukhari 18]."
+  - text: "Not to slander anyone, and to obey him in what is good"
+    correct: true
+    feedback: "Yes. Clean speech and doing good together were part of it [Bukhari 18]."
+  - text: "To fight Quraysh at once"
+    correct: false
+    feedback: "Not quite. This first pledge was about faith and character. No fighting was mentioned."
+```
+
+### 4 · learn
+```yaml
+pic: quran
+text: "**A teacher sent ahead.** He sent Mus'ab ibn 'Umayr back with them to teach the Qur'an. Mus'ab was one of the first Muslims to reach Yathrib, and through him many there accepted Islam [Bukhari 3925; IslamQA 11575]."
+bubbles:
+  - "Before any city welcomed the Prophet ﷺ, it welcomed a teacher. The new Muslims of Yathrib learned their faith from one patient person at a time."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "Three Hajj seasons"
+text: "How a farming town became a home."
+events:
+  - when: "Year one"
+    title: "A few say yes"
+    text: "Some men of Khazraj from Yathrib accept Islam at Hajj [IslamQA 11575]."
+    pic: icon:Tent
+  - when: "Year two"
+    title: "The first pledge"
+    text: "About a dozen pledge faith and good conduct [Bukhari 18; IslamQA 11575]."
+    pic: icon:Handshake
+  - when: "That year"
+    title: "Mus'ab teaches"
+    text: "Mus'ab ibn 'Umayr goes to Yathrib to teach the Qur'an [Bukhari 3925]."
+    pic: quran
+  - when: "Year three"
+    title: "The night pledge"
+    text: "More than seventy meet him secretly at night and promise to protect him [IslamQA 11575]."
+    pic: icon:MoonStar
+  - when: "Next episode"
+    title: "The move"
+    text: "Muslims begin leaving Makkah for Yathrib."
+    pic: icon:Route
+```
+
+### 6 · learn
+```yaml
+pic: icon:MoonStar
+text: "**A secret meeting at night.** The next year, more than seventy came. They met him in the dark at a place called 'Aqabah and promised to protect him if he came to live with them [IslamQA 11575; Yaqeen (Hate)]."
+bubbles:
+  - "His uncle al-'Abbas came with him, though, the sources say, he wasn't Muslim yet. Family who don't share your faith can still stand by you [IslamQA 11575]."
+```
+
+### 7 · choice
+```yaml
+pic: icon:Shield
+prompt: "You're from Yathrib, at that night meeting. Why does your promise matter so much?"
+options:
+  - text: "He'd be leaving his home city and needed people who would truly protect him"
+    correct: true
+    feedback: "Right. They were promising him a new home and their protection. Soon after, he came."
+  - text: "Because they wanted him to rule their trade"
+    correct: false
+    feedback: "Not quite. The pledge was about faith and protection, not business."
+  - text: "It didn't matter; he was staying in Makkah"
+    correct: false
+    feedback: "Not quite. This pledge opened the way for him to leave Makkah. That's the next episode."
+```
+
+### 8 · learn
+```yaml
+pic: community
+text: "**Your people may be somewhere new.** The city he grew up in said no. Strangers from a town he'd never lived in said yes. If the people you started with don't understand your faith, Allah can open a door you didn't expect."
+bubbles:
+  - "Day 48 talked about Muslims who let you down. Sometimes the welcome comes from a different masjid, a study circle, or one person who becomes your Mus'ab."
+```
+
+### 9 · scenario
+```yaml
+pic: community
+situation: "Dre's old friends joke about his \"new religion\" and stopped inviting him out. At a masjid across town, a Saturday study circle keeps saving him a seat. He wonders if it's disloyal to spend more time there."
+options:
+  - text: "Keep showing up to the circle, and stay kind to his old friends"
+    best: true
+    feedback: "Yes. A new community doesn't cancel old ties. He can be warm to both, and grow where he's welcomed."
+  - text: "Stop going to the circle so his old friends don't feel replaced"
+    best: false
+    feedback: "Not quite. He needs people who support his faith. The pilgrims from Yathrib changed everything by saying yes."
+  - text: "Cut off his old friends completely"
+    best: false
+    feedback: "Not quite. He can keep kind ties. Even the Prophet's ﷺ uncle, not yet Muslim, stood by him."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "Who was Mus'ab ibn 'Umayr?"
+  - "Why did people from Yathrib say yes?"
+  - "What did they promise at 'Aqabah?"
+  - "My masjid feels cold. Where else can I look?"
+```
+
+### 11 · reflect
+```yaml
+prompt: "Who was a \"stranger who said yes\" in your own journey to Islam? Who could you be that for?"
+share_with_mentor: optional
+```
+
+### 12 · do_today
+```yaml
+pic: icon:UserPlus
+text: "Say yes to one new connection."
+steps:
+  - "Find one Muslim gathering near you: a class, a circle or a meal"
+  - "Message someone to ask about it, or put it in your calendar"
+log: null
+```
+
+### 13 · takeaway
+```yaml
+pic: icon:DoorOpen
+text: "Makkah said no, and strangers from a farming town said yes. Your people might be waiting somewhere you haven't looked yet."
+```
+
+### 14 · closing
+Next episode: assassins wait at his door, and his young cousin lies in his bed.
+
+---
+
+## Check
+```yaml
+- prompt: "Who did he send to Yathrib to teach the Qur'an?"
+  options:
+    - text: "Mus'ab ibn 'Umayr"
+      correct: true
+      feedback: "Right. He was among the first Muslims to arrive there, teaching the Qur'an [Bukhari 3925]."
+    - text: "Abu Talib"
+      correct: false
+      feedback: "Not quite. Abu Talib had already died. He sent a young Companion, Mus'ab ibn 'Umayr."
+- prompt: "What did the more than seventy promise at 'Aqabah?"
+  options:
+    - text: "To protect him if he came to live with them"
+      correct: true
+      feedback: "Right. It opened the door to his move to Yathrib."
+    - text: "To bring him their tribe's wealth"
+      correct: false
+      feedback: "Not quite. It was a promise of protection, not money."
+```
+
+## AI guide context
+**Lesson facts**
+- At the Hajj season he invited visiting tribes; a few men of Khazraj from Yathrib (later Madinah) accepted Islam [IslamQA 11575].
+- The next year about a dozen ("over ten", IslamQA 11575) came and pledged: to worship nothing besides Allah, not to steal, commit zina, kill their children or slander, and to obey him in good [Bukhari 18]. 'Ubadah ibn al-Samit, who narrates it, was one of their leaders.
+- He sent Mus'ab ibn 'Umayr with them to teach the Qur'an; Mus'ab was among the first to reach Madinah, and many there accepted Islam, among them Sa'd ibn Mu'adh and Usayd ibn Hudayr [Bukhari 3925; IslamQA 11575].
+- The following year more than seventy came, met him secretly at night at 'Aqabah with his uncle al-'Abbas present (not yet Muslim), and pledged to protect him if he came to them [IslamQA 11575; Yaqeen (How Muhammad Confronted Hate)].
+
+**Likely questions**
+- *"How many were at the second pledge?"* Say "more than seventy". A well-known figure in the biographies includes two women, but this track uses only what its sources confirm.
+- *"Why did people from Yathrib say yes?"* Keep to the episode: they heard him at Hajj, accepted, and learned from Mus'ab. Don't add tribal-war history unless the convert asks, and then keep it brief and say it comes from the early biographers.
+- *"My masjid feels cold. Where else can I look?"* Listen first. Suggest another masjid, a study circle, a convert group, and the mentor; Day 48 covers this.
+- *"Was al-'Abbas Muslim?"* Not at that time, according to the early biographers. He's an example of family who protect you without sharing your faith.
+
+**Escalate:** nothing specific.
+
+**Don't**
+- Don't give the second-pledge number as an exact count.
+- Don't encourage the convert to cut off old friends or family.
+
+## Sources
+- [Bukhari 18](https://sunnah.com/bukhari:18) (Sahih): the terms of the pledge, narrated by 'Ubadah ibn al-Samit.
+- [Bukhari 3925](https://sunnah.com/bukhari:3925) (Sahih): Mus'ab ibn 'Umayr among the first to reach Madinah, teaching the Qur'an.
+- [IslamQA 11575, *Who Is Muhammad?*](https://islamqa.info/en/answers/11575): Khazraj at Hajj; "over ten" at the first pledge; Mus'ab sent; "more than seventy" at 'Aqabah with al-'Abbas present.
+- [Yaqeen Institute, *How Muhammad ﷺ Confronted Hate and Became the Most Influential Person in History*](https://yaqeeninstitute.org/read/paper/how-muhammad-confronted-hate-and-became-the-most-influential-person-in-history): the delegates from Yathrib pledged at the pilgrimage season.
+- Fact rows 19.1–19.5 in [[Seerah Fact-Check Log]].

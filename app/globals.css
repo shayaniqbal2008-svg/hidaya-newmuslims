@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* Tokens: "Iznik". Porcelain ground, cobalt for structure, turquoise for action and correct answers,
+   saffron for XP, streaks and celebration. "Not quite" is a soft amber, never red. */
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #1b2440;
+  --muted: #5d6680;
+  --line: #e1e6ef;
+  --line-deep: #c9d1df; /* the 3D bottom edge of neutral cards */
+  --cobalt: #2a46a8;
+  --cobalt-deep: #1d3280;
+  --cobalt-soft: #e6ebfa;
+  --tile: #0f9a86; /* turquoise: primary action + correct */
+  --tile-deep: #0a7466;
+  --tile-soft: #dcf4ef;
+  --dawn: #f0a92e; /* saffron */
+  --dawn-deep: #c9851a;
+  --dawn-soft: #fdf1d8;
+  --gentle: #b0661c;
+  --gentle-deep: #8a4f14;
+  --gentle-soft: #fbead6;
+  --locked: #e3e7ee;
+  --locked-deep: #c6cdd9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1626;
+    --surface: #18213a;
+    --ink: #eef1f8;
+    --muted: #a3acc4;
+    --line: #2a3554;
+    --line-deep: #1f2944;
+    --cobalt: #8ea4ff;
+    --cobalt-deep: #6178d6;
+    --cobalt-soft: #1f2a52;
+    --tile: #2cc4ab;
+    --tile-deep: #1d927f;
+    --tile-soft: #12352f;
+    --dawn: #f5b84a;
+    --dawn-deep: #c48b22;
+    --dawn-soft: #3a2f17;
+    --gentle: #eab077;
+    --gentle-deep: #b77d43;
+    --gentle-soft: #3b2a19;
+    --locked: #2a3554;
+    --locked-deep: #1c2540;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-deep: var(--line-deep);
+  --color-cobalt: var(--cobalt);
+  --color-cobalt-deep: var(--cobalt-deep);
+  --color-cobalt-soft: var(--cobalt-soft);
+  --color-tile: var(--tile);
+  --color-tile-deep: var(--tile-deep);
+  --color-tile-soft: var(--tile-soft);
+  --color-dawn: var(--dawn);
+  --color-dawn-deep: var(--dawn-deep);
+  --color-dawn-soft: var(--dawn-soft);
+  --color-gentle: var(--gentle);
+  --color-gentle-deep: var(--gentle-deep);
+  --color-gentle-soft: var(--gentle-soft);
+  --color-locked: var(--locked);
+  --color-locked-deep: var(--locked-deep);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-arabic: var(--font-amiri);
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+.font-display { font-family: var(--font-display), Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+.arabic { font-family: var(--font-amiri), serif; direction: rtl; line-height: 2; font-weight: 400; }
+:focus-visible { outline: 3px solid var(--dawn); outline-offset: 2px; border-radius: 8px; }
+
+/* Duolingo-style chunky buttons: a darker bottom edge that presses down. */
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  width: 100%; border-radius: 1rem; padding: 0.85rem 1.25rem;
+  font-weight: 800; font-size: 1.05rem; letter-spacing: 0.02em;
+  border-bottom: 4px solid transparent; transition: transform 80ms, border-bottom-width 80ms, filter 120ms;
+  user-select: none;
+}
+.btn:active:not(:disabled) { transform: translateY(3px); border-bottom-width: 1px; }
+.btn:disabled { cursor: default; }
+.btn-primary { background: var(--tile); color: #fff; border-bottom-color: var(--tile-deep); }
+.btn-cobalt { background: var(--cobalt); color: #fff; border-bottom-color: var(--cobalt-deep); }
+.btn-dawn { background: var(--dawn); color: #3a2604; border-bottom-color: var(--dawn-deep); }
+.btn-gentle { background: var(--gentle); color: #fff; border-bottom-color: var(--gentle-deep); }
+.btn-ghost { background: var(--surface); color: var(--cobalt); border: 2px solid var(--line); border-bottom-width: 4px; border-bottom-color: var(--line-deep); }
+.btn-primary:disabled, .btn-dawn:disabled, .btn-cobalt:disabled { background: var(--locked); color: var(--muted); border-bottom-color: var(--locked-deep); }
+
+/* Answer cards: neutral 3D tiles that tint when picked. */
+.opt {
+  width: 100%; text-align: left; border-radius: 1rem; padding: 0.85rem 1rem;
+  background: var(--surface); border: 2px solid var(--line); border-bottom-width: 4px; border-bottom-color: var(--line-deep);
+  transition: transform 80ms, background-color 150ms, border-color 150ms;
+}
+.opt:active:not(:disabled) { transform: translateY(2px); border-bottom-width: 2px; }
+.opt[data-state="picked"] { background: var(--cobalt-soft); border-color: var(--cobalt); color: var(--cobalt-deep); }
+.opt[data-state="right"] { background: var(--tile-soft); border-color: var(--tile); color: var(--tile-deep); }
+.opt[data-state="wrong"] { background: var(--gentle-soft); border-color: var(--gentle); color: var(--gentle-deep); }
+.opt[data-state="dim"] { opacity: 0.5; }
+@media (prefers-color-scheme: dark) {
+  .opt[data-state="picked"] { color: var(--ink); }
+  .opt[data-state="right"] { color: var(--ink); }
+  .opt[data-state="wrong"] { color: var(--ink); }
+}
+
+/* Word tiles (tap_words). */
+.chip {
+  border-radius: 0.8rem; padding: 0.45rem 0.85rem; background: var(--surface);
+  border: 2px solid var(--line); border-bottom-width: 4px; border-bottom-color: var(--line-deep); font-weight: 700;
+}
+.chip:active { transform: translateY(2px); border-bottom-width: 2px; }
+
+@keyframes pop { 0% { transform: scale(0.6); opacity: 0; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes flicker { 0%, 100% { transform: scale(1) rotate(-2deg); } 50% { transform: scale(1.06) rotate(2deg); } }
+@keyframes shine { 0% { transform: translateX(-120%); } 100% { transform: translateX(220%); } }
+.animate-pop { animation: pop 380ms cubic-bezier(.2,.9,.3,1.3) both; }
+.animate-bob { animation: bob 1.6s ease-in-out infinite; }
+.animate-flicker { animation: flicker 1.2s ease-in-out infinite; transform-origin: 50% 90%; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,220 @@
+---
+day: 62
+phase: 3
+unit: 8
+title: "Intention: who is this for?"
+hook: "Same prayer, same post, same favor. What makes it count is who you're doing it for."
+minutes: 5
+skills: [S1]
+pain_points: [character]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [niyyah, ikhlas, riya', Allah, ﷺ, iftar, masjid, Qur'an, masha Allah, Maghrib]
+sources: [Bukhari 1, Bukhari 6491, Muslim 2564, Muslim 2985, Being Muslim (Spiritual Refinement), Revealed Path Part III ch. 15]
+format: 2
+---
+# Day 62 · Intention: who is this for?
+
+### 1 · hook
+```yaml
+pic: intention
+text: "Yesterday was about doing things *well*. Today is about doing them for the *right reason*. It's quieter than it sounds, and it changes everything you do, from prayer to the dishes."
+```
+
+### 2 · learn
+```yaml
+pic: intention
+text: "The Prophet ﷺ taught that actions are judged by their intentions, and each person gets what they intended [Bukhari 1]. Your **niyyah** (intention) is simply the \"why\" in your heart."
+bubbles:
+  - "You don't have to say it out loud."
+  - "The good news: with the right niyyah, ordinary things become worship. Going to work to feed your family, sleeping so you can wake for prayer, studying to help people."
+```
+
+### 3 · fill
+```yaml
+pic: icon:Heart
+before: "Actions are judged by their"
+after: "and each person gets what they intended [Bukhari 1]."
+options:
+  - text: "intentions,"
+    correct: true
+    feedback: "Yes. The \"why\" in your heart is what makes a deed count."
+  - text: "results,"
+    correct: false
+    feedback: "Not quite. Allah judges by intention [Bukhari 1]. Even a good deed you meant but couldn't do is recorded."
+  - text: "size,"
+    correct: false
+    feedback: "Not quite. A small deed with a sincere intention counts. It's the intention [Bukhari 1]."
+```
+
+### 4 · reveal
+```yaml
+title: "Same action, different intention"
+cards:
+  - front: "Going to the gym"
+    back: "For vanity only? It's just a workout. To stay healthy and strong for your family and your prayer? Now it's also worship."
+    pic: icon:Dumbbell
+  - front: "Posting your first iftar on social media"
+    back: "To share joy or encourage a friend? Good. To collect compliments on how religious you are? That's the thing to watch."
+    pic: icon:Smartphone
+  - front: "Helping set up chairs at the masjid"
+    back: "Done for Allah, it's rewarded whether anyone notices or not. Done to be noticed, the reward is the noticing."
+    pic: masjid
+  - front: "Meaning to give charity, then the money runs out"
+    back: "Allah records a good deed you sincerely meant to do, even if you couldn't do it [Bukhari 6491]."
+    pic: icon:HandCoins
+```
+
+### 5 · learn
+```yaml
+pic: icon:Eye
+text: "**Ikhlas** (sincerity) means doing it for Allah. Its opposite is **riya'** (showing off): doing worship so people will admire you."
+bubbles:
+  - "Allah doesn't look at your looks or your bank balance. He looks at your heart and your deeds [Muslim 2564]."
+  - "And a deed done for someone else's applause is left to that someone [Muslim 2985]."
+  - "Scholars count showing off in worship among the worst faults of the heart [Being Muslim, Spiritual Refinement]."
+```
+
+### 6 · scenario
+```yaml
+pic: quran
+situation: "Jordan has started reading Qur'an at the masjid after Maghrib. Last week someone said, \"Masha Allah, you're so dedicated!\" It felt good. Now Jordan worries: \"Was that showing off? Maybe I should stop reading there.\""
+options:
+  - text: "Keep reading there, and quietly renew the intention: \"This is for You, Allah\""
+    best: true
+    feedback: "Yes. Fix the intention, keep the deed. Quitting good deeds out of fear of showing off is a trap."
+  - text: "Stop reading at the masjid so nobody sees"
+    best: false
+    feedback: "Not quite. Scholars warn this is a trick: you lose the good deed and the intention isn't fixed either."
+  - text: "Read louder, so more people are inspired"
+    best: false
+    feedback: "Not quite. Inspiring others is fine, but if the goal becomes the audience, the heart has drifted."
+```
+
+### 7 · learn
+```yaml
+pic: icon:RotateCcw
+text: "**Don't quit the good deed.** Noticing a show-off feeling is normal. Scholars teach: keep doing the deed and steer the intention back to Allah [Being Muslim, Spiritual Refinement]."
+bubbles:
+  - "Feeling happy when someone says something kind isn't showing off by itself. The question is what you were doing it *for*."
+  - "Intention isn't a one-time switch. You check it, and you correct it, for life."
+```
+
+### 8 · choice
+```yaml
+pic: icon:Camera
+prompt: "Hannah realizes halfway through helping at a food drive that she mostly came for the photos. What's the best move?"
+options:
+  - text: "Keep helping, and turn her intention back to Allah right now"
+    correct: true
+    feedback: "Right. Intentions can be corrected mid-deed. The work is still good."
+  - text: "Leave, since the deed is ruined anyway"
+    correct: false
+    feedback: "Not quite. Nothing is ruined while she can still fix her intention. Leaving loses the good she's doing."
+  - text: "Post the photos to prove she's sincere"
+    correct: false
+    feedback: "Not quite. Proving sincerity to people is still about the people."
+```
+
+### 9 · steps
+```yaml
+title: "A quick check before you post about your faith"
+steps:
+  - text: "Ask: who is this for?"
+    pic: intention
+  - text: "Ask: would I still do this deed if nobody ever saw it?"
+    pic: icon:EyeOff
+  - text: "Ask: does sharing it help someone, or just help my image?"
+    pic: icon:Smartphone
+done_text: "Sharing isn't wrong. Many converts find each other by posting. The check just keeps your heart honest."
+```
+
+### 10 · reflect
+```yaml
+prompt: "Pick one thing you do every day (work, school, cooking, caring for someone). What intention could turn it into worship? Write it in one sentence."
+share_with_mentor: optional
+```
+
+### 11 · ask_ai
+```yaml
+chips:
+  - "Do I have to say my intention out loud before praying?"
+  - "Is it showing off to post about my shahada?"
+  - "How do I know if my intention is sincere?"
+  - "I feel fake when people praise me at the masjid. What do I do?"
+```
+
+### 12 · do_today
+```yaml
+pic: intention
+text: "Check your \"why\" today."
+steps:
+  - "Before your next prayer, pause for one breath"
+  - "Tell Allah in your heart who it's for"
+  - "Do one good deed today that nobody will ever know about"
+log: null
+optional_extra: "Look at your last few posts about your faith. Run the three-question check on them. No need to delete anything; just notice."
+```
+
+### 13 · takeaway
+```yaml
+pic: icon:Heart
+text: "Actions count by their intention. Do it for Allah, check your \"why\" often, and never drop a good deed out of fear of showing off."
+```
+
+### 14 · closing
+Nobody's heart is pure all the time. Just keep turning it back.
+
+---
+
+## Check
+```yaml
+- prompt: "What did the Prophet ﷺ teach about intentions?"
+  options:
+    - text: "Actions are judged by their intentions"
+      correct: true
+      feedback: "Right. Each person gets what they intended [Bukhari 1]."
+    - text: "Only the action matters, not the reason"
+      correct: false
+      feedback: "Not quite. Actions are judged by their intentions [Bukhari 1]."
+- prompt: "You notice you're enjoying people's praise while doing a good deed. What should you do?"
+  options:
+    - text: "Keep doing the deed and turn your intention back to Allah"
+      correct: true
+      feedback: "Right. Fix the intention, keep the deed."
+    - text: "Stop the deed so you can't show off"
+      correct: false
+      feedback: "Not quite. Dropping good deeds out of fear of showing off is a trap."
+```
+
+## AI guide context
+**Lesson facts**
+- Actions are judged by intentions, and each person gets what they intended [Bukhari 1].
+- Allah looks at hearts and deeds, not appearances or wealth [Muslim 2564].
+- A deed done to be seen by others, in Allah's words, is left to the one it was done for [Muslim 2985]. Scholars treat showing off in worship (riya') as a serious fault of the heart [Being Muslim, Spiritual Refinement].
+- A sincerely intended good deed that the person couldn't do is still recorded as a good deed [Bukhari 6491].
+- Scholars teach not to abandon a good deed for fear of showing off, but to keep it and correct the intention [Being Muslim, Spiritual Refinement].
+- With a good intention, everyday actions (work, sleep, study, caring for family) can be acts of worship [Revealed Path ch. 15, ch. 24].
+
+**Likely questions**
+- *"Do I say my intention out loud?"* No. The intention is in the heart: knowing which prayer you're about to pray is enough. Some people say it quietly to help focus; it isn't required. Don't make it a source of worry (link Day 26 on waswasa).
+- *"Is it showing off to post about my shahada?"* Not necessarily. Sharing good news, encouraging others or finding community is fine. Suggest the three-question check. Also remind them privacy is their choice; they don't owe anyone a post.
+- *"How do I know if I'm sincere?"* Nobody is sure all the time, and worrying about it is itself a sign of care. Keep renewing it; do some good deeds privately.
+- *"People praise me and I feel fake."* Normal. Thank them, make du'a, keep going, and keep some deeds secret.
+
+**Escalate:** persistent, distressing doubts that none of their worship counts (possible waswasa): offer the mentor or imam.
+
+**Don't**
+- Don't make the convert anxious about every motive. The point is a gentle habit of checking, not scrupulosity.
+- Don't tell anyone to stop a good deed because their intention may be mixed.
+- Don't judge other people's intentions; only Allah knows hearts.
+
+## Sources
+- [Bukhari 1](https://sunnah.com/bukhari:1): deeds are judged by their intentions.
+- [Bukhari 6491](https://sunnah.com/bukhari:6491): an intended good deed is recorded.
+- [Muslim 2564](https://sunnah.com/muslim:2564): Allah looks at hearts and deeds, not bodies and faces.
+- [Muslim 2985](https://sunnah.com/muslim:2985): Allah needs no partner; a deed done for another is left to that partner.
+- [[Source - Being Muslim a Practical Guide]], Spiritual Refinement (intention, showing off, not abandoning deeds).
+- [[Source - The Revealed Path]] Part III, ch. 15 (heart and limbs); ch. 24 (earning with the right intention as worship).

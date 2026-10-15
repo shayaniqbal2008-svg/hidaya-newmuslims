@@ -1,0 +1,263 @@
+---
+day: 21
+phase: 1
+unit: 3
+title: "Mistakes and starting again"
+hook: "Missed a prayer? Slipped up? Here's the way back, and it's always open."
+minutes: 5
+skills: [S5, P8]
+pain_points: [guilt]
+logs: []
+madhab_sensitive: true
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [tawbah, astaghfirullah, qada, Fajr, rak'ah, Allah, ﷺ]
+sources: [Q 39:53, Q 25:70, Q 2:222, Q 3:135, Tirmidhi 2499, Muslim 2749, Muslim 121, Bukhari 597, Muslim 831, Ibn Majah 897, First Instructions on Worship ch. 5, SeekersGuidance (makeup order), SeekersGuidance (when makeup is allowed), IslamWeb 243298]
+format: 2
+---
+# Day 21 · Mistakes and starting again
+
+### 1 · hook
+```yaml
+pic: fresh-start
+text: "Maybe you slept through Fajr. Maybe you did something you promised yourself you wouldn't. Three weeks in, nearly everyone has, and it can feel like proof you're a \"fake\" Muslim. It isn't. Today: the way back."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Undo2
+text: "**Everyone slips.** Every human being makes mistakes, and the best of them are the ones who keep coming back [Tirmidhi 2499]. Allah loves those who turn back to Him again and again [Q 2:222]."
+bubbles:
+  - "The Qur'an speaks to people who've wronged themselves: don't lose hope in Allah's mercy, because He forgives all sins [Q 39:53]."
+```
+
+### 3 · steps
+```yaml
+title: "How to come back (tawbah)"
+intro: "Turning back to Allah is simple, and you do it directly, with no one in between."
+steps:
+  - text: "Feel sorry it happened"
+    pic: icon:HeartCrack
+  - text: "Stop doing it"
+    pic: icon:OctagonX
+  - text: "Mean not to go back to it"
+    pic: intention
+  - text: "Ask His forgiveness: ***astaghfirullah*** (I ask Allah's forgiveness) [Q 3:135]"
+    pic: dua
+  - text: "If you wronged a person, make it right with them too"
+    pic: icon:Handshake
+done_text: "That's tawbah. Allah can even turn past wrongs into good [Q 25:70]."
+```
+
+### 4 · scenario
+```yaml
+pic: icon:AlarmClock
+situation: "Jordan slept through Fajr for the third time this week. He feels like a fraud and thinks, \"Maybe I'm just not a Fajr person.\""
+options:
+  - text: "Make it up as soon as he's up, say astaghfirullah, and fix one thing: earlier bedtime or an alarm across the room"
+    best: true
+    feedback: "Yes. Make it up, turn back to Allah, and change one small thing. That's exactly how it gets easier."
+  - text: "Skip Fajr for now and focus on the other four"
+    best: false
+    feedback: "Not quite. All five are due. Missing it isn't a reason to drop it; it's a reason to plan for it."
+  - text: "Make it up, but decide he's a bad Muslim"
+    best: false
+    feedback: "The make-up is right; the verdict isn't. Struggling isn't failing. Allah loves people who keep coming back."
+```
+
+### 5 · learn
+```yaml
+madhab_variant: true
+pic: prayer-mat
+default: |
+  **Making up a missed prayer (qada).** Pray it as soon as you remember, the same number of rak'ahs, intending "the Fajr I missed today" [Bukhari 597]. Your masjid will teach its rules on timing and order.
+hanafi: |
+  **Making up a missed prayer (qada).** Pray it as soon as you can, the same number of rak'ahs, intending "the Fajr I missed today" [Bukhari 597]. With only a few to make up, pray the missed one before the current prayer.
+```
+
+### 6 · sort
+```yaml
+prompt: "Is it made up?"
+buckets: ["Make it up", "Never made up"]
+items:
+  - text: "A Fajr you slept through"
+    bucket: 0
+    why: "Make it up as soon as you can. Oversleeping isn't a sin [Bukhari 597]."
+  - text: "A Dhuhr you forgot during a busy day"
+    bucket: 0
+    why: "Make it up. Forgetting isn't a sin either."
+  - text: "A prayer you skipped on purpose"
+    bucket: 0
+    why: "Make it up and repent: missing one on purpose is a sin. The door back is still open."
+  - text: "Prayers from the years before you were Muslim"
+    bucket: 1
+    why: "Never made up. Those years are wiped clean [Muslim 121]."
+```
+
+### 7 · choice
+```yaml
+pic: icon:Sunrise
+prompt: "Ana wakes up at 7:20. Sunrise was at 7:12. What should she do about Fajr?"
+options:
+  - text: "Wait until the sun is fully up (about 15–20 minutes after sunrise), then pray 2 rak'ahs for the missed Fajr"
+    correct: true
+    feedback: "Right. Some schools allow no prayer while the sun is rising [Muslim 831], and waiting suits every school. Then she prays right away."
+  - text: "Pray right this second, while the sun is still rising"
+    correct: false
+    feedback: "Not quite. Some schools don't allow any prayer while the sun is rising [Muslim 831]. Waiting a few minutes is valid for every school."
+  - text: "Nothing. Once Fajr's time is over, it's gone"
+    correct: false
+    feedback: "Not quite. A missed prayer is made up as soon as you can [Bukhari 597]."
+variants:
+  hanafi:
+    options:
+      - text: "Wait until the sun is fully up (about 15–20 minutes after sunrise), then pray 2 rak'ahs for the missed Fajr"
+        correct: true
+        feedback: "Right. No prayer, not even a make-up, while the sun is rising [Muslim 831]. Once it's fully up, she prays right away."
+      - text: "Pray right this second, while the sun is still rising"
+        correct: false
+        feedback: "Not quite. No prayer is allowed while the sun is rising [Muslim 831]. She waits a few minutes, then prays."
+      - text: "Nothing. Once Fajr's time is over, it's gone"
+        correct: false
+        feedback: "Not quite. A missed prayer is made up as soon as you can [Bukhari 597]."
+```
+
+### 8 · learn
+```yaml
+pic: icon:Heart
+text: "**Guilt or shame?** Guilt that brings you back to Allah is healthy. Shame that keeps you away from Him is the trap."
+bubbles:
+  - "The Prophet ﷺ said that if people never sinned, Allah would bring people who sin and then ask forgiveness, and forgive them [Muslim 2749]."
+  - "Coming back is the whole point. Your record before Islam is already wiped clean [Muslim 121]."
+```
+
+### 9 · widget
+```yaml
+widget: tasbih
+prompt: "Say it ten times"
+text: "Tap once each time you say it. About twenty seconds, anywhere."
+phrases:
+  - translit: "Astaghfirullah"
+    meaning: "I ask Allah's forgiveness"
+    count: 10
+```
+
+### 10 · reflect
+```yaml
+prompt: "Is there something you've been carrying since you became Muslim? Write it to Allah in your own words, and end with astaghfirullah. This stays private."
+share_with_mentor: optional
+```
+
+### 11 · prayer
+```yaml
+title: "Where today's prayer phrase goes"
+intro: "A request for forgiveness, in every rak'ah."
+moves:
+  - pose: sujud
+    text: "The first prostration of the rak'ah."
+  - pose: jalsa
+    text: "Say *Allahu akbar* and sit up. Once you're still, say *Rabbighfirli, rabbighfirli*: my Lord, forgive me."
+    say: "Rabbighfirli, rabbighfirli"
+  - pose: sujud
+    text: "Say *Allahu akbar* and prostrate again."
+done_text: "You'll ask for forgiveness dozens of times a day."
+```
+
+### 12 · ask_ai
+```yaml
+chips:
+  - "How do I actually wake up for Fajr?"
+  - "I keep doing the same sin. Does Allah still forgive me?"
+  - "I missed a whole day of prayers. What do I do?"
+  - "Do I need to confess to someone?"
+```
+
+### 13 · do_today
+```yaml
+pic: icon:AlarmClock
+text: "Make it up, then plan for Fajr."
+steps:
+  - "If you missed a prayer this week, make it up today"
+  - "Set up one change for tomorrow's Fajr: an earlier bedtime, a second alarm, or your phone across the room"
+log: null
+optional_extra: "Say astaghfirullah ten times today, wherever you are. It takes about twenty seconds."
+```
+
+### 14 · takeaway
+```yaml
+pic: fresh-start
+text: "Slipping is human; coming back is what Allah loves. Make up what you missed, ask His forgiveness, change one thing, and start again."
+```
+
+### 15 · closing
+Today's prayer phrase asks for forgiveness in every rak'ah, dozens of times a day. That's how close the door is.
+
+---
+
+## Prayer phrase
+```yaml
+arabic: "رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي"
+translit: "Rabbighfirli, rabbighfirli"
+meaning: "My Lord, forgive me. My Lord, forgive me"
+audio_id: rabbighfirli
+when: "Sitting between the two prostrations, once you're still. [Ibn Majah 897]"
+```
+
+## Check
+```yaml
+- prompt: "You overslept and missed Fajr. What do you do?"
+  options:
+    - text: "Make it up as soon as you can (once the sun is fully up, if it's rising)"
+      correct: true
+      feedback: "Right. Oversleeping isn't a sin, and the prayer is made up as soon as you can [Bukhari 597]."
+    - text: "Nothing; it's too late"
+      correct: false
+      feedback: "Not quite. A missed prayer is made up as soon as you can [Bukhari 597]."
+- prompt: "What are the steps of tawbah (turning back to Allah)?"
+  options:
+    - text: "Feel sorry, stop, mean not to return, ask Allah's forgiveness"
+      correct: true
+      feedback: "Right. And if you wronged a person, make it right with them too."
+    - text: "Confess to an imam and wait for permission"
+      correct: false
+      feedback: "Not quite. You turn to Allah directly. An imam can advise you, but no one stands in between."
+```
+
+## AI guide context
+**Lesson facts**
+- Repentance: regret, stopping, resolving not to return, asking Allah's forgiveness; restoring people's rights where you wronged them [Q 3:135; Q 39:53; Q 25:70; Q 2:222]. Directly with Allah; no confession to a person is required.
+- Every human errs; the best return [Tirmidhi 2499 (hasan per al-Albani; da'if per Zubair Ali Zai)]; Allah would replace a people who never sinned [Muslim 2749]; pre-Islam record wiped [Muslim 121].
+- Missed prayers: make them up as soon as remembered [Bukhari 597]; no sin for sleeping through or forgetting, but deliberately missing is a major sin needing repentance and make-up [First Instructions on Worship ch. 5].
+- Hanafi: someone with five or fewer missed prayers must keep order (missed before current) unless the current prayer's time is running out or they forgot [SeekersGuidance (makeup order)]. With six or more, order drops; a plan with the imam helps.
+- Hanafi: no prayer, including make-ups, while the sun is rising (until ~15–20 min after sunrise), at its zenith, or while it's setting [Muslim 831; SeekersGuidance (when makeup is allowed)]. Exception taught by Hanafis: that day's own Asr may still be finished while the sun sets.
+- Prayers from before Islam are not made up [IslamWeb 243298]; the day-of-conversion question is Q15 (route to the imam).
+
+**Likely questions**
+- *"How do I wake for Fajr?"* Sleep earlier, alarm across the room, two alarms, make wudu at night, ask a friend for a wake-up text, intend it before sleeping. Practical, not preachy.
+- *"I keep doing the same sin."* Keep repenting each time; Allah doesn't tire of forgiving [Muslim 2749; Q 39:53]. Encourage a small practical change and talking to the mentor. Separate struggling from denying.
+- *"I missed a whole day / a week."* Make them up, a few at a time alongside current prayers (e.g., one extra with each prayer), in order where possible. For many weeks or months: escalate to the imam for a plan.
+- *"Do I confess?"* No. Between them and Allah. They may ask the imam for advice, privately, if they want.
+- *"I missed prayers during my period."* Those are never made up (Day 17).
+
+**Escalate:** large numbers of missed prayers; sins involving other people's rights (money, harm) where making it right is complicated; anything suggesting self-harm or despair (safety rule).
+
+**Don't**
+- Don't use Hell or punishment to motivate.
+- Don't ask what the sin was. Never make them disclose it.
+- Don't say missing prayers is "fine" or "no big deal"; say it's forgivable and fixable.
+
+## Madhab note
+- **Order of make-ups:** the Hanafi and Maliki schools require keeping order when only a few prayers are owed; the Shafi'i school recommends it; the Hanbali school requires it with some exceptions. Ask your imam if you have many to make up.
+- **Forbidden times:** the Maliki, Shafi'i and Hanbali schools allow making up an obligatory prayer even at sunrise or sunset; the Hanafi school doesn't, so wait until the sun is fully up.
+
+## Sources
+- Qur'an [39:53](https://quran.com/39/53), [25:70](https://quran.com/25/70), [2:222](https://quran.com/2/222), [3:135](https://quran.com/3/135).
+- [Tirmidhi 2499](https://sunnah.com/tirmidhi:2499) (hasan, al-Albani): the best of those who err are those who repent.
+- [Muslim 2749](https://sunnah.com/muslim:2749): people who sin and seek forgiveness. [Muslim 121](https://sunnah.com/muslim:121): Islam wipes out what came before.
+- [Bukhari 597](https://sunnah.com/bukhari:597): pray a forgotten prayer when you remember it.
+- [Muslim 831](https://sunnah.com/muslim:831): the three times prayer is not allowed.
+- [Ibn Majah 897](https://sunnah.com/ibnmajah:897) (sahih, al-Albani): *Rabbighfirli* between the two prostrations.
+- [SeekersGuidance: the current prayer while make-ups are owed](https://seekersguidance.org/answers/hanafi-fiqh/what-is-the-ruling-of-a-current-prayer-while-leaving-the-make-up-prayers/) (Mawlana Ilyas Patel, rev. Shaykh Faraz Rabbani); [SeekersGuidance: When is it permissible to make up missed prayers?](https://seekersguidance.org/answers/hanafi-fiqh/when-is-it-permissible-to-make-up-missed-prayers/)
+- [IslamWeb 243298](https://www.islamweb.net/en/fatwa/243298/does-the-person-who-embraces-islam-have-to-perform-the-prayers-he-missed-on-that-day): no make-up of prayers before Islam.
+- [[Source - First Instructions on Worship]] ch. 5 (missing the prayer time) and ch. 7 (*Rabbighfirli* in the sitting).
+- Madhab note (verified, T2 final review): [IslamWeb 84228: order in making up prayers (reports the schools)](https://www.islamweb.net/en/fatwa/84228/making-up-missed-prayers); [SeekersGuidance (Shafi'i) 108349: missed prayers in order](https://islamqa.org/shafii/seekersguidance-shafii/108349/); [Qibla 37301: prohibited times for make-up prayers (Hanafi)](https://islamqa.org/hanafi/qibla-hanafi/37301/prohibited-times-for-make-up-prayers/); [IslamWeb 83131: making up an obligatory prayer at forbidden times](https://www.islamweb.net/en/fatwa/83131/forbidden-times-of-prayer).

@@ -1,0 +1,298 @@
+---
+day: 22
+phase: 1
+unit: 4
+title: "Praying with the congregation"
+hook: "Walking in late, not sure what to do? By the end of today, you'll know exactly how to join."
+minutes: 5
+skills: [P5, B1]
+pain_points: [awkward-at-masjid]
+logs: []
+madhab_sensitive: true
+scholar_flags: [Q1]
+status: draft-pending-scholar-review
+glossary: [imam, masjid, rak'ah, Allahu akbar, al-Fatiha, Amin, salam, tashahhud]
+sources: [Bukhari 645, Bukhari 722, Bukhari 723, Bukhari 636, Bukhari 831, First Instructions on Worship ch. 7 and 8, SeekersGuidance (latecomer: when a rak'ah is missed), SeekersGuidance (latecomer recitation), Research Notes - Core Essentials and Madhab Map]
+format: 2
+---
+# Day 22 · Praying with the congregation
+
+### 1 · hook
+```yaml
+pic: masjid
+text: "You've prayed in a row at the masjid (Day 7). Now the details: where to stand, what to say behind the imam, and what to do when you walk in late, which happens to everyone."
+```
+
+### 2 · learn
+```yaml
+pic: community
+text: "**Why pray together.** Praying in a group is worth twenty-seven times praying alone [Bukhari 645]. {men}For you, it's strongly encouraged for the five daily prayers.{/men}{women}You're welcome at the masjid, and you aren't required to attend.{/women}"
+bubbles:
+  - "A prayer you pray alone at home is still valid. The masjid is simply where it's multiplied, and where your people are."
+```
+
+### 3 · fill
+```yaml
+before: "Praying in a group is worth"
+after: "times praying alone."
+options:
+  - text: "27"
+    correct: true
+    feedback: "Yes, twenty-seven times [Bukhari 645]. Same prayer, multiplied."
+  - text: "2"
+    correct: false
+    feedback: "Not quite. It's twenty-seven times [Bukhari 645]."
+  - text: "5"
+    correct: false
+    feedback: "Not quite. Five is the number of daily prayers. A group prayer is worth twenty-seven [Bukhari 645]."
+```
+
+### 4 · steps
+```yaml
+title: "Joining a row"
+steps:
+  - text: "Fill the front rows first"
+    pic: masjid
+  - text: "Stand shoulder to shoulder and foot to foot, and keep the row straight [Bukhari 723]"
+    pic: icon:Users
+  - text: "{men}Line up in the rows behind the imam{/men}{women}Pray in the rows behind the men, or in the women's area{/women}"
+    pic: icon:MapPin
+  - text: "Before the first Allahu akbar, intend in your heart to follow the imam"
+    pic: intention
+variants:
+  hanafi:
+    steps:
+      - text: "Fill the front rows first"
+        pic: masjid
+      - text: "Stand shoulder to shoulder, keeping the row straight [Bukhari 723]"
+        pic: icon:Users
+      - text: "{men}If you're the only one praying with the imam, stand at his right{/men}{women}Pray in the rows behind the men, or in the women's area{/women}"
+        pic: icon:MapPin
+      - text: "Before the first Allahu akbar, intend to follow the imam [First Instructions on Worship ch. 8]"
+        pic: intention
+```
+
+### 5 · choice
+```yaml
+pic: masjid
+prompt: "{men}Marcus arrives as the prayer starts. The front row has a gap in the middle; the back row is empty. Where should he go?{/men}{women}Keisha arrives as the prayer starts. The front row in the women's section has a gap in the middle; the back row is empty. Where should she go?{/women}"
+options:
+  - text: "Fill the gap in the front row"
+    correct: true
+    feedback: "Right. Front rows fill first, with no gaps. Straight, full rows are part of a complete prayer [Bukhari 723]."
+  - text: "Start a new back row to avoid squeezing in"
+    correct: false
+    feedback: "Not quite. Fill the gap in front first. People expect it, so don't be shy."
+```
+
+### 6 · learn
+```yaml
+pic: "pose:qiyam"
+text: "**Following the imam.** Say each Allahu akbar after him, and never move ahead of him [Bukhari 722]. Watch it, move by move."
+```
+
+### 7 · prayer
+```yaml
+title: "Praying behind the imam"
+intro: "The imam leads; you follow, one beat behind."
+moves:
+  - pose: takbir
+    text: "Intend to follow the imam. Say your Allahu akbar after his, never before."
+    say: "Allahu akbar"
+  - pose: qiyam
+    text: "While he recites, do what {{masjid.name}} teaches about reciting al-Fatiha behind the imam."
+  - pose: ruku
+    text: "Bow after he bows, and say what you'd say praying alone."
+  - pose: sujud
+    text: "Prostrate after him, never ahead of him. Everything you say is as you'd say it alone."
+  - pose: tashahhud
+    text: "Sit with him and say what you know of the tashahhud."
+  - pose: salam-right
+    text: "Give the salam after he gives his."
+variants:
+  hanafi:
+    moves:
+      - pose: takbir
+        text: "Intend to follow the imam. Say your Allahu akbar after his, never before."
+        say: "Allahu akbar"
+      - pose: qiyam
+        text: "Say the opening du'a quietly. Then stay silent while he recites: **no al-Fatiha or surah** behind the imam. `[SCHOLAR: Q1]`"
+      - pose: qiyam
+        text: "When he finishes al-Fatiha, say *Amin* quietly."
+        say: "Amin"
+      - pose: ruku
+        text: "Bow after he bows, and say what you usually say."
+      - pose: itidal
+        text: "Rising from bowing, say only *Rabbana wa lakal-hamd*."
+        say: "Rabbana wa lakal-hamd"
+      - pose: sujud
+        text: "Prostrate after him, never ahead of him. Everything else you say as usual."
+      - pose: tashahhud
+        text: "Sit with him and say what you know of the tashahhud."
+      - pose: salam-right
+        text: "Give the salam after he gives his."
+```
+
+### 8 · learn
+```yaml
+pic: icon:Footprints
+text: "**Running late?** Walk in calmly; don't run [Bukhari 636]. Step into the row, say your opening ***Allahu akbar*** standing up, then say Allahu akbar again and join the imam in whatever position he's in."
+bubbles:
+  - "If you bow with him **before he rises from bowing**, you've caught that rak'ah. If he's already up, that rak'ah will need making up [SeekersGuidance (latecomer)]."
+```
+
+### 9 · widget
+```yaml
+widget: rows
+prompt: "You walk in late. Where do you stand?"
+text: "Front rows fill first, with no gaps."
+```
+
+### 10 · scenario
+```yaml
+pic: "pose:sujud"
+situation: "Destiny walks into Maghrib late. The imam is in prostration, in the second rak'ah. What should she do?"
+options:
+  - text: "Say Allahu akbar standing, then join him in prostration right away"
+    best: true
+    feedback: "Yes. Join immediately, whatever the position. That rak'ah doesn't count, but joining earns reward. She'll make up two after the salam."
+  - text: "Wait at the back until he stands for the next rak'ah"
+    best: false
+    feedback: "Not quite. Don't wait: join in whatever position he's in. Waiting costs you the reward of being with the group."
+  - text: "Pray Maghrib alone in a corner"
+    best: false
+    feedback: "It would be valid, but she'd miss the group's reward. Joining late is normal; everyone does it."
+```
+
+### 11 · prayer
+```yaml
+title: "Joined late? Finishing your prayer"
+moves:
+  - pose: tashahhud
+    text: "In the imam's last sitting, stay seated with him and say what you know of the tashahhud."
+  - pose: tashahhud
+    text: "He gives his salams. **Don't give yours.** Wait until he's said both."
+  - pose: qiyam
+    text: "Say *Allahu akbar* and stand. Pray the rak'ahs you missed as if alone, reciting al-Fatiha and a surah [SeekersGuidance (latecomer recitation)]."
+    say: "Allahu akbar"
+  - pose: tashahhud
+    text: "Sit and finish your tashahhud."
+  - pose: salam-right
+    text: "Now give your own salam [Bukhari 636]…"
+  - pose: salam-left
+    text: "…to both sides. Done."
+```
+
+### 12 · order
+```yaml
+prompt: "You arrive late and the imam is bowing. Put the steps in order."
+items:
+  - "Walk in calmly and step into the row"
+  - "Intend to follow the imam and say Allahu akbar while standing"
+  - "Say Allahu akbar and bow before the imam rises: that rak'ah counts"
+  - "Follow him to the end, but don't give the salam"
+  - "After both of his salams, say Allahu akbar and stand up"
+  - "Pray any rak'ahs you missed, then sit and give your own salam"
+pics: ["icon:Footprints", "pose:takbir", "pose:ruku", "pose:tashahhud", "pose:qiyam", "pose:salam-right"]
+feedback: "That's it. Whatever you catch, pray with the imam; whatever you missed, complete after [Bukhari 636]."
+```
+
+### 13 · ask_ai
+```yaml
+chips:
+  - "How do I count which rak'ahs I missed?"
+  - "What if the imam follows a different madhab?"
+  - "Can women pray at the masjid?"
+  - "What if I'm late for Jumu'ah?"
+```
+
+### 14 · do_today
+```yaml
+pic: community
+text: "Pray one prayer with a group this week."
+steps:
+  - "Pray at {{masjid.name}}, or with one other Muslim"
+  - "If you arrive late, use today's steps"
+log: null
+optional_extra: "Ask {{mentor.name}} to stand next to you once and talk through the joining-late steps with you afterward."
+```
+
+### 15 · takeaway
+```yaml
+pic: "pose:ruku"
+text: "Fill the rows, follow the imam without going ahead of him, and if you're late, join him wherever he is, then complete what you missed after his salam."
+```
+
+### 16 · closing
+Nobody at the masjid is counting your rak'ahs but you. Walk in, join, and keep coming.
+
+---
+
+## Prayer phrase
+```yaml
+arabic: "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ وَالطَّيِّبَاتُ"
+translit: "At-tahiyyatu lillahi was-salawatu wat-tayyibat"
+meaning: "All words of honor belong to Allah, and all prayers, and every good thing"
+audio_id: tashahhud-1
+when: "The start of the tashahhud, said in every sitting, before the shahada you already say there. Over the next three days you'll fill in the middle. [Bukhari 831]"
+```
+
+## Check
+```yaml
+- prompt: "You join late and bow with the imam before he rises from bowing. Did you catch that rak'ah?"
+  options:
+    - text: "Yes"
+      correct: true
+      feedback: "Right. Bowing with him before he rises means you caught it."
+    - text: "No, you have to hear al-Fatiha"
+      correct: false
+      feedback: "Not quite. If you bow with him before he rises, that rak'ah counts."
+- prompt: "You joined late. The imam gives his salam. What do you do?"
+  options:
+    - text: "Wait for both salams, then stand and make up what you missed"
+      correct: true
+      feedback: "Right. Then finish with your own salam."
+    - text: "Give the salam with him and leave"
+      correct: false
+      feedback: "Not quite. Your prayer isn't finished yet. Stand and complete the rak'ahs you missed."
+```
+
+## AI guide context
+**Lesson facts**
+- Congregation is 27 times better [Bukhari 645]. Hanafi: highly recommended (sunnah mu'akkadah) for men in the five prayers; not required of women; a prayer alone is valid [First Instructions on Worship ch. 8; Research Notes - Core Essentials §4].
+- Rows: straight and filled from the front [Bukhari 722; Bukhari 723]; one male follower stands at the imam's right; women behind the men or in the women's area [First Instructions on Worship ch. 8].
+- Follow the imam; never precede him [Bukhari 722]. Hanafi follower: opening du'a, then silence during recitation (no al-Fatiha or surah in any prayer), Amin quietly, *Rabbana wa lakal-hamd* only on rising, all other phrases as usual [First Instructions on Worship ch. 7–8; Research Notes - Core Essentials (madhab map)].
+- Latecomer (Hanafi): opening takbir standing, then join in any position; bowing with the imam before he rises catches the rak'ah [SeekersGuidance (latecomer); Ustadha Naielah Ackbarali, rev. Shaykh Faraz Rabbani]. After both salams, stand and make up missed rak'ahs in order as if praying alone: al-Fatiha and a surah in the missed first two rak'ahs, al-Fatiha alone in a missed third; for sitting, count your own rak'ahs, so if you caught only one, sit for a tashahhud after the first one you make up [SeekersGuidance (latecomer recitation); Bukhari 636]. In the imam's last sitting, the latecomer recites the tashahhud only (slowly, up to *'abduhu wa rasuluh*, no salawat), doesn't give salam, and stands after the imam's second salam [Qibla 35678; SeekersGuidance (can the latecomer stand after the first salam)].
+- Ta'awwudh: a Hanafi latecomer says it when he stands to make up (he's now reciting).
+
+**Likely questions**
+- *"Which rak'ahs did I miss?"* Count what you caught by bowing with the imam; the rest are made up. Walk through the specific case. E.g., joined in the last rak'ah of Maghrib (two missed): make up one with al-Fatiha + surah, sit for the tashahhud, then one more with al-Fatiha + surah, final sitting, salam. Joined in rak'ah 3 of Isha (two missed): two rak'ahs, each with al-Fatiha + surah, no sitting between them, then the final sitting [SeekersGuidance (latecomer recitation)]. Suggest confirming with the mentor or imam.
+- *"The imam follows a different school."* Praying behind him is valid; all four schools accept it [Research Notes - Core Essentials, common ground]. Follow his movements; recite per your own school.
+- *"Can women pray at the masjid?"* Yes, in the women's area; it isn't required. Practical arrangements vary by masjid. Don't go into intra-Hanafi debates on women's attendance; route to the imam if asked.
+- *"Late for Jumu'ah?"* If you catch any part of it with the imam, complete it as Jumu'ah (Hanafi view); details: imam. Keep it short.
+- *"Forgot I joined late and gave salam with the imam."* Common mistake; escalate gently to the imam for the specific fix (Day 26 covers the forgetfulness prostration).
+
+**Escalate:** specific prayer-repair questions after mistakes in congregation; a convert who feels unwelcome or was harshly corrected in the row (route to the mentor).
+
+**Don't**
+- Don't tell a Hanafi convert to recite al-Fatiha behind the imam.
+- Don't say a prayer alone is invalid or that men "must" attend every prayer (Hanafi: highly recommended).
+- Don't overload with every latecomer edge case; walk through only the convert's actual situation.
+
+## Madhab note
+- **Reciting behind the imam:** Hanafis stay silent in every prayer; Malikis recite al-Fatiha in the silent prayers only; Shafi'is recite al-Fatiha in every rak'ah; Hanbalis recommend it in the silent prayers and in the imam's pauses.
+- **Status of congregation for men:** Hanafi and Maliki, strongly emphasized (many Hanafis say necessary, wajib); Shafi'i, a communal obligation; Hanbali, individually required. All agree a prayer alone is valid.
+- **Latecomer's make-up:** schools differ on whether the made-up rak'ahs count as the beginning or end of one's prayer, which changes small details of recitation. Follow what your masjid teaches.
+
+## Sources
+- [Bukhari 645](https://sunnah.com/bukhari:645): congregation is twenty-seven times better.
+- [Bukhari 722](https://sunnah.com/bukhari:722): the imam is there to be followed; straighten the rows.
+- [Bukhari 723](https://sunnah.com/bukhari:723): straight rows complete the prayer.
+- [Bukhari 636](https://sunnah.com/bukhari:636): come calmly; pray what you catch and complete what you missed.
+- [Bukhari 831](https://sunnah.com/bukhari:831): the tashahhud of Ibn Mas'ud (the Hanafi wording).
+- [SeekersGuidance: A latecomer's prayer, when is a rak'ah missed?](https://seekersguidance.org/answers/hanafi-fiqh/a-latecomers-prayer-when-is-one-considered-to-have-missed-a-cycle-rakat/) (Ustadha Naielah Ackbarali, rev. Shaykh Faraz Rabbani); [SeekersGuidance: Latecomer recitation in prayer](https://seekersguidance.org/answers/hanafi-fiqh/latecomer-recitation-in-prayer/) (Ustadh Tabraze Azam, rev. Shaykh Faraz Rabbani); [Qibla 35678: what the latecomer says in the imam's final sitting](https://islamqa.org/hanafi/qibla-hanafi/35678/what-does-the-latecomer-say-in-the-imams-final-sitting/); [SeekersGuidance: can the latecomer stand after the imam's first salam?](https://islamqa.org/hanafi/seekersguidance-hanafi/167169/can-the-latecomer-stand-after-the-first-salam-of-the-imam/).
+- [[Source - First Instructions on Worship]] ch. 7 (what the follower says) and ch. 8 (praying in a group: rows, intention, not preceding the imam, the follower doesn't recite).
+- [[Research Notes - Core Essentials and Madhab Map]] §4 (congregation by school) and the madhab map (al-Fatiha behind the imam).
+
+## Scholar flags
+- **Screen 7 (Q1).** The Hanafi follower's practice (no recitation behind the imam; Amin quietly; only *Rabbana wa lakal-hamd* on rising) is taught on screen as the pilot default, pending the reviewing imam's confirmation of the pilot masjid's school. The `default` variant defers to the masjid.

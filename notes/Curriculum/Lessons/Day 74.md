@@ -1,0 +1,233 @@
+---
+day: 74
+phase: 3
+unit: 9
+title: "Muslims in America: a long story"
+hook: "You're not the first American to find Islam. Not even close."
+minutes: 5
+skills: [B6]
+pain_points: [identity]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [Allah, Hajj, Makkah, masjid, Qur'an, wudu]
+sources: [Diouf, Servants of Allah (NYU Press 1998), Library of Congress (Omar Ibn Said Collection), New Georgia Encyclopedia (Bilali Mohammed), National Archives (Nation of Islam), Malcolm X chronology, Muhammad Ali Center (Ali's spirituality), Pew Research Center 2017 and 2019, Q 49:13]
+format: 2
+---
+# Day 74 · Muslims in America: a long story
+
+### 1 · hook
+```yaml
+pic: icon:Landmark
+text: "Some people treat Islam like it just arrived in America. It didn't. Muslims were here before the United States existed, and many of them looked like a lot of today's converts. Today you meet a few of them."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Ship
+text: "**It starts in West Africa.** Among the Africans kidnapped and enslaved in the Americas were many Muslims: scholars, teachers, traders and students. Many could read and write Arabic."
+bubbles:
+  - "Historian Sylviane Diouf shows that many kept their faith in slavery: praying, fasting, writing Arabic [Diouf, *Servants of Allah*]."
+  - "Some of their pages survive, like Omar ibn Said's Qur'an chapters and Bilali Muhammad's prayer handbook [Library of Congress; New Georgia Encyclopedia]."
+```
+
+### 3 · widget
+```yaml
+widget: timeline
+prompt: "Muslims in America"
+text: "Tap through the story, from West Africa to today."
+events:
+  - when: "Around 1770"
+    title: "Omar ibn Said is born"
+    text: "Born in Futa Toro, in today's Senegal. He studied Islam for 25 years."
+    pic: icon:BookOpen
+  - when: "1807"
+    title: "Captured"
+    text: "Omar is captured and enslaved, and ends up in North Carolina."
+    pic: icon:Ship
+  - when: "Early 1800s"
+    title: "Bilali Muhammad, Sapelo Island, Georgia"
+    text: "An enslaved West African scholar who prayed daily on a prayer rug. He left a 13-page Arabic manuscript on Islamic practice, including wudu and prayer times."
+    pic: icon:Scroll
+  - when: "1831"
+    title: "Omar writes his life story"
+    text: "Still enslaved, he writes it in Arabic: the only known autobiography in Arabic by an enslaved person in the US. The Library of Congress holds it [Library of Congress]."
+    pic: icon:Feather
+  - when: "The 1900s"
+    title: "A new wave"
+    text: "Many Black Americans, searching for dignity under segregation, came to Islam. Many first came through the Nation of Islam (founded 1930), whose beliefs about God differ from mainstream Islam."
+    pic: icon:Users
+  - when: "1964"
+    title: "Malcolm X makes Hajj"
+    text: "He joined the Nation of Islam in prison. In 1964 he left it, made Hajj in Makkah and became a Sunni Muslim: el-Hajj Malik el-Shabazz."
+    pic: kaaba
+  - when: "1964 and 1967"
+    title: "Muhammad Ali"
+    text: "Took his name in 1964, and refused the Vietnam draft in 1967 on religious grounds."
+    pic: icon:Award
+  - when: "1975"
+    title: "Into mainstream Islam"
+    text: "Muhammad Ali followed Warith Deen Mohammed into mainstream Sunni Islam, along with many others."
+    pic: icon:Route
+  - when: "Today"
+    title: "You"
+    text: "Millions of American Muslims of every background, and now you."
+    pic: community
+```
+
+### 4 · match
+```yaml
+prompt: "Match each person to their story."
+pairs:
+  - left: "Omar ibn Said"
+    right: "Wrote his life story in Arabic while enslaved, 1831"
+  - left: "Bilali Muhammad"
+    right: "Left an Arabic manuscript on prayer, Georgia"
+  - left: "Malcolm X"
+    right: "Made Hajj in 1964 and became Sunni"
+  - left: "Muhammad Ali"
+    right: "Refused the draft in 1967 and became Sunni in 1975"
+```
+
+### 5 · learn
+```yaml
+pic: kaaba
+text: "**Two paths, one direction.** The Nation of Islam gave many people pride and discipline at a hard time, and it's part of this history. But its core teachings about God and prophethood are different from Islam's."
+bubbles:
+  - "Malcolm X's journey shows the difference. At Hajj he saw one God worshipped by every race together, and it changed him. He wrote of praying beside pilgrims of every color."
+  - "In 1975, many more followed that road into mainstream Islam."
+```
+
+### 6 · sort
+```yaml
+prompt: "Fact, or a myth about Muslims in America?"
+buckets: ["Fact", "Myth"]
+items:
+  - text: "Islam only arrived in America recently"
+    bucket: 1
+    why: "Myth. Enslaved West African Muslims were praying here before the United States existed."
+  - text: "Some enslaved Muslims wrote in Arabic, and their pages survive"
+    bucket: 0
+    why: "Fact. Omar ibn Said's life story and Bilali Muhammad's manuscript still exist."
+  - text: "The Nation of Islam teaches the same beliefs about God as Islam"
+    bucket: 1
+    why: "Myth. It's part of this history, but its core teachings about God and prophethood differ from Islam's."
+  - text: "No single ethnic group is a majority of American Muslims"
+    bucket: 0
+    why: "Fact. Black, white, Arab, South Asian, Latino and more pray in the same rows [Pew]."
+```
+
+### 7 · learn
+```yaml
+pic: community
+text: "**And today?** About one in five American Muslims is Black, and about half of Black Muslims are converts. No single ethnic group is a majority [Pew]."
+bubbles:
+  - "Allah made us *\"peoples and tribes that you may know one another\"* [Q 49:13, Saheeh Intl.]. You're part of this story now."
+```
+
+### 8 · fill
+```yaml
+before: "About half of Black American Muslims are"
+after: "to Islam."
+options:
+  - text: "converts"
+    correct: true
+    feedback: "Yes. About half came to Islam themselves, like you [Pew]."
+  - text: "immigrants"
+    correct: false
+    feedback: "Not quite. About half of Black American Muslims are converts [Pew]."
+  - text: "new arrivals"
+    correct: false
+    feedback: "Not quite. Islam in Black America goes back centuries, and about half of Black Muslims today are converts [Pew]."
+```
+
+### 9 · ask_ai
+```yaml
+chips:
+  - "Tell me more about Omar ibn Said"
+  - "What's the difference between the Nation of Islam and Islam?"
+  - "Who are some Latino or white American Muslim pioneers?"
+  - "What happened to Malcolm X after Hajj?"
+```
+
+### 10 · reflect
+```yaml
+prompt: "Which person from today's story stays with you, and why? What would you want a convert 100 years from now to know about Muslims in your time?"
+share_with_mentor: optional
+```
+
+### 11 · do_today
+```yaml
+pic: icon:Feather
+text: "See Omar ibn Said's handwriting for yourself."
+steps:
+  - "Find the Omar Ibn Said Collection on the Library of Congress website"
+  - "Look at one page of his handwriting. He wrote it while enslaved, and his faith is still on the page"
+log: null
+optional_extra: "Ask {{mentor.name}} or an older member about the history of {{masjid.name}}: who started it, and when."
+```
+
+### 12 · takeaway
+```yaml
+pic: icon:Landmark
+text: "Islam in America goes back centuries, through enslaved African scholars, Malcolm X and millions today. You belong to that story."
+```
+
+### 13 · closing
+You're not starting something new. You're joining something old and strong.
+
+---
+
+## Check
+```yaml
+- prompt: "Who was Omar ibn Said?"
+  options:
+    - text: "An enslaved West African scholar who wrote his life story in Arabic in 1831"
+      correct: true
+      feedback: "Right. His manuscript is at the Library of Congress."
+    - text: "The founder of the first American masjid"
+      correct: false
+      feedback: "Not quite. He was an enslaved scholar who wrote his autobiography in Arabic in 1831."
+- prompt: "What changed for Malcolm X after his Hajj in 1964?"
+  options:
+    - text: "He became a Sunni Muslim, having left the Nation of Islam"
+      correct: true
+      feedback: "Right. He took the name el-Hajj Malik el-Shabazz."
+    - text: "He founded the Nation of Islam"
+      correct: false
+      feedback: "Not quite. The Nation was founded in 1930. Malcolm left it and became Sunni."
+```
+
+## AI guide context
+**Lesson facts** (history: stay with these verified facts; don't add dates or numbers that aren't here)
+- Enslaved African Muslims: Diouf documents West African Muslims in some 20 countries and colonies of the Americas, 16th–19th centuries, including clerics, teachers, students, rulers and traders, many literate in Arabic, who kept practicing [Diouf, *Servants of Allah*, NYU Press 1998]. Scholarly estimates of how many enslaved Africans were Muslim vary widely; don't give a percentage.
+- Omar ibn Said: born c. 1770 in Futa Toro (between the Senegal and Gambia rivers); studied for 25 years; captured in 1807; enslaved first in South Carolina, then North Carolina (Fayetteville area, later the household of John Owen); wrote his 15-page Arabic autobiography in 1831; died 1863. The Library of Congress acquired the Omar Ibn Said Collection (42 documents) in 2017 and put it online in 2019; it's the only known extant narrative written in Arabic by an enslaved person in the US [Library of Congress].
+- Bilali Muhammad: born c. 1770s in Timbo, Futa Jallon (Guinea); enslaved on Thomas Spalding's plantation on Sapelo Island, Georgia, from about 1803; prayed on a prayer rug; wrote a 13-page Arabic manuscript on Islamic practice, held at the University of Georgia's Hargrett Library; died c. 1859 [New Georgia Encyclopedia].
+- The Nation of Islam: founded in Detroit in 1930 by Wallace D. Fard Muhammad; Elijah Muhammad led it from 1934; it grew in the 1950s–60s [National Archives]. Its founding teachings (e.g., about Fard as God and Elijah Muhammad as a messenger) contradict core Islamic beliefs in one God who has no human form and in Muhammad ﷺ as the final Prophet [Q 33:40; Q 42:11]. After Elijah Muhammad died in 1975, his son Warith Deen Mohammed led most members into mainstream Sunni Islam; Muhammad Ali followed [Muhammad Ali Center].
+- Malcolm X: joined the NOI while in prison and was paroled in 1952; announced his break with the NOI on March 8, 1964; made Hajj in April 1964 and became Sunni (el-Hajj Malik el-Shabazz); his letter from Makkah described worshipping alongside Muslims of all colors; assassinated on February 21, 1965, in New York [Malcolm X chronology; Oxford Islamic Studies].
+- Muhammad Ali: met the NOI in 1959; named Muhammad Ali by Elijah Muhammad on March 6, 1964; refused induction on April 28, 1967, as a conscientious objector, and was stripped of his titles (conviction overturned in 1971); embraced Sunni Islam in 1975; made Hajj in 1972 and 1988 [Muhammad Ali Center].
+- Today: about 20% of US Muslims are Black, 41% white (including Middle Eastern and North African), 28% Asian, and smaller shares Hispanic; about half of Black Muslims are converts [Pew 2017; Pew 2019].
+
+**Likely questions**
+- *"NOI vs. Islam?"* Respectfully: it played a real role in Black American history and drew many toward faith and self-respect; its original teachings about God and prophethood differ from Islam's core beliefs; most of its members moved to mainstream Islam in 1975; a separate group under the same name continues today. Don't disparage individuals or members (rule 11). Route detailed questions to the imam.
+- *"Who killed Malcolm X?"* Say he was assassinated in 1965 and the case has a complicated legal history; don't name or assign blame.
+- *"Latino or other pioneers?"* Not covered by verified facts here; say so and offer to find a trusted source rather than invent names.
+
+**Escalate:** questions about the theology of current NOI or other groups outside mainstream Sunni Islam (fixed-topic policy on sectarian questions).
+
+**Don't**
+- Don't speak disrespectfully of the Nation of Islam or its members, and don't call anyone an unbeliever.
+- Don't invent historical details, quotes, numbers or figures.
+- Don't make the history only about men; if asked, note that enslaved Muslim women (like Bilali's wife Phoebe, who joined the daily prayers) kept faith too [New Georgia Encyclopedia].
+
+## Sources
+- Sylviane A. Diouf, *Servants of Allah: African Muslims Enslaved in the Americas* ([NYU Press](https://nyupress.org/9781479847112/servants-of-allah/), 1998; 15th anniv. ed. 2013).
+- Library of Congress: [Omar Ibn Said Collection](https://www.loc.gov/collections/omar-ibn-said-collection/about-this-collection/); [LOC blog: rare autobiography by enslaved West African scholar](https://blogs.loc.gov/international-collections/2019/01/new-online-rare-autobiography-in-arabic-by-enslaved-american/); [press release](https://www.loc.gov/item/prn-19-004/).
+- [New Georgia Encyclopedia: Bilali Mohammed](https://www.georgiaencyclopedia.org/articles/arts-culture/bilali-mohammed/).
+- [National Archives: Nation of Islam](https://www.archives.gov/research/african-americans/black-power/nation-of-islam).
+- [Malcolm X official chronology](https://www.malcolmx.com/chronology/); [Oxford Islamic Studies: Malcolm X's letters from abroad (1964)](http://oxfordislamicstudies.com/print/doc/ps-islam-0285).
+- [Muhammad Ali Center: Ali's spirituality](https://alicenter.org/meet-ali/spirituality/).
+- Pew Research Center: [Demographic portrait of Muslim Americans (2017)](https://www.pewresearch.org/religion/2017/07/26/demographic-portrait-of-muslim-americans/); [Black Muslims account for a fifth of all U.S. Muslims (2019)](https://www.pewresearch.org/short-reads/2019/01/17/black-muslims-account-for-a-fifth-of-all-u-s-muslims-and-about-half-are-converts-to-islam/).
+- Qur'an [49:13](https://quran.com/49/13) (peoples and tribes); [33:40](https://quran.com/33/40), [42:11](https://quran.com/42/11) (AI guide).
+- T2 final review: "writing verses of the Qur'an from memory" couldn't be confirmed from a fetched page of Diouf and was replaced with what the Library of Congress (Omar ibn Said's Qur'an chapters and autobiography), UNC's Wilson Library (his handwritten short surahs) and the New Georgia Encyclopedia (Bilali's 13-page Arabic manuscript on Islamic practice) document. Diouf's book supports the general claim (literacy in Arabic; keeping prayer and fasting).

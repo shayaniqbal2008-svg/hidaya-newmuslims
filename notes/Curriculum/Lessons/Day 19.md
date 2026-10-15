@@ -1,0 +1,236 @@
+---
+day: 19
+phase: 1
+unit: 3
+title: "The Qur'an: where to start"
+hook: "You already know two chapters by heart. Here's how to meet the rest."
+minutes: 5
+skills: [T2, P4]
+pain_points: []
+logs: []
+madhab_sensitive: true
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [Qur'an, surah, Jibril, mushaf, wudu, Allah, ﷺ, al-Fatiha, al-Ikhlas]
+sources: [Q 96:1–5, Q 54:17, Q 15:9, Bukhari 3, Muslim 798, Bukhari 5027, Abu Dawud 776, Tirmidhi 243, Revealed Path ch. 10, First Instructions on Worship Part I and ch. 7]
+format: 2
+---
+# Day 19 · The Qur'an: where to start
+
+### 1 · hook
+```yaml
+pic: quran
+text: "You already carry two chapters of the Qur'an by heart: al-Fatiha and al-Ikhlas. That's real. Today: what the rest of the book is, and an easy way to start reading it."
+```
+
+### 2 · learn
+```yaml
+pic: quran
+text: "**What it is.** Muslims believe the **Qur'an** is Allah's own words, brought to the Prophet ﷺ by the angel Jibril over twenty-three years, in Arabic [Revealed Path ch. 10]. It has 114 chapters, each called a **surah**."
+```
+
+### 3 · widget
+```yaml
+widget: timeline
+prompt: "How the Qur'an reached you"
+events:
+  - when: "The beginning"
+    title: "The first words"
+    text: "Jibril brought the first verses: recite in the name of your Lord, who taught by the pen [Q 96:1–5; Bukhari 3]."
+    pic: icon:Feather
+  - when: "Over 23 years"
+    title: "Piece by piece"
+    text: "It came in Arabic, a part at a time, until all 114 surahs were complete [Revealed Path ch. 10]."
+    pic: icon:BookOpenText
+  - when: "Every generation since"
+    title: "Kept safe"
+    text: "Memorized and passed down by millions, generation after generation. Muslims believe Allah promised to protect it [Q 15:9]."
+    pic: icon:ShieldCheck
+  - when: "Today"
+    title: "Your turn"
+    text: "Two of its surahs, al-Fatiha and al-Ikhlas, already live in your memory and your prayers."
+    pic: prayer-mat
+```
+
+### 4 · fill
+```yaml
+before: "The Qur'an has"
+after: "surahs (chapters)."
+options:
+  - text: "114"
+    correct: true
+    feedback: "Yes. 114 surahs, from long ones to a few short lines."
+  - text: "30"
+    correct: false
+    feedback: "Not quite. It has 114 surahs."
+  - text: "5"
+    correct: false
+    feedback: "Not quite. Five is the number of daily prayers. The Qur'an has 114 surahs."
+```
+
+### 5 · reveal
+```yaml
+title: "Tap to flip: what new readers often think"
+cards:
+  - front: "\"I have to read it front to back, in order.\""
+    pic: icon:ListOrdered
+    back: "You don't. It isn't arranged by date or as a story. Many people start with the short surahs near the end, or read a little from the beginning each day."
+  - front: "\"An English translation is the Qur'an.\""
+    pic: icon:Languages
+    back: "A translation shares the meaning, and it's how you'll understand it. The Qur'an itself is the Arabic, which is why prayer is in Arabic."
+  - front: "\"It's been changed over the centuries.\""
+    pic: icon:ShieldCheck
+    back: "Muslims believe Allah promised to protect it [Q 15:9]. It has been memorized and passed down by millions, generation after generation [Revealed Path ch. 10]."
+  - front: "\"It's too hard for someone like me.\""
+    pic: icon:Sprout
+    back: "The Qur'an says it was made easy to remember [Q 54:17], and whoever struggles reading it gets a double reward [Muslim 798]."
+```
+
+### 6 · learn
+```yaml
+pic: icon:BookOpen
+text: "**Where to start.** Pick a clear English translation with short notes; ask {{mentor.name}} which one your masjid recommends. Read five or ten verses a day, slowly."
+bubbles:
+  - "Stop when something touches you. Listening to recitation while you read the English helps too."
+  - "Little and often beats a big push. The Prophet ﷺ praised those who learn the Qur'an and teach it [Bukhari 5027]."
+```
+
+### 7 · steps
+```yaml
+title: "Read your first five verses (2 minutes)"
+intro: "Have two minutes now? Try it. If not, come back to it today."
+steps:
+  - text: "Open the Qur'an in the app's reader at chapter 96 (al-'Alaq)"
+    pic: icon:Smartphone
+  - text: "Listen to verses 1–5 once in Arabic"
+    pic: icon:Headphones
+  - text: "Read verses 1–5 in English, slowly"
+    pic: icon:BookOpenText
+  - text: "Notice: the very first word revealed was about reading and learning"
+    pic: icon:Lightbulb
+  - text: "Say \"alhamdulillah\" (all praise is for Allah): you've just read the first verses ever revealed"
+    pic: icon:Sparkles
+done_text: "That's how it started for the Prophet ﷺ too: five verses."
+```
+
+### 8 · learn
+```yaml
+madhab_variant: true
+pic: quran
+default: |
+  **Respect for the book.** Most scholars say to have wudu before touching a printed Arabic Qur'an (a **mushaf**). Your masjid will tell you its view on apps and translations, and on reciting while you need a ghusl. Listening is fine any time.
+hanafi: |
+  **Respect for the book.** Have wudu before touching a printed Arabic Qur'an (a **mushaf**). An app (without touching the words) and reciting from memory are fine without wudu, unless you need a ghusl. Listening is fine any time [First Instructions on Worship Part I].
+```
+
+### 9 · choice
+```yaml
+pic: icon:Smartphone
+prompt: "Ana wants to read some Qur'an on her phone during her lunch break, but she doesn't have wudu. What's right?"
+options:
+  - text: "She can read it on the app; wudu is for touching a printed mushaf"
+    correct: true
+    feedback: "Right. Reading on an app is fine without wudu (some say don't touch the words). Wudu is for holding the printed Arabic copy."
+  - text: "She can't read any Qur'an without wudu"
+    correct: false
+    feedback: "Not quite. Reading on an app or from memory doesn't need wudu. Touching a printed mushaf does."
+  - text: "She should wait until she can read Arabic"
+    correct: false
+    feedback: "Not quite. Read the translation now. Understanding it is the point, and Arabic can come later."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "Which translation should I start with?"
+  - "Which short surahs should I read first?"
+  - "Why does the Qur'an talk about Jesus and Moses?"
+  - "I read a verse that confused me. Can you help?"
+```
+
+### 11 · do_today
+```yaml
+pic: quran
+text: "Read five verses today."
+steps:
+  - "Read five verses of the Qur'an in translation"
+  - "Set a reminder for the same time tomorrow"
+log: null
+optional_extra: "Ask {{mentor.name}} which translation and which short surahs they'd suggest you start with."
+```
+
+### 12 · takeaway
+```yaml
+pic: quran
+text: "The Qur'an is Allah's words in 114 surahs. Start small: a good translation, a few verses a day, and respect for the printed copy."
+```
+
+### 13 · closing
+Five verses a day is more than a thousand a year.
+
+---
+
+## Prayer phrase
+```yaml
+arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلاَ إِلَهَ غَيْرُكَ"
+translit: "Subhanaka Allahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk"
+meaning: "You are perfect, O Allah, and I praise You. Your name is blessed, Your greatness is high, and no god exists but You"
+audio_id: opening-dua-subhanaka
+when: "Quietly, right after the opening Allahu akbar, before al-Fatiha. First rak'ah only. [Abu Dawud 776; Tirmidhi 243]"
+```
+
+## Check
+```yaml
+- prompt: "Do you need to read the Qur'an from the first page in order?"
+  options:
+    - text: "No. Many start with short surahs or read a little each day"
+      correct: true
+      feedback: "Right. It isn't a story in date order. Start where you can keep going."
+    - text: "Yes, or it doesn't count"
+      correct: false
+      feedback: "Not quite. Any reading counts. Start small and keep it going."
+- prompt: "What do you need before touching a printed Arabic Qur'an (a mushaf)?"
+  options:
+    - text: "Wudu"
+      correct: true
+      feedback: "Right. Reading on an app or reciting from memory doesn't need it."
+    - text: "Nothing"
+      correct: false
+      feedback: "Not quite. Make wudu before touching a printed mushaf."
+```
+
+## AI guide context
+**Lesson facts**
+- The Qur'an: Allah's words, revealed to the Prophet ﷺ through Jibril over about 23 years, in Arabic; preserved by memorization and writing [Revealed Path ch. 10; Q 15:9]. First revelation: [Q 96:1–5; Bukhari 3]. 114 surahs, not in chronological order.
+- Made easy to remember [Q 54:17]; the struggling reader is doubly rewarded [Muslim 798]; the best learn and teach it [Bukhari 5027].
+- Translations convey meaning; the recitation in prayer is Arabic only (Q13: never offer a translation to recite in prayer).
+- Hanafi: wudu is required to touch a mushaf; someone needing ghusl may not recite Qur'an or touch a mushaf [First Instructions on Worship Part I]. Many contemporary Hanafi scholars allow reading on a device without wudu but advise not touching the verses on screen.
+- Opening du'a (*Subhanaka Allahumma…*) is sunnah in the Hanafi school, said quietly after the opening takbir in the first rak'ah; a follower says it too, before the imam begins reciting aloud [Abu Dawud 776; Tirmidhi 243; First Instructions on Worship ch. 7].
+
+**Likely questions**
+- *"Which translation?"* Suggest asking the mentor for the masjid's recommendation; Saheeh International (the one this app quotes) is a common clear choice. Don't rank translators.
+- *"Which surahs first?"* The short surahs in the last section (e.g., chapters 112–114, 103, 108), and al-Fatiha's meaning.
+- *"I read a verse about war / women / punishment and it bothered me."* Take it seriously; give context briefly (verses have settings and are explained by scholars); offer to go through it slowly or route to the imam. Don't dismiss the discomfort or argue.
+- *"Can I touch the Qur'an on my period?"* Not a printed mushaf (Hanafi); she can listen and read the translation. Reciting: see Day 17's scholar flag.
+- *"Do I need to learn Arabic?"* Not to be a good Muslim; the prayer phrases are enough now. Learning the Arabic letters is optional, Day 82.
+
+**Escalate:** interpretation of specific contested verses beyond a brief mainstream summary; questions about the Qur'an's preservation that turn into serious doubts (take them seriously, offer a scholar).
+
+**Don't**
+- Don't interpret verses with a personal ruling; stay with mainstream summaries.
+- Don't quote translations other than Saheeh International from the Citation Bank.
+- Don't make Arabic sound like a requirement to belong.
+
+## Madhab note
+- **Opening du'a:** the Hanafi school uses *Subhanaka Allahumma…*; Shafi'is often use a longer du'a beginning *Wajjahtu wajhiya…*; Malikis don't say an opening du'a in obligatory prayers. Any authentic opening is valid where it's said.
+- **Touching a mushaf:** all four schools require wudu to touch a printed Arabic Qur'an, with small differences over translations, devices and children learning.
+
+## Sources
+- Qur'an [96:1–5](https://quran.com/96/1-5), [54:17](https://quran.com/54/17), [15:9](https://quran.com/15/9).
+- [Bukhari 3](https://sunnah.com/bukhari:3): the first revelation.
+- [Muslim 798](https://sunnah.com/muslim:798): the double reward. [Bukhari 5027](https://sunnah.com/bukhari:5027): the best learn and teach the Qur'an.
+- [Abu Dawud 776](https://sunnah.com/abudawud:776) (sahih, al-Albani) and [Tirmidhi 243](https://sunnah.com/tirmidhi:243) (sahih, al-Albani): *Subhanaka Allahumma…* to open the prayer.
+- [[Source - The Revealed Path]] ch. 10 (the Qur'an: revelation over 23 years, preservation, memorization).
+- [[Source - First Instructions on Worship]] Part I (wudu needed to touch the Qur'an; recitation from memory allowed without wudu; major impurity) and ch. 7 (opening supplication).
+- Madhab note (verified, T2 final review): [SeekersGuidance: when to say the ta'awwudh and basmala (Hanafi: first rak'ah only)](https://seekersguidance.org/answers/hanafi-fiqh/when-should-i-say-taawwudh-and-basmala-in-prayer/); [IslamQA.info 9062: ta'awwudh in every rak'ah? (reports the views)](https://islamqa.info/en/answers/9062); [[Research Notes - Core Essentials and Madhab Map]] (basmala row).
+- Madhab note (verified, T2 final review): [SeekersGuidance (Shafi'i): reciting a different du'a of istiftah](https://seekersguidance.org/answers/shafii-fiqh/can-i-recite-a-different-dua-of-istiftah-before-the-fatiha-in-my-prayer/); [Darul Iftaa Birmingham 87353: salah in the Maliki school](https://islamqa.org/hanafi/daruliftaa-birmingham/87353/salah-according-to-the-maliki-school-of-thought-2/).

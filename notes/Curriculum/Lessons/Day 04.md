@@ -1,0 +1,225 @@
+---
+day: 4
+phase: 1
+unit: 1
+title: "Telling your family (or not yet)"
+hook: "You don't owe anyone an announcement. But when you're ready, there are kind ways to say it."
+minutes: 5
+skills: [T5, B4]
+pain_points: [family]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [shahada, ﷺ]
+sources: [Q 31:14–15, Bukhari 2620, Muslim 1003, Welcome to Islam D1, Field Guide ch. 1 and 4, Yaqeen 2025, Research Notes - Retention and Convert Voices, Personal Research via reddit]
+format: 2
+---
+# Day 4 · Telling your family (or not yet)
+
+### 1 · hook
+```yaml
+pic: family
+text: "For a lot of new Muslims, this is the scariest part: telling the people you love. Today isn't about rushing. It's about choosing **who**, **when** and **how**, so the news lands as gently as it can."
+```
+
+### 2 · learn
+```yaml
+pic: icon:ShieldCheck
+text: "**First, a relief:** your shahada counts whether anyone knows about it or not. Islam doesn't require you to announce it."
+bubbles:
+  - "Many converts wait a while, especially if their family is hostile to Islam or they depend on them for a home or money [Welcome to Islam D1]."
+  - "Waiting to share news isn't lying, and it isn't weak faith. It's wisdom."
+```
+
+### 3 · sort
+```yaml
+prompt: "True, or a myth?"
+buckets: ["True", "Myth"]
+items:
+  - text: "My shahada only counts once my family knows"
+    bucket: 1
+    why: "Your shahada counts whether anyone knows or not. Islam doesn't require an announcement."
+  - text: "Waiting for a safe moment means my faith is weak"
+    bucket: 1
+    why: "Waiting to share news isn't lying, and it isn't weak faith. It's wisdom."
+  - text: "Many converts wait a while before telling family"
+    bucket: 0
+    why: "Especially when family is hostile to Islam, or they depend on them for a home or money."
+  - text: "I'm free to choose who I tell first"
+    bucket: 0
+    why: "You choose who, when and how. Start with the person most likely to stay calm."
+```
+
+### 4 · steps
+```yaml
+title: "Before you say it"
+intro: "{teen}If you're under 18 and live with your parents, talk to {{mentor.name}} before telling them.{/teen}"
+steps:
+  - text: "**Test the waters.** Before you say \"I'm Muslim,\" mention something you read, or a Muslim friend, and listen to the reaction"
+    pic: icon:Ear
+  - text: "**Start with the safest person:** the sibling, cousin or parent most likely to stay calm"
+    pic: icon:UserCheck
+  - text: "**Win one ally.** One person on your side at home makes everything after easier"
+    pic: icon:HeartHandshake
+done_text: "No rush. You choose who, when and how."
+```
+
+### 5 · scenario
+```yaml
+pic: family
+situation: "Marcus, 24, wants to tell his family. His mom is warm but very religious. His older sister is curious about everything. His dad tends to blow up first and calm down later."
+options:
+  - text: "Tell his sister first, then plan the talk with Mom together"
+    best: true
+    feedback: "A good plan. A calm ally first, then a planned talk. His dad can hear it later, at a good moment."
+  - text: "Announce it at Sunday dinner with everyone there"
+    best: false
+    feedback: "Understandable, but risky. Big news in a group can turn into a pile-on. One person at a time usually goes better."
+  - text: "Post it online so he only has to say it once"
+    best: false
+    feedback: "Not quite. Family usually feels hurt hearing it online. In person, or a call, shows them respect."
+```
+
+### 6 · learn
+```yaml
+pic: icon:MessageCircle
+text: "**How to say it.** Keep it short and warm. Lead with what hasn't changed: *\"I love you. I'm still me.\"* Then share one reason Islam spoke to you."
+bubbles:
+  - "They may be shocked, scared or sad. Most of that is fear of losing you."
+  - "You don't need to win any argument today. Let them react, and let questions come later."
+```
+
+### 7 · order
+```yaml
+prompt: "Put the talk in a good order."
+items:
+  - "Lead with love: \"I'm still me\""
+  - "Share one reason Islam spoke to you"
+  - "Let them react, without arguing"
+  - "Offer to talk more later"
+pics: ["icon:Heart", "icon:MessageCircle", "icon:Ear", "icon:CalendarClock"]
+feedback: "Love first, one honest reason, then room for them. One talk is never the last."
+```
+
+### 8 · learn
+```yaml
+pic: family
+text: "**Kindness to your parents is part of your faith.** The Qur'an tells you to be grateful to your parents and keep treating them well in this world, even if they disagree with your faith [Q 31:14–15]."
+```
+
+### 9 · fill
+```yaml
+before: "A Companion named Asma' asked the Prophet ﷺ whether to keep close ties with her mother, who wasn't Muslim. He said"
+after: "[Bukhari 2620]."
+options:
+  - text: "yes"
+    correct: true
+    feedback: "Right. Keep your family close, and keep treating your parents well."
+  - text: "only if she became Muslim"
+    correct: false
+    feedback: "Not quite. He told Asma' to keep close ties with her mother as she was."
+  - text: "no"
+    correct: false
+    feedback: "Not quite. He said yes. Islam asks you to keep treating your parents well."
+```
+
+### 10 · roleplay
+```yaml
+character: "Your mom (or the parent you'd tell first). She loves you, was raised Christian, and knows little about Islam beyond the news. She's surprised and a bit hurt, not angry."
+setup: "You've asked her to sit down for a minute because you have something important to share."
+goal: "Tell her you've become Muslim in a way that keeps her close: lead with love, give one honest reason, and leave room for her questions."
+success_looks_like: "You stay calm, say \"I'm still me\" in your own words, answer one question simply, and offer to talk more later. No debating."
+coach_notes: "She may ask: 'Is this because of a boyfriend or girlfriend?', 'What about Jesus?', 'Are you going to change how you dress?', 'Did someone pressure you?' She softens if the convert is warm and patient, and tenses up if they lecture. Debrief: what landed, what to say differently, and one line to use next time."
+```
+
+### 11 · reflect
+```yaml
+prompt: "Optional: write a short letter to your family. What do you want them to know: that you love them, why Islam matters to you, what won't change? You can keep it, edit it, or one day hand it to them."
+share_with_mentor: optional
+```
+
+### 12 · ask_ai
+```yaml
+chips:
+  - "What if my parents say I'm going to hell?"
+  - "How do I explain Islam in one sentence?"
+  - "What if I'm not safe telling them?"
+  - "Should I tell my friends first?"
+```
+
+### 13 · do_today
+```yaml
+pic: icon:UserCheck
+text: "Decide who you'd tell first, and roughly when."
+steps:
+  - "Pick the person most likely to stay calm"
+  - "Pick a rough time. \"Not yet\" is a fine answer"
+log: null
+optional_extra: "If home doesn't feel safe to tell, message {{mentor.name}} and plan it together."
+```
+
+### 14 · takeaway
+```yaml
+pic: icon:HeartHandshake
+text: "You choose who knows and when. When you tell them, lead with love, and keep treating your parents well, whatever they say."
+```
+
+### 15 · closing
+Most families take time, and many come around. You don't have to fix it in one conversation.
+
+---
+
+## Check
+```yaml
+- prompt: "Do you have to tell your family that you've become Muslim for your shahada to count?"
+  options:
+    - text: "No. It counts either way; you choose when to share"
+      correct: true
+      feedback: "Right. Waiting for a safe, good moment is wisdom, not weak faith."
+    - text: "Yes, right away"
+      correct: false
+      feedback: "Not quite. Your shahada counts on its own. You decide when and how to tell people."
+- prompt: "Your parents disagree with your new faith. How does Islam ask you to treat them?"
+  options:
+    - text: "With kindness and good company, while keeping your faith"
+      correct: true
+      feedback: "Right. Asma' was told to keep ties with her mother, who wasn't Muslim [Bukhari 2620]."
+    - text: "Keep your distance until they accept it"
+      correct: false
+      feedback: "Not quite. The Qur'an asks you to keep treating your parents well, even when they disagree [Q 31:14–15]."
+```
+
+## AI guide context
+**Lesson facts**
+- Saying the shahada sincerely makes someone Muslim; no announcement is required (Day 1).
+- Sounding out family first, and waiting a few months if they're hostile or the convert depends on them, is long-standing practical advice [Welcome to Islam D1].
+- Kindness and good companionship toward parents is required even when they're not Muslim and disagree; obedience doesn't extend to leaving Islam [Q 31:14–15].
+- Asma' bint Abi Bakr was told to keep ties with her mother, who wasn't Muslim [Bukhari 2620; Muslim 1003].
+- Convert data: family relationships often dip at disclosure and then recover, often ending up better than before [Yaqeen 2025, via Research Notes - Retention and Convert Voices]. Family is the most-discussed convert problem online [Personal Research via reddit].
+- Parents' first reactions are usually fear of losing their child, or of what they've heard in the news [Field Guide ch. 4].
+
+**Likely questions**
+- *"My parents say I'm going to hell / I've betrayed them."* Validate the hurt. Suggest not debating theology in the heat of the moment; reassure them of love; revisit later. Day 14 covers pushback.
+- *"How do I explain Islam in one sentence?"* Something like: "I believe in one God, the God of Abraham, Moses and Jesus, and I follow His last prophet, Muhammad ﷺ." Keep it gentle.
+- *"Should I tell friends first?"* Often yes, starting with the most supportive. Warn about social media: once it's out, they lose control of who hears.
+- *"Do I have to tell them?"* No one is owed an announcement. Don't counsel lying about it if asked directly; suggest calm, honest wording at their pace, and talk it through with the mentor or imam.
+- *"I'm not safe telling them."* Take it seriously. Safety first (Spec §6.2 rule 6).
+
+**Escalate:** any risk of being thrown out, cut off financially, or harmed (give crisis resources: 911 for immediate danger, National Domestic Violence Hotline 1-800-799-7233, 988; offer to alert their chosen person); a minor whose parents forbid Islam or prayer; a spouse who isn't Muslim (Q21).
+
+**Don't**
+- Don't tell anyone to cut off family or to stop speaking to a parent.
+- Don't push a timeline ("you must tell them this week").
+- Don't coach a minor to deceive or defy parents (Spec §6.2 rule 12). Route minors' hard situations to the mentor and imam.
+- Don't criticize the family's religion.
+
+**Role-play brief:** The convert's mom, a loving, churchgoing woman. She pushes on: "Is this because of someone you're dating?", "What about Jesus?", "Will you still come to Christmas?", "Are you safe?" She's hurt, not hostile; she relaxes when the convert is warm and listens. Never abusive. Debrief: one thing that went well, one phrase to try instead, and the reminder that one talk isn't the last.
+
+## Sources
+- Qur'an [31:14–15](https://quran.com/31/14-15): gratitude and good company toward parents, without obeying them in leaving faith in Allah.
+- [Bukhari 2620](https://sunnah.com/bukhari:2620), [Muslim 1003](https://sunnah.com/muslim:1003): Asma' and her mother.
+- [[Source - Welcome to Islam]] Day 1 (sound out family first; wait if they're hostile, especially if you depend on them).
+- [[Source - The New Muslims Field Guide]] ch. 1 (don't walk away from family), ch. 4 (a letter to your family; family usually comes around with time).
+- [Yaqeen Institute, *Becoming Muslim* (2025)](https://yaqeeninstitute.org/read/data/reports/becoming-muslim-lives-of-american-converts-to-islam): parental relationships dip, then recover.
+- [[Research Notes - Retention and Convert Voices]] (V9, V19: hiding Islam from family; telling family felt like coming out); [[Personal Research via reddit on pain points for converts]] (family is the top topic).

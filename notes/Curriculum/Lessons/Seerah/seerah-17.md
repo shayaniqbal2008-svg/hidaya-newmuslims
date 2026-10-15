@@ -1,0 +1,212 @@
+---
+track: seerah
+order: 17
+phase: null
+unit: null
+title: "Ta'if: the hardest day"
+hook: "He walked to another town to ask for help. They chased him out with stones. Then an angel offered revenge."
+minutes: 6
+skills: [T2, T3, B6]
+pain_points: [islamophobia, family, character]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q43]
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, Makkah, Jibril, du'a]
+sources: [Bukhari 3231, IslamQA 11575, Yaqeen (How Muhammad Confronted Hate)]
+format: 2
+---
+# seerah-17 · Ta'if: the hardest day
+
+### 1 · hook
+```yaml
+pic: icon:Footprints
+text: "**He walked to another town to ask for help.** They chased him out with stones. Then an angel offered him revenge. You met the ending on Day 73. This is the whole day."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Route
+text: "**Looking for support.** After the Year of Sorrow, with Khadijah and Abu Talib gone, he went to the town of Ta'if. He invited its people to Islam and asked for their support [IslamQA 11575; Yaqeen]."
+bubbles:
+  - "Zayd ibn Harithah, the man he had freed and raised as a son, was with him, one account says [Yaqeen]."
+```
+
+### 3 · multi
+```yaml
+pic: icon:HeartCrack
+prompt: "What had he lost just before going to Ta'if? Pick all that apply."
+options:
+  - text: "His wife Khadijah"
+    correct: true
+    feedback: "Yes. She had died that year, after about 25 years of marriage."
+  - text: "His uncle Abu Talib's protection"
+    correct: true
+    feedback: "Yes. With Abu Talib gone, Makkah grew harsher, and he looked elsewhere for support."
+  - text: "His trust in Allah"
+    correct: false
+    feedback: "Not quite. He went to Ta'if still calling people to Allah. His grief never became giving up."
+```
+
+### 4 · learn
+```yaml
+pic: icon:HeartCrack
+text: "**Stones on the road.** The people of Ta'if refused him and insulted him. Then they set people on him who threw stones until his feet bled [IslamQA 11575; Yaqeen]."
+bubbles:
+  - "Zayd was hurt trying to shield him, according to that same account [Yaqeen]."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "The hardest day"
+text: "From rejection to mercy."
+events:
+  - when: "After the Year of Sorrow"
+    title: "To Ta'if"
+    text: "He goes to invite its people and seek support [IslamQA 11575; Yaqeen]."
+    pic: icon:Route
+  - when: "That day"
+    title: "Refused"
+    text: "A leader there turns him away, and people throw stones until his feet bleed [IslamQA 11575; Bukhari 3231]."
+    pic: icon:HeartCrack
+  - when: "On the road"
+    title: "Walking in grief"
+    text: "He walks on, overwhelmed, until a cloud shades him [Bukhari 3231]."
+    pic: icon:Cloud
+  - when: "Then"
+    title: "An offer"
+    text: "Jibril brings the angel of the mountains, who offers to crush the town [Bukhari 3231]."
+    pic: icon:Mountain
+  - when: "His answer"
+    title: "Hope"
+    text: "He refuses, hoping their descendants will worship Allah alone [Bukhari 3231]."
+    pic: icon:Sprout
+```
+
+### 6 · learn
+```yaml
+pic: icon:Cloud
+text: "**His hardest day.** Years later, Aisha asked if he'd ever had a day harder than the battle of Uhud. He told her about this one: rejected, he walked on in grief until he looked up, saw a cloud shading him, and **Jibril** in it [Bukhari 3231]."
+bubbles:
+  - "Jibril had brought the angel of the mountains, who offered to crush the town between two mountains [Bukhari 3231]."
+```
+
+### 7 · choice
+```yaml
+pic: icon:Sprout
+prompt: "Why did he say no to the angel's offer?"
+options:
+  - text: "He hoped their descendants would worship Allah alone"
+    correct: true
+    feedback: "Right. On his worst day, he looked past his own pain to their children [Bukhari 3231]."
+  - text: "He wasn't really hurt"
+    correct: false
+    feedback: "Not quite. He called it the hardest day of his life. He chose mercy anyway."
+  - text: "He planned to take revenge himself later"
+    correct: false
+    feedback: "Not quite. He refused revenge, hoping their children would one day worship Allah [Bukhari 3231]."
+```
+
+### 8 · learn
+```yaml
+pic: icon:Sprout
+text: "**Answer hate with hope.** On his worst day, the Prophet ﷺ could have destroyed the people who hurt him. He chose to hope for their children instead. When people mock your faith, you don't have to answer in kind."
+```
+
+### 9 · scenario
+```yaml
+pic: icon:Smartphone
+situation: "Ana's cousin leaves a cruel comment about Muslims under her photo, and a few relatives like it. Ana could screenshot it and expose him in the family group chat."
+options:
+  - text: "Don't retaliate; reply calmly or message him privately, and make du'a for him"
+    best: true
+    feedback: "Yes. That's the spirit of Ta'if: no revenge, and hope that he changes."
+  - text: "Expose him to the whole family"
+    best: false
+    feedback: "Not quite. Revenge might feel good for a minute, but it closes doors. He chose hope."
+  - text: "Block every relative who liked the comment"
+    best: false
+    feedback: "Not quite. Protect your peace if you need to, but don't cut off family over one moment."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "What happened at Ta'if?"
+  - "Who was Zayd ibn Harithah?"
+  - "Why didn't he accept the angel's offer?"
+  - "How do I respond when people mock my faith?"
+```
+
+### 11 · do_today
+```yaml
+pic: icon:Sprout
+text: "Answer one hurt with hope."
+steps:
+  - "If someone is unkind to you today, don't answer in kind"
+  - "Make a **du'a** (personal prayer) that Allah guides them and softens their heart"
+log: null
+```
+
+### 12 · takeaway
+```yaml
+pic: icon:Sprout
+text: "On his hardest day, he was offered revenge and chose hope. Their children were worth waiting for."
+```
+
+### 13 · closing
+Next episode: one night, a journey to Jerusalem and beyond, and a gift that comes back with him: the prayer.
+
+---
+
+## Check
+```yaml
+- prompt: "What did the angel of the mountains offer him?"
+  options:
+    - text: "To crush the town between two mountains"
+      correct: true
+      feedback: "Right. He refused, hoping their descendants would worship Allah alone [Bukhari 3231]."
+    - text: "To make the town rich"
+      correct: false
+      feedback: "Not quite. The angel offered to crush the town. He refused [Bukhari 3231]."
+- prompt: "What's the lesson of Ta'if for a new Muslim who's mocked?"
+  options:
+    - text: "You don't have to answer cruelty in kind; you can hope for the person"
+      correct: true
+      feedback: "Right. He chose hope over revenge on his worst day."
+    - text: "Get even, so it doesn't happen again"
+      correct: false
+      feedback: "Not quite. He had the power for revenge and refused it."
+```
+
+## AI guide context
+**Lesson facts**
+- After the Year of Sorrow he went to Ta'if to invite its people and seek support; they refused, insulted him, and set people on him who threw stones until his feet bled [IslamQA 11575; Yaqeen (How Muhammad Confronted Hate)].
+- Zayd ibn Harithah was with him and was hurt shielding him (his head was gashed, Yaqeen says) [Yaqeen]. Single source: keep it "one account says".
+- He told Aisha it was the hardest day of his life: rejected by Ibn 'Abd Yalil, he walked on in grief until a cloud shaded him and Jibril came with the angel of the mountains [Bukhari 3231].
+- The angel offered to crush them between two mountains; he refused, hoping their descendants would worship Allah alone [Bukhari 3231].
+- Note: Bukhari 3231 names the man, not the town, and calls it "the day of al-'Aqabah"; the link to Ta'if comes from the early biographers. Day 73 already teaches the angel's offer.
+
+**Likely questions**
+- *"What was the du'a he made after Ta'if?"* The well-known du'a ("To You I complain of my weakness…") is reported outside the six collections, and its chain is widely considered weak, so this track doesn't teach it as his words. Say it's "a well-known du'a whose chain scholars consider weak", and that anyone may pour out their heart to Allah in their own words. `[SCHOLAR: Q43]`
+- *"Wasn't there a Christian servant who was kind to him there?"* The story of Addas is in the early biographies but hasn't been verified for this track, so it's left out; don't tell it as fact. `[SCHOLAR: Q43]`
+- *"Did the people of Ta'if become Muslim later?"* Don't answer from memory. Say later episodes cover what happened, and that the hadith shows his hope for their descendants [Bukhari 3231].
+- *"How do I respond when people mock my faith?"* Calm, brief, no revenge; protect your peace; make du'a for them. If it becomes harassment or threats, document it and get help (safety rule if there's danger). Day 71 and Day 73.
+
+**Escalate:** threats or harassment that make a convert unsafe (safety rule, never only the imam queue).
+
+**Don't**
+- Don't quote the Ta'if du'a as his words.
+- Don't tell the Addas story.
+- Don't state as certain that Ibn 'Abd Yalil was "the leader of Ta'if"; keep the town link as the early biographers' account.
+- No graphic detail of his injuries; don't picture the Prophet ﷺ, Zayd, Jibril or the angel of the mountains.
+
+## Sources
+- [Bukhari 3231](https://sunnah.com/bukhari:3231) (Sahih): his hardest day; the cloud, Jibril and the angel of the mountains; his hope for their descendants.
+- [IslamQA 11575, *Who Is Muhammad?*](https://islamqa.info/en/answers/11575): Ta'if; stones until his heels bled.
+- [Yaqeen Institute, *How Muhammad ﷺ Confronted Hate…*](https://yaqeeninstitute.org/read/paper/how-muhammad-confronted-hate-and-became-the-most-influential-person-in-history): pelted with stones at Ta'if; Zayd's head gashed.
+- Fact rows 17.1–17.4, X7 and X8 in [[Seerah Fact-Check Log]].
+
+## Scholar flags
+- **AI guide (Q43).** The du'a of Ta'if (X7) and the Addas story (X8) are left off screens; if asked, the du'a is "a well-known du'a whose chain scholars consider weak", and Addas is unverified for this track.

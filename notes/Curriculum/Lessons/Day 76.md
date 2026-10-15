@@ -1,0 +1,222 @@
+---
+day: 76
+phase: 3
+unit: 9
+title: "Islam online: who to trust"
+hook: "Your feed has figured out you're Muslim. Some of what it shows you is gold. Some of it is noise, or worse."
+minutes: 5
+skills: [S3]
+pain_points: [conflicting-voices]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [Allah, imam, masjid, ﷺ]
+sources: [Q 49:6, Abu Dawud 4992, Q 3:103, Q 16:43, SeekersGuidance (recent convert), Research Notes - Core Essentials (common mistakes), Research Notes - Retention and Convert Voices]
+format: 2
+---
+# Day 76 · Islam online: who to trust
+
+### 1 · hook
+```yaml
+pic: icon:Smartphone
+text: "Since you became Muslim, your phone has changed. Short clips, fiery lectures, people arguing in the comments about whose prayer is valid. Some posts lift you up. Some leave you anxious or confused. Today: how to tell the difference."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Megaphone
+text: "**Great lectures, loud noise.** Online you'll find excellent teachers, and also clips cut out of context, angry arguments between groups, and people calling other Muslims unbelievers."
+bubbles:
+  - "Converts often say the hardest part of their first year was conflicting voices: one person says one thing, the next says the opposite [Research Notes, Retention]."
+  - "The internet turns that up to full volume."
+```
+
+### 3 · sort
+```yaml
+prompt: "Gold, or noise?"
+buckets: ["Gold", "Noise"]
+items:
+  - text: "A full lecture by an excellent, qualified teacher"
+    bucket: 0
+    why: "Gold. There are great teachers online. Learn from them alongside your imam."
+  - text: "A clip cut out of its context"
+    bucket: 1
+    why: "Noise. Without the context, you can't tell what was really meant."
+  - text: "An angry comment war between Muslim groups"
+    bucket: 1
+    why: "Noise. Arguments like this leave everyone angrier and rarely teach anything."
+  - text: "Someone calling other Muslims unbelievers"
+    bucket: 1
+    why: "Noise, and worse. You never need to call anyone an unbeliever."
+  - text: "Your own imam's talks"
+    bucket: 0
+    why: "Gold. A teacher who knows you and your community."
+```
+
+### 4 · learn
+```yaml
+pic: icon:Search
+text: "**Check before you share.** The Qur'an says that when news comes from someone unreliable, *\"investigate, lest you harm a people out of ignorance\"* [Q 49:6, Saheeh Intl.]."
+bubbles:
+  - "That includes \"hadith\" in memes. If there's no source, don't repost it."
+```
+
+### 5 · fill
+```yaml
+before: "The Prophet ﷺ said it's enough of a"
+after: "for a person to pass on everything they hear [Abu Dawud 4992]."
+options:
+  - text: "lie"
+    correct: true
+    feedback: "Yes. Passing on everything unchecked is a kind of lying [Abu Dawud 4992]. Check first."
+  - text: "kindness"
+    correct: false
+    feedback: "Not quite. He called it enough of a lie [Abu Dawud 4992]. Sharing unchecked claims spreads harm."
+  - text: "reward"
+    correct: false
+    feedback: "Not quite. He called it enough of a lie [Abu Dawud 4992]. Check before you share."
+```
+
+### 6 · multi
+```yaml
+pic: icon:ShieldAlert
+prompt: "Which of these are red flags in an online teacher or account? Select all that apply."
+options:
+  - text: "Calls other Muslims unbelievers or mocks whole groups"
+    correct: true
+    feedback: "Red flag. Mainstream scholars warn strongly against this. It breeds division, not faith."
+  - text: "Messages new converts privately about marriage, money, or cutting off family"
+    correct: true
+    feedback: "Big red flag. Tell {{mentor.name}}. Nobody trustworthy pressures a new Muslim like this."
+  - text: "Says \"scholars differ on this; ask your local imam\""
+    correct: false
+    feedback: "That's a good sign. Honest teachers admit differences and send you to people who know you."
+  - text: "Makes everything urgent and says only their group is right"
+    correct: true
+    feedback: "Red flag. Fear and urgency are sales tactics, not teaching."
+  - text: "Studied with known teachers and is part of a real community"
+    correct: false
+    feedback: "That's a good sign. Real teachers have teachers, and people who can hold them accountable."
+```
+
+### 7 · scenario
+```yaml
+pic: icon:Smartphone
+situation: "Maria sees a viral clip: a man says anyone who prays with their hands in a certain position \"has no prayer.\" It's the way her masjid taught her. The comments are a war."
+options:
+  - text: "Close the app, remember Day 40, and ask her imam if she's unsure"
+    best: true
+    feedback: "Yes. Schools differ on details like this, and all four are valid. A two-minute clip doesn't cancel her teacher."
+  - text: "Change how she prays to match the clip"
+    best: false
+    feedback: "Not quite. Switching with every video brings confusion. Stick with her masjid's way and ask the imam."
+  - text: "Jump into the comments to defend her masjid"
+    best: false
+    feedback: "Not quite. Comment wars rarely change minds and usually leave everyone angrier. Her energy is better spent elsewhere."
+  - text: "Share it to her group chat to warn people"
+    best: false
+    feedback: "Not quite. Sharing unchecked claims spreads the confusion. Check first [Q 49:6]."
+```
+
+### 8 · learn
+```yaml
+pic: community
+text: "**About the group fights.** You'll see arguments between Muslim groups and movements. You don't have to pick a side to be a good Muslim, and you never need to call anyone an unbeliever."
+bubbles:
+  - "Allah tells believers to hold on to His rope together and not split apart [Q 3:103]."
+  - "Learn the mainstream teaching at your masjid. Bring questions about groups to your imam, not the comments."
+```
+
+### 9 · steps
+```yaml
+title: "Build a small, calm feed"
+intro: "Use the internet with a teacher, not instead of one. A trusted teacher can answer your follow-up questions and knows your situation [Q 16:43; SeekersGuidance]."
+steps:
+  - text: "Start with your imam's talks"
+    pic: masjid
+  - text: "Add one or two trusted places, like SeekersGuidance or Yaqeen Institute"
+    pic: icon:BadgeCheck
+  - text: "Mute what leaves you angry or anxious. Your heart is worth protecting"
+    pic: icon:VolumeX
+done_text: "A teacher who knows you, plus a calm feed."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "How do I know if a hadith I saw online is real?"
+  - "Someone online says my masjid is wrong. What do I do?"
+  - "What are Sunni and Shia?"
+  - "Someone online wants to marry me / meet me. Is that okay?"
+```
+
+### 11 · do_today
+```yaml
+pic: icon:Smartphone
+text: "Do a two-minute feed check."
+steps:
+  - "Mute or unfollow one account that leaves you anxious, angry or confused"
+  - "Follow one trusted source your mentor or imam recommends"
+log: null
+optional_extra: "Before you share any Islamic post this week, ask: where's the source? If there isn't one, don't post it."
+```
+
+### 12 · takeaway
+```yaml
+pic: icon:ShieldCheck
+text: "Check before you share, avoid voices that divide or pressure, and learn from a real teacher who knows you."
+```
+
+### 13 · closing
+A calm feed makes for a calmer heart.
+
+---
+
+## Check
+```yaml
+- prompt: "You see an Islamic quote online with no source. What should you do?"
+  options:
+    - text: "Check it before sharing, or don't share it"
+      correct: true
+      feedback: "Right. Verify first [Q 49:6]. Passing on everything you hear is a kind of lying [Abu Dawud 4992]."
+    - text: "Share it; it sounds nice"
+      correct: false
+      feedback: "Not quite. Sounding nice isn't the same as being true. Check first [Q 49:6]."
+- prompt: "Someone online calls other Muslims unbelievers and pushes you to join their group. What's this?"
+  options:
+    - text: "A red flag; talk to your mentor or imam"
+      correct: true
+      feedback: "Right. Trustworthy teachers don't divide or pressure people."
+    - text: "A sign they're very serious about Islam"
+      correct: false
+      feedback: "Not quite. Harshness and pressure are red flags, not signs of knowledge."
+```
+
+## AI guide context
+**Lesson facts**
+- Verify news from unreliable sources before acting on it [Q 49:6]; passing on everything you hear is enough to make one a liar [Abu Dawud 4992, sahih per al-Albani].
+- Hold to Allah's rope together, don't divide [Q 3:103]; ask people of knowledge [Q 16:43].
+- Scholars advise new Muslims to learn from mainstream, qualified teachers, avoid sectarian and strident voices and online misinformation, and not split the community over minor differences [SeekersGuidance, recent convert; Research Notes - Core Essentials §10].
+- Conflicting instruction is one of the most common convert complaints; in one UK study, 75% reported confusion from conflicting presentations [Research Notes - Retention and Convert Voices, R8].
+
+**Likely questions**
+- *"Is this hadith real?"* Ask for the reference. If it's in the Citation Bank, confirm it. If not, say you can't verify it and suggest asking the imam or checking a trusted hadith site with the imam's help. Never confirm a hadith from memory.
+- *"What are Sunni and Shia?"* (Fixed-topic policy, rule 11.) Short, neutral: the two largest branches of Muslims; they differ on early leadership after the Prophet ﷺ and some practices; this program teaches mainstream Sunni Islam, as the masjid does. Don't disparage either. Route anything more to the imam.
+- *"Someone online says my masjid is wrong."* Differences among the four schools are valid (Day 40, Day 78). Follow the masjid while learning; ask the imam.
+- *"Someone online wants to marry me / meet me / sent me money."* Rule 12: warn gently about people who pressure new converts into marriage, money or isolation; route to the mentor; for under-18s, safeguarding applies. If there's any danger or coercion, follow the safety rule.
+- *"Which online teachers are good?"* Name only general trusted institutions already in the curriculum (SeekersGuidance, Yaqeen Institute) and the masjid's own imam. Don't rank or criticize named individuals.
+
+**Escalate:** sectarian questions (Sunni/Shia, Ahmadiyya, Salafi/Sufi), takfir; any online contact pressuring the convert; anything resembling recruitment to extremist content (also safety rule).
+
+**Don't**
+- Don't name or condemn specific influencers, groups or movements.
+- Don't call any person or group unbelievers.
+- Don't tell them to stay off the internet entirely; teach discernment.
+
+## Sources
+- Qur'an [49:6](https://quran.com/49/6) (verify news), [3:103](https://quran.com/3/103) (hold together), [16:43](https://quran.com/16/43) (ask those who know).
+- [Abu Dawud 4992](https://sunnah.com/abudawud:4992): enough of a lie to relate everything one hears (sahih, al-Albani).
+- [SeekersGuidance: How should a recent convert build their knowledge of Islam?](https://seekersguidance.org/answers/seeking-knowledge/how-should-a-recent-convert-build-their-knowledge-of-islam/) (mainstream teachers; avoid strident voices).
+- [[Research Notes - Core Essentials and Madhab Map]] §10 (common mistakes: sectarian arguments and harsh voices).
+- [[Research Notes - Retention and Convert Voices]] (conflicting voices theme; R8: 75% confusion).

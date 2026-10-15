@@ -1,0 +1,392 @@
+---
+day: 3
+phase: 1
+unit: 1
+title: "Your first prayer"
+hook: "You don't need to know Arabic to pray today. You need the moves and a few words."
+minutes: 7
+skills: [P3, P4]
+pain_points: [prayer-without-arabic]
+logs: [prayed_first_prayer]
+madhab_sensitive: true
+scholar_flags: [Q1, Q2, Q4, Q11]
+status: draft-pending-scholar-review
+glossary: [rak'ah, al-Fatiha, Allahu akbar, salam, shahada, wudu, qibla, Fajr, Dhuhr, Asr, Maghrib, Isha, Allah, ﷺ]
+sources: [Q 1:2, Abu Dawud 832, Muslim 798, Qibla 35467, SeekersGuidance 167692, IslamWeb 529861, Dar al-Ifta Egypt 8030, IslamQA 5410, SeekersGuidance (convert following a school), First Instructions on Worship ch. 4, 5 and 7, Welcome to Islam D3]
+format: 2
+---
+# Day 3 · Your first prayer
+
+### 1 · hook
+```yaml
+pic: "pose:qiyam"
+text: "Today you pray. You don't need Arabic or a perfect memory. You need the moves and a few short words, and you'll add more every day."
+```
+
+### 2 · learn
+```yaml
+pic: "pose:ruku"
+text: "A prayer is made of **rak'ahs** (rounds). One rak'ah: stand, bow, then two prostrations, forehead to the floor. All five prayers are yours from today: pray each with what you know so far. `[SCHOLAR: Q4, Q11]`"
+bubbles:
+  - "{women}On your period? You don't pray during it, and you don't make those prayers up.{/women}"
+```
+
+### 3 · widget
+```yaml
+widget: rakahs
+prompt: "How many rak'ahs in each prayer?"
+text: "Fajr has 2. Maghrib has 3. Dhuhr, Asr and Isha have 4. Set each one."
+```
+
+### 4 · steps
+```yaml
+title: "Before you start"
+steps:
+  - text: "Have wudu (Day 2)"
+    pic: water
+  - text: "Make sure your clothes and the spot where you pray are clean"
+    pic: prayer-mat
+  - text: "{men}Cover at least from your navel to your knees.{/men}{women}Cover everything except your face and hands, hair included, in clothes you can't see through. Loose is best. {{masjid.name}} will tell you its view on the feet.{/women}"
+    pic: icon:Shirt
+  - text: "Face the qibla"
+    pic: qibla
+  - text: "In your heart, intend the prayer: \"I'm praying Dhuhr for Allah.\" `[SCHOLAR: Q1]`"
+    pic: intention
+variants:
+  hanafi:
+    steps:
+      - text: "Have wudu (Day 2)"
+        pic: water
+      - text: "Make sure your clothes and the spot where you pray are clean"
+        pic: prayer-mat
+      - text: "{men}Cover from your navel to your knees, knees included.{/men}{women}Cover everything except your face, hands and feet, hair included, in clothes you can't see through. Loose is best.{/women}"
+        pic: icon:Shirt
+      - text: "Face the qibla"
+        pic: qibla
+      - text: "In your heart, intend the prayer: \"I'm praying Dhuhr for Allah.\" `[SCHOLAR: Q1]`"
+        pic: intention
+```
+
+### 5 · phrase
+```yaml
+arabic: "ٱللَّٰهُ أَكْبَرُ"
+translit: "Allahu akbar"
+meaning: "Allah is the greatest"
+audio_id: allahu-akbar
+when: "To begin the prayer, and as you go down to bow, go down to prostrate, sit up, and stand up for the next rak'ah."
+```
+
+### 6 · prayer
+```yaml
+title: "Watch one rak'ah"
+intro: "Tap Next move, or Play. Pause until you're still in every position: never rush."
+moves:
+  - pose: stand
+    text: "Stand facing the qibla. In your heart, intend the prayer."
+  - pose: takbir
+    text: "Raise your hands and say *Allahu akbar*. You're now in prayer: no talking, eating or checking your phone until it ends."
+    say: "Allahu akbar"
+  - pose: qiyam
+    text: "Hold your hands the way {{masjid.name}} teaches: most fold the right over the left. Recite what you know (next screens)."
+  - pose: ruku
+    text: "Say *Allahu akbar* and bow: hands on your knees, back flat. Be still and say *Subhan Allah* three times."
+    say: "Subhan Allah ×3"
+  - pose: itidal
+    text: "Stand back up straight. Pause until you're still."
+  - pose: sujud
+    text: "Say *Allahu akbar* and prostrate: forehead and nose, both hands, both knees and your toes on the floor, toes pointing to the qibla."
+  - pose: sujud
+    text: "Be still and say *Subhan Allah* three times."
+    say: "Subhan Allah ×3"
+  - pose: jalsa
+    text: "Say *Allahu akbar* and sit up. Pause until you're still."
+  - pose: sujud
+    text: "Say *Allahu akbar* and prostrate again. Be still: *Subhan Allah* three times. That's one rak'ah!"
+variants:
+  hanafi:
+    moves:
+      - pose: stand
+        text: "Stand facing the qibla. In your heart, intend the prayer."
+      - pose: takbir
+        text: "Raise your hands {men}to your ears{/men}{women}to your shoulders{/women} and say *Allahu akbar*. You're now in prayer: no talking, eating or checking your phone."
+        say: "Allahu akbar"
+      - pose: qiyam
+        text: "Fold your hands, right over left, {men}just below your navel{/men}{women}on your chest{/women}. Recite what you know (next screens)."
+      - pose: ruku
+        text: "Say *Allahu akbar* and bow: hands on your knees, back flat. Be still and say *Subhan Allah* three times."
+        say: "Subhan Allah ×3"
+      - pose: itidal
+        text: "Stand back up straight. Pause until you're still."
+      - pose: sujud
+        text: "Say *Allahu akbar* and go down: knees, then hands, then forehead and nose. **Keep your toes on the floor**, pointing to the qibla."
+      - pose: sujud
+        text: "{men}Elbows off the floor and away from your sides.{/men}{women}Keep your arms and body close together.{/women} Be still and say *Subhan Allah* three times."
+        say: "Subhan Allah ×3"
+      - pose: jalsa
+        text: "Say *Allahu akbar* and sit up. Pause until you're still."
+      - pose: sujud
+        text: "Say *Allahu akbar* and prostrate again. Be still: *Subhan Allah* three times. That's one rak'ah!"
+```
+
+### 7 · learn
+```yaml
+pic: quran
+text: "**Standing: what to say.** The goal is *al-Fatiha*, the Qur'an's first chapter (Days 11–16). Today, say its first line, then the words the Prophet ﷺ taught a man who couldn't yet memorize Qur'an [Abu Dawud 832]. `[SCHOLAR: Q2]`"
+bubbles:
+  - "Practice them before and after prayer, never from a screen during it."
+```
+
+### 8 · phrase
+```yaml
+arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ"
+translit: "Al-hamdu lillahi rabbil-'alamin"
+meaning: "All praise is for Allah, Lord of all the worlds"
+audio_id: fatiha-2
+when: "While standing, in every rak'ah. It's your first verse of the Qur'an. [Q 1:2]"
+```
+
+### 9 · phrase
+```yaml
+arabic: "سُبْحَانَ ٱللَّٰهِ، وَٱلْحَمْدُ لِلَّٰهِ، وَلَا إِلَٰهَ إِلَّا ٱللَّٰهُ، وَٱللَّٰهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ"
+translit: "Subhan Allah, wal-hamdu lillah, wa la ilaha illa Allah, wa Allahu akbar, wa la hawla wa la quwwata illa billah"
+meaning: "Glory be to Allah, all praise is for Allah, there is no god but Allah, Allah is the greatest, and there is no power or strength except through Allah"
+audio_id: dhikr-substitute
+when: "While standing, after your verse, until you've learned al-Fatiha. If it's too long today, say what you can."
+```
+
+### 10 · scenario
+```yaml
+situation: "You're standing in your first prayer and your mind goes blank. The words you practiced are gone."
+options:
+  - text: "Say what you do remember, even just \"Subhan Allah\" or \"Allahu akbar,\" and carry on"
+    best: true
+    feedback: "That's it. Say what you can and keep going. Mistakes while you're learning aren't sins."
+  - text: "Stop and look up the words on your phone"
+    best: false
+    feedback: "Better not. Some scholars say reading from a screen can invalidate the prayer. Use what you remember, and practice afterwards."
+  - text: "Stop praying until you know it perfectly"
+    best: false
+    feedback: "Please don't. The prayer is due now, and a learner's effort counts. It gets easier every day."
+```
+
+### 11 · prayer
+```yaml
+title: "Finishing the prayer"
+moves:
+  - pose: qiyam
+    text: "Say *Allahu akbar*, stand, and pray a second rak'ah the same way."
+  - pose: tashahhud
+    text: "After its second prostration, stay sitting. {{masjid.name}} will show you how to sit."
+  - pose: tashahhud
+    text: "Say the shahada from Day 1."
+    say: "Ash-hadu an la ilaha illa Allah…"
+  - pose: salam-right
+    text: "Turn your head to the right and say *As-salamu 'alaykum wa rahmatullah*."
+  - pose: salam-left
+    text: "Turn to the left and say it again. Your prayer is done."
+variants:
+  hanafi:
+    moves:
+      - pose: qiyam
+        text: "Say *Allahu akbar*, stand, and pray a second rak'ah the same way."
+      - pose: tashahhud
+        text: "After its second prostration, stay sitting: {men}on your left foot, with your right foot upright and its toes toward the qibla{/men}{women}with both feet tucked out to your right{/women}."
+      - pose: tashahhud
+        text: "Say the shahada from Day 1."
+        say: "Ash-hadu an la ilaha illa Allah…"
+      - pose: salam-right
+        text: "Turn your head to the right and say *As-salamu 'alaykum wa rahmatullah*."
+      - pose: salam-left
+        text: "Turn to the left and say it again. Your prayer is done."
+```
+
+### 12 · phrase
+```yaml
+arabic: "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ"
+translit: "As-salamu 'alaykum wa rahmatullah"
+meaning: "Peace be upon you, and the mercy of Allah"
+audio_id: taslim
+when: "To end the prayer: once turning right, once turning left."
+```
+
+### 13 · prayer
+```yaml
+title: "Your whole 2-rak'ah prayer"
+intro: "Watch it once from start to finish before you pray. Press Play, or go move by move."
+moves:
+  - pose: stand
+    text: "Wudu done, covered, facing the qibla. Intend the prayer in your heart."
+  - pose: takbir
+    text: "Raise your hands: *Allahu akbar*."
+    say: "Allahu akbar"
+  - pose: qiyam
+    text: "Fold your hands. *Al-hamdu lillahi rabbil-'alamin*, then the remembrance words."
+  - pose: ruku
+    text: "*Allahu akbar*, bow. Be still. *Subhan Allah* ×3."
+  - pose: itidal
+    text: "Stand back up. Be still."
+  - pose: sujud
+    text: "*Allahu akbar*, prostrate, toes on the floor. Be still. *Subhan Allah* ×3."
+  - pose: jalsa
+    text: "*Allahu akbar*, sit up. Be still."
+  - pose: sujud
+    text: "*Allahu akbar*, prostrate again. *Subhan Allah* ×3."
+  - pose: qiyam
+    text: "*Allahu akbar*, stand for the second rak'ah. Recite again."
+  - pose: ruku
+    text: "*Allahu akbar*, bow. *Subhan Allah* ×3."
+  - pose: itidal
+    text: "Stand back up. Be still."
+  - pose: sujud
+    text: "*Allahu akbar*, prostrate. *Subhan Allah* ×3."
+  - pose: jalsa
+    text: "*Allahu akbar*, sit up. Be still."
+  - pose: sujud
+    text: "*Allahu akbar*, prostrate again. *Subhan Allah* ×3."
+  - pose: tashahhud
+    text: "*Allahu akbar*, sit, and say the shahada."
+  - pose: salam-right
+    text: "*As-salamu 'alaykum wa rahmatullah*, to the right…"
+  - pose: salam-left
+    text: "…and to the left. Done!"
+done_text: "You've got it. Now put your phone away and pray."
+```
+
+### 14 · learn
+```yaml
+pic: "pose:tashahhud"
+text: "**Maghrib, Dhuhr, Asr and Isha are longer.** After the second rak'ah, sit and say the shahada, but don't end. Say *Allahu akbar*, stand, and pray the rest. Then sit, shahada, salam."
+```
+
+### 15 · fill
+```yaml
+before: "At Maghrib, after the first sitting, you stand and pray"
+after: "more rak'ah before the final sitting."
+options:
+  - text: "1"
+    correct: true
+    feedback: "Yes. Maghrib has 3 rak'ahs: 2, the first sitting, then 1 more."
+  - text: "2"
+    correct: false
+    feedback: "Not quite. That's Dhuhr, Asr and Isha. Maghrib has 3 in all, so 1 more."
+  - text: "0"
+    correct: false
+    feedback: "Not quite. Maghrib has 3 rak'ahs, so there's 1 more after the first sitting."
+```
+
+### 16 · ask_ai
+```yaml
+chips:
+  - "Walk me through a 4-rak'ah prayer slowly"
+  - "What if someone walks in while I'm praying?"
+  - "Can I pray in English?"
+  - "I'm nervous I'm doing it wrong"
+```
+
+### 17 · do_today
+```yaml
+pic: prayer-mat
+text: "Pray the next prayer that's due."
+steps:
+  - "Watch the whole-prayer walkthrough once more"
+  - "Make wudu, cover, and face the qibla"
+  - "Put your phone away, and pray"
+log: prayed_first_prayer
+optional_extra: "If you can, pray at {{masjid.name}} once and simply copy the imam's movements. Day 7 explains praying in a row."
+```
+
+### 18 · takeaway
+```yaml
+pic: "pose:sujud"
+text: "Stand, bow, prostrate twice, with stillness in each; repeat; sit and end with the salam. Say what you know so far. All five prayers start today."
+```
+
+### 19 · closing
+Your first prayer won't be perfect, and it doesn't need to be. Even someone who stumbles through the Qur'an gets a double reward [Muslim 798]. Slow and steady.
+
+---
+
+## Check
+```yaml
+- prompt: "How many rak'ahs is Fajr?"
+  options:
+    - text: "2"
+      correct: true
+      feedback: "Right. Fajr is 2, Maghrib 3, and the other three are 4."
+    - text: "4"
+      correct: false
+      feedback: "Not quite. Fajr is 2. Dhuhr, Asr and Isha are 4."
+- prompt: "You haven't learned all of al-Fatiha yet. What do you say while standing?"
+  options:
+    - text: "The verse you know, then short remembrance phrases"
+      correct: true
+      feedback: "Right. Say the Qur'an you know, then the phrases the Prophet ﷺ taught [Abu Dawud 832]."
+    - text: "Nothing: you can't pray until you learn it"
+      correct: false
+      feedback: "Not quite. Pray now with what you know while you learn al-Fatiha."
+    - text: "Read al-Fatiha from your phone during the prayer"
+      correct: false
+      feedback: "Not quite. Practice from your phone before and after prayer, not during it."
+- prompt: "What should you do in each position: bowing, standing up, prostrating, sitting?"
+  options:
+    - text: "Pause until you're still"
+      correct: true
+      feedback: "Right. Stillness in each position is part of a proper prayer."
+    - text: "Move on as quickly as you can"
+      correct: false
+      feedback: "Not quite. Pause until you're still in each position. Rushing can spoil the prayer."
+```
+
+## AI guide context
+**Lesson facts**
+- All five prayers are due from the day of conversion; the convert prays with what they know while learning, and nobody presents fewer prayers as allowed [SeekersGuidance 167692; IslamWeb 529861].
+- Women don't pray during menstruation or postnatal bleeding, and don't make those prayers up [First Instructions on Worship ch. 4–5].
+- Recitation while learning: say whatever Qur'an you know (today: *Al-hamdu lillahi rabbil-'alamin*, [Q 1:2]), then the remembrance phrases [Abu Dawud 832; Qibla 35467 (Hanafi: a new Muslim is excused from what they can't yet recite and should learn quickly); Dar al-Ifta Egypt 8030].
+- **Stillness (tuma'ninah)** in bowing, standing up from it, prostration and sitting between prostrations is required (wajib in the Hanafi school; a pillar in the others). Teach it every time.
+- **Hanafi:** keep at least the toes on the floor during prostration; lifting both feet for the whole prostration spoils it. Men's and women's positions differ as in the lesson [First Instructions on Worship ch. 7].
+- **No reading from a card or phone during prayer** until a scholar rules (Hanafis hold it can invalidate the prayer).
+- Honest mistakes while learning aren't sins [SeekersGuidance, convert following a school].
+- Rak'ahs: Fajr 2, Dhuhr 4, Asr 4, Maghrib 3, Isha 4.
+
+**Likely questions**
+- *"Walk me through a prayer."* Step by step, one message per position, using this lesson's wording and the masjid variant, including stillness and toes on the floor. Offer the 3- and 4-rak'ah versions.
+- *"Can I pray in English?"* Not the recitation itself; the verse and phrases are the bridge while learning. Personal du'a in English is welcome outside the prayer. Never offer a translation of al-Fatiha to recite in prayer (Q13).
+- *"Someone walked in while I was praying."* Keep going calmly; the prayer is fine. Day 5 covers this.
+- *"I'm doing it wrong."* Reassure: learners make mistakes, effort is rewarded, and it gets easier within a week. Suggest praying once with their mentor or at the masjid.
+- *"What about witr?"* If the masjid is Hanafi: it's a short prayer after Isha that Day 8 teaches; for now, focus on the five. Don't teach it in detail here (Q18).
+- *"I missed prayers before today."* Prayers before Islam aren't made up. About the day they converted, suggest asking the imam (Q15).
+- *"I'm on my period."* No prayer until it ends, then ghusl (Day 17). She can still learn the movements and words.
+
+**Escalate:** physical limitations (can't stand, kneel or prostrate: give the general idea that one prays sitting or as able, and send details to the imam); the day-of-conversion question (Q15).
+
+**Don't**
+- Don't say "start with one prayer a day" or anything like it (Q4).
+- Don't say "until you learn, just sit and thank Allah" (*Welcome to Islam*'s advice; Q11).
+- Don't suggest reading from the phone during prayer (Q2).
+- Don't overload with sunnah prayers or extra du'as; they come later.
+
+## Madhab note
+Other schools differ in small, valid ways:
+- **Hands:** Shafi'is fold them above the navel; Malikis usually leave them at their sides in obligatory prayers.
+- **Raising the hands:** Shafi'is and Hanbalis also raise them before and after bowing.
+- **Sitting:** in the final sitting, Malikis and Shafi'is sit with the left foot tucked under and the hip on the floor (Hanbalis do this only in prayers of 3 or 4 rak'ahs); Hanafi men sit on the left foot.
+- **Before al-Fatiha is learned:** every school says to learn it quickly. Shafi'is and Hanbalis say to recite whatever Qur'an you know first, then remembrance phrases for the rest; in the Hanafi school, one verse is required and a new Muslim is excused while learning. Today's verse plus the phrases covers them.
+
+## Sources
+- Qur'an [1:2](https://quran.com/1/2).
+- [Abu Dawud 832](https://sunnah.com/abudawud:832) (hasan, al-Albani): the remembrance phrases for someone who can't yet recite.
+- [Muslim 798](https://sunnah.com/muslim:798): the one who stumbles through the Qur'an gets a double reward.
+- [Qibla 35467 (Faraz Rabbani)](https://islamqa.org/hanafi/qibla-hanafi/35467/how-do-new-muslims-recite-in-prayer/): Hanafi view on new Muslims' recitation; no reading from a text in prayer.
+- [Dar al-Ifta Egypt 8030](https://www.dar-alifta.org/en/fatwa/details/8030/i-am-a-new-muslim-and-unable-to-recite-fatiha-chapter-during-prayers-what-should); [IslamQA.info 5410](https://islamqa.info/en/answers/5410): what to say before memorizing al-Fatiha.
+- [IslamQA.org/SeekersGuidance 167692](https://islamqa.org/hanafi/seekersguidance-hanafi/167692/is-it-permissible-to-just-read-the-quran-until-i-learn-how-to-pray/) and [IslamWeb 529861](https://www.islamweb.net/en/fatwa/529861/the-obligation-of-the-five-daily-prayers-for-a-new-muslim): all five from day one.
+- [SeekersGuidance: How can a convert follow a school correctly](https://seekersguidance.org/answers/general-counsel/how-can-a-convert-follow-a-school-of-thought-correctly/): honest mistakes while learning.
+- [[Source - First Instructions on Worship]] (Hanafi) ch. 4 (menstruation and prayer), ch. 5 (conditions: purity, covering, qibla, intention), ch. 7 (praying two rak'ahs; positions for men and women; stillness; toes in prostration).
+- [[Source - Welcome to Islam]] Day 3 (learn the movements, follow the imam, learn the rest over time).
+- [[Research Notes - Core Essentials and Madhab Map]] §4–5 and the madhab table.
+
+## Scholar flags
+- **Screen 2 (Q4, Q11).** "All five are yours from today; pray each with what you know." Doesn't use *Welcome to Islam*'s "sit and thank Allah," and doesn't suggest starting with fewer prayers.
+- **Screens 6–8 (Q2).** One verse of al-Fatiha plus the remembrance phrases while standing. This satisfies the Hanafi one-verse requirement as far as the learner can, and matches the Shafi'i and Hanbali order (Qur'an you know first, then phrases). Practice only outside prayer.
+- **Screens 9–10.** *Subhan Allah* in bowing and prostration until Days 8–9 add the full phrases; nothing said on rising until Day 10. In the Hanafi school these phrases are sunnah, so the prayer is valid either way.
+- **Screen 12.** The shahada in the sitting until the full tashahhud (Days 22–25). The shahada is part of the tashahhud, and a new Muslim is excused from what they haven't learned yet (Qibla 35467).
+- **Screen 3 (Q1), and the positions on screens 5, 10 and 12.** Hanafi positions for men and women in the `hanafi` variant (the pilot default); the `default` variant defers to the masjid.

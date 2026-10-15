@@ -1,0 +1,225 @@
+---
+track: seerah
+order: 16
+phase: null
+unit: null
+title: "The Year of Sorrow"
+hook: "In one year he lost the wife who believed him first and the uncle who shielded him."
+minutes: 6
+skills: [T2, B4, B6]
+pain_points: [grief, family, christian-family]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q23, Q37, Q42]
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, du'a]
+sources: [Q 28:56, Q 31:15, Q 9:113, Bukhari 3896, Bukhari 3, Bukhari 3884, Bukhari 1360, Bukhari 1303, IslamQA 11575, IslamQA 20240, Yaqeen (What Islam Says About Prophet Muhammad; How Muhammad Confronted Hate), Qalam Institute Sirah Podcast ep. 55–56]
+format: 2
+---
+# seerah-16 · The Year of Sorrow
+
+### 1 · hook
+```yaml
+pic: icon:Sunset
+text: "**In one year, he lost the two people who had stood closest to him.** The wife who believed him first. The uncle who had shielded him since he was a boy."
+```
+
+### 2 · learn
+```yaml
+pic: icon:House
+text: "**Khadijah dies.** Khadijah died about three years before the hijra, his move to Madinah [Bukhari 3896]. They had been married about 25 years [Qalam ep. 55; Yaqeen]."
+bubbles:
+  - "She was the one who wrapped him up and comforted him on the night of Hira [Bukhari 3]."
+```
+
+### 3 · reveal
+```yaml
+title: "What each of them gave him"
+cards:
+  - front: "Khadijah"
+    back: "Comfort and belief on the night of Hira, and about 25 years of marriage [Bukhari 3; Yaqeen]."
+    pic: icon:HeartHandshake
+  - front: "Abu Talib"
+    back: "A home from the age of about eight, and protection for over forty years [IslamQA 20240; IslamQA 11575]."
+    pic: icon:Shield
+  - front: "With both gone"
+    back: "The persecution grew harsher [IslamQA 11575]."
+    pic: icon:HeartCrack
+```
+
+### 4 · learn
+```yaml
+pic: icon:Shield
+text: "**Abu Talib dies.** Around the same time, about ten years into his mission, his uncle Abu Talib died [IslamQA 11575; IslamQA 20240]. He never accepted Islam, yet the Prophet ﷺ loved him."
+bubbles:
+  - "That year is remembered as the Year of Sorrow, or of Grief [Yaqeen]."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "One hard year"
+text: "About ten years into the mission."
+events:
+  - when: "About 25 years"
+    title: "A marriage"
+    text: "He and Khadijah share about a quarter of a century [Qalam ep. 55; Yaqeen]."
+    pic: icon:HeartHandshake
+  - when: "About 10 years in"
+    title: "Khadijah dies"
+    text: "About three years before the hijra [Bukhari 3896]."
+    pic: icon:Sunset
+  - when: "Around the same time"
+    title: "Abu Talib dies"
+    text: "The uncle who protected him for decades [IslamQA 11575; IslamQA 20240]."
+    pic: icon:Shield
+  - when: "After that"
+    title: "Harsher days"
+    text: "Without his uncle's protection, the persecution grows [IslamQA 11575; Qalam ep. 56]."
+    pic: icon:HeartCrack
+  - when: "Next episode"
+    title: "Ta'if"
+    text: "He walks to another town to look for support [IslamQA 11575]."
+    pic: icon:Footprints
+```
+
+### 6 · learn
+```yaml
+pic: quran
+text: "**Guidance belongs to Allah.** He loved his uncle and longed for him to believe. The Qur'an reminded him that even he couldn't guide those he loved; guidance is Allah's to give [Q 28:56]."
+```
+
+### 7 · fill
+```yaml
+before: "\"Indeed, [O Muhammad], you do not guide whom you like, but Allah guides whom He"
+after: "\" [Q 28:56, Saheeh Intl.]"
+options:
+  - text: "wills"
+    correct: true
+    feedback: "Yes. You can love, invite and pray. The guiding is Allah's."
+  - text: "punishes"
+    correct: false
+    feedback: "Not quite. The verse says Allah guides whom He wills. It's about who holds guidance, not punishment."
+  - text: "forgets"
+    correct: false
+    feedback: "Not quite. Allah forgets no one. He guides whom He wills."
+```
+
+### 8 · learn
+```yaml
+pic: family
+text: "**Love them, and leave guidance to Allah.** Loving family who don't share your faith is normal and right. The Prophet ﷺ did. Be kind, make **du'a** (personal prayer) for them, and remember their hearts are in Allah's hands, not yours."
+bubbles:
+  - "And grief is not weak faith. He grieved deeply that year, and he wept at other losses too [Bukhari 1303]."
+```
+
+### 9 · scenario
+```yaml
+pic: family
+situation: "Luis has talked about Islam with his mom many times. She's kind about it, but she isn't interested. Luis feels like he's failing her."
+options:
+  - text: "Keep loving her, make du'a for her, and remember guidance is in Allah's hands"
+    best: true
+    feedback: "Yes. Even the Prophet ﷺ couldn't guide the uncle he loved. Luis's job is love and kindness [Q 28:56]."
+  - text: "Bring it up at every visit until she gives in"
+    best: false
+    feedback: "Not quite. Pressure pushes people away. Kindness and du'a do more, and guidance is Allah's."
+  - text: "Stop visiting until she's ready to listen"
+    best: false
+    feedback: "Not quite. Keep the relationship warm. The Qur'an asks for kindness to parents [Q 31:15]."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "Why is it called the Year of Sorrow?"
+  - "How long were he and Khadijah married?"
+  - "How do I love family who don't share my faith?"
+  - "I'm grieving someone. Is that okay in Islam?"
+```
+
+### 11 · reflect
+```yaml
+prompt: "Who do you love who doesn't share your faith? Write one thing you're grateful for about them."
+share_with_mentor: optional
+```
+
+### 12 · do_today
+```yaml
+pic: icon:HandHeart
+text: "Show love that doesn't depend on agreement."
+steps:
+  - "Do one kind thing today for a family member who isn't Muslim"
+  - "Make a du'a for them in your own words"
+log: null
+```
+
+### 13 · takeaway
+```yaml
+pic: icon:Sunset
+text: "He grieved deeply, and he loved an uncle who never shared his faith. Grief is part of faith, and guidance is Allah's alone."
+```
+
+### 14 · closing
+Next episode: he walks to another town for help, and they drive him out with stones.
+
+---
+
+## Check
+```yaml
+- prompt: "Who did he lose in the Year of Sorrow?"
+  options:
+    - text: "His wife Khadijah and his uncle Abu Talib"
+      correct: true
+      feedback: "Right. The two people who had stood closest to him, in about the same year."
+    - text: "His grandfather and his mother"
+      correct: false
+      feedback: "Not quite. Those losses came in childhood. In the Year of Sorrow he lost Khadijah and Abu Talib."
+- prompt: "What does Q 28:56 teach about family who don't share your faith?"
+  options:
+    - text: "You can't guide even those you love; guidance is Allah's"
+      correct: true
+      feedback: "Right. Love them, be kind, make du'a, and leave guidance to Allah."
+    - text: "Stop loving them until they believe"
+      correct: false
+      feedback: "Not quite. The Prophet ﷺ loved his uncle. The verse is about who holds guidance: Allah."
+```
+
+## AI guide context
+**Lesson facts**
+- Khadijah died about three years before the hijra [Bukhari 3896], after about 25 years of marriage [Qalam ep. 55; Yaqeen].
+- His uncle Abu Talib died around the same time, about ten years into the mission [IslamQA 11575; IslamQA 20240]. Qalam (ep. 55–56) says the 11th year; say "about ten years in".
+- At Abu Talib's deathbed the Prophet ﷺ urged him to say *la ilaha illa Allah*; he died on his forefathers' religion [Bukhari 3884; Bukhari 1360]. On screen we say only that he never accepted Islam, yet the Prophet ﷺ loved him.
+- You cannot guide whom you love; Allah guides whom He wills [Q 28:56].
+- With both gone, the persecution grew harsher [IslamQA 11575; Qalam ep. 56].
+
+**Likely questions**
+- *"Where is Abu Talib now?"* This is sensitive, especially for converts with non-Muslim parents. Answer gently and briefly: there are authentic hadith on this [Bukhari 3884; Bukhari 1360], and scholars discuss them. Don't deny the texts and don't speculate about any person. Stress that Allah alone judges, with perfect justice and mercy, and offer "Ask my imam". `[SCHOLAR: Q42]`
+- *"Can I pray for my non-Muslim parents?"* For the living: yes, make du'a for their guidance and wellbeing, and treat them kindly [Q 31:14–15]. For a relative who has died, follow Day 77: state the Qur'an's guidance gently [Q 9:113], name what is open (grieving, attending the funeral, condolence, kindness), note that scholars discuss the details, and offer the imam. Never comment on any individual's fate. `[SCHOLAR: Q23]`
+- *"Isn't Bukhari 3896 about Aisha's age?"* The report mentions it, and this episode cites it only for Khadijah's death. If asked, follow the track's approach: the sahih reports give six at the contract and nine when the marriage began [Bukhari 5133]; scholars discuss it; never mock the question or deny the hadith; offer the imam. `[SCHOLAR: Q37]`
+- *"Is grief okay in Islam?"* Yes. He wept at his son's death and called it mercy [Bukhari 1303]. Point to Day 77 and Day 64.
+
+**Escalate:** the afterlife of Abu Talib (Q42) or of the convert's own deceased relative (Q23); Aisha's age beyond the outline above (Q37); any convert in acute grief or crisis (safety rule if there's risk).
+
+**Don't**
+- Never raise Abu Talib's fate unless asked, and never on a screen.
+- Don't quote Bukhari 3884 or 1360 word for word to someone grieving; summarise gently if asked.
+- Don't use the convert's family to pressure them.
+- Don't picture the Prophet ﷺ, Khadijah or Abu Talib.
+
+## Sources
+- Qur'an [28:56](https://quran.com/28/56) (you cannot guide whom you love); AI guide only: [9:113](https://quran.com/9/113), [31:14–15](https://quran.com/31/14-15).
+- [Bukhari 3896](https://sunnah.com/bukhari:3896) (Sahih): Khadijah died three years before the hijra (cited for her death only).
+- [Bukhari 3](https://sunnah.com/bukhari:3) (Sahih): Khadijah on the night of Hira.
+- [Bukhari 1303](https://sunnah.com/bukhari:1303) (Sahih): he wept at his son's death.
+- AI guide only: [Bukhari 3884](https://sunnah.com/bukhari:3884), [Bukhari 1360](https://sunnah.com/bukhari:1360), [Bukhari 5133](https://sunnah.com/bukhari:5133) (all Sahih).
+- [IslamQA 11575, *Who Is Muhammad?*](https://islamqa.info/en/answers/11575): Abu Talib's death ten years into the mission; persecution intensified.
+- [IslamQA 20240, *Who took care of him after his mother died?*](https://islamqa.info/en/answers/20240): Abu Talib's care and protection.
+- Yaqeen Institute: [*What Islam Says About Prophet Muhammad ﷺ*](https://yaqeeninstitute.org/what-islam-says-about/prophet-muhammad) (25 years of marriage); [*How Muhammad ﷺ Confronted Hate…*](https://yaqeeninstitute.org/read/paper/how-muhammad-confronted-hate-and-became-the-most-influential-person-in-history) (the Year of Grief).
+- Qalam Institute, *The Sīrah Podcast*: [ep. 55, The Prophet loses Khadijah](https://www.qalaminstitute.org/2013/10/seerah-life-of-the-prophet-the-prophet-losses-khadijah/); [ep. 56, The death of Abu Talib](https://www.qalaminstitute.org/2013/10/seerah-life-of-the-prophet-the-death-of-abu-talib/).
+- Fact rows 16.1–16.6, 04.4 and X21 in [[Seerah Fact-Check Log]].
+
+## Scholar flags
+- **AI guide (Q42).** Abu Talib's fate is never on screen; the guide acknowledges the sahih texts, doesn't speculate, stresses Allah alone judges, and offers the imam.
+- **AI guide (Q23).** A convert's own deceased non-Muslim relative is handled as in Day 77.
+- **AI guide (Q37).** Bukhari 3896 also mentions Aisha's age; the episode cites it only for Khadijah's death, and the guide uses the drafted Q37 approach if asked.

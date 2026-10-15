@@ -1,0 +1,212 @@
+---
+day: 35
+phase: 2
+unit: 5
+title: "Being the Muslim in your family"
+hook: "You might be the only Muslim at the table for years. That's not a problem to solve. It's a long game."
+minutes: 5
+skills: [B4, T5]
+pain_points: [family]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q5]
+status: draft-pending-scholar-review
+glossary: [Allah, du'a, salah]
+sources: [Q 17:23–24, Q 31:15, Q 16:125, Q 28:56, Q 41:34, Bukhari 2620, Field Guide ch. 4, Brice 2010/11 (Research Notes R9), Research Notes - Retention and Convert Voices]
+format: 2
+---
+# Day 35 · Being the Muslim in your family
+
+### 1 · hook
+```yaml
+pic: family
+text: "The first conversation is over. Now comes the part nobody prepares you for: every holiday, every group chat, every dinner where you're the only Muslim. Today: the long game with your family, with kindness that doesn't run out."
+```
+
+### 2 · widget
+```yaml
+widget: timeline
+prompt: "It usually gets better"
+text: "Tap through how it often goes for converts' families."
+events:
+  - when: "At first"
+    title: "A rough start"
+    text: "In one UK survey of converts, about two in three said their family reacted badly at first [Brice 2010/11]."
+    pic: icon:CloudRain
+  - when: "The first holidays"
+    title: "The only Muslim at the table"
+    text: "Every holiday, every group chat, every dinner. Your part is kindness that doesn't run out."
+    pic: icon:Utensils
+  - when: "Months, sometimes years"
+    title: "They're watching"
+    text: "What changes a family's mind is rarely one great argument. It's watching you, year after year."
+    pic: icon:Eye
+  - when: "The long run"
+    title: "It usually eases"
+    text: "Fewer than three in ten faced rejection that lasted [Brice 2010/11]."
+    pic: icon:HeartHandshake
+```
+
+### 3 · learn
+```yaml
+pic: family
+text: "**What Allah asks of you.** Right after \"worship none but Him,\" the Qur'an says: be excellent to your parents. Don't even sigh \"ugh\" at them. Speak to them with honor, and lower yourself to them out of mercy [Q 17:23–24]."
+bubbles:
+  - "{teen}If you're under 18 and live at home, your parents set the house rules. Respect them and help out, in everything except giving up what Islam requires of you.{/teen}"
+  - "{teen}If a rule gets in the way of prayer, don't turn it into a standoff alone. Talk to {{mentor.name}} first.{/teen}"
+  - "If home ever feels unsafe, that's different: Day 14's safety steps come first."
+```
+
+### 4 · fill
+```yaml
+pic: icon:HandHeart
+before: "Even when your parents aren't Muslim, keep them company in this world with"
+after: "[Q 31:15]."
+options:
+  - text: "kindness"
+    correct: true
+    feedback: "Yes. Being excellent to your parents holds whatever their faith."
+  - text: "distance"
+    correct: false
+    feedback: "Not quite. The Qur'an asks you to stay close and keep them company with kindness [Q 31:15]."
+  - text: "silence"
+    correct: false
+    feedback: "Not quite. Speak to them with honor, and keep them company with kindness [Q 31:15]."
+```
+
+### 5 · scenario
+```yaml
+pic: icon:Utensils
+situation: "Thanksgiving. Aaliyah's uncle, half-joking, says loudly: \"So, does your new religion let you talk to men, or what?\" The table goes quiet."
+options:
+  - text: "Smile, answer in one light sentence (\"I talk to you, don't I?\"), and offer to explain more later if he's really curious"
+    best: true
+    feedback: "Yes. Calm and short keeps the meal from becoming a debate, and leaves a door open for a real talk."
+  - text: "Give a ten-minute explanation of women's rights in Islam, right there"
+    best: false
+    feedback: "Not quite. True content, wrong moment. A crowded table turns explaining into performing. Save it for one-on-one."
+  - text: "Fire back about the problems in his own religion"
+    best: false
+    feedback: "Not quite. It wins the moment and loses the relationship. Islam asks you to respond to rudeness with something better [Q 41:34]."
+  - text: "Leave the table without a word"
+    best: false
+    feedback: "Understandable, but it can look like proof he hit a nerve. A calm one-liner usually ends it faster."
+```
+
+### 6 · learn
+```yaml
+pic: conversation
+text: "**You don't have to win.** The Qur'an says to invite with wisdom and good words, and to discuss in the best way [Q 16:125]. Wisdom includes knowing when to stay quiet."
+bubbles:
+  - "And guiding hearts is Allah's job, not yours [Q 28:56]. Your job is lighter: be honest, be kind, and make du'a (personal prayer) for them."
+```
+
+### 7 · steps
+```yaml
+title: "Let your life do the talking"
+steps:
+  - text: "Keep the traditions that aren't against Islam: game night, birthday calls, Sunday visits."
+    pic: icon:Gift
+  - text: "Help more at home than before."
+    pic: icon:House
+  - text: "Keep your salah (prayer) quiet and unshowy."
+    pic: prayer-mat
+  - text: "Laugh with them. Islam didn't take your sense of humor."
+    pic: icon:Heart
+done_text: "When they see you kinder and steadier than before, that says more than any debate."
+```
+
+### 8 · roleplay
+```yaml
+character: "Your older sibling. Loves you, feels a little left behind, and is half-teasing, half-hurt. Not religious. Never cruel or insulting."
+setup: "You're doing dishes together after a family dinner. Your sibling says: \"So are you going to start judging all of us now? You barely laugh at Dad's jokes anymore.\""
+goal: "Reassure them you haven't changed sides, show you still love them and your family, and avoid preaching."
+success_looks_like: "You hear the hurt under the teasing, say clearly that you're not judging them, name something you still love doing together, and keep it warm and light."
+coach_notes: "The sibling pushes on: 'You can't even eat Grandma's food now', 'You disappear to pray', 'Are you going to try to convert me?'. They soften when the convert is warm and honest, and pull back if lectured. Debrief: one moment they reassured well, one line to try next time, and a reminder that being the Muslim in the family is a marathon."
+```
+
+### 9 · ask_ai
+```yaml
+chips:
+  - "How do I handle a relative who sends me anti-Islam videos?"
+  - "My family keeps saying it's a phase. What do I say?"
+  - "Can I still go to family holidays?"
+  - "How do I make du'a for my non-Muslim parents?"
+```
+
+### 10 · do_today
+```yaml
+pic: family
+text: "Ten minutes of real listening."
+steps:
+  - "Pick one family member"
+  - "Ask about something they love"
+  - "Really listen for ten minutes. No religion talk."
+log: null
+optional_extra: "Tonight, make du'a for each person in your family by name: their health, their happiness, and their guidance."
+```
+
+### 11 · takeaway
+```yaml
+pic: icon:HeartHandshake
+text: "Being the Muslim in your family is a long game: be honest, be kind, skip the debates, and let Allah handle the hearts."
+```
+
+### 12 · closing
+Your family is watching how Islam changes you. Let it make you warmer.
+
+---
+
+## Check
+```yaml
+- prompt: "According to the Qur'an, how should you treat parents who aren't Muslim?"
+  options:
+    - text: "Keep them company with kindness in this world"
+      correct: true
+      feedback: "Right. Kindness to parents isn't conditional on their faith [Q 31:15]."
+    - text: "Keep your distance until they accept Islam"
+      correct: false
+      feedback: "Not quite. The Qur'an tells you to stay kind and close to them [Q 31:15]."
+- prompt: "A relative mocks Islam at a crowded dinner. What usually works best?"
+  options:
+    - text: "A calm, short answer, and an offer to talk later"
+      correct: true
+      feedback: "Right. Wisdom includes choosing the moment [Q 16:125]."
+    - text: "A full debate right there"
+      correct: false
+      feedback: "Not quite. Crowds turn explaining into performing. Save real talks for one-on-one."
+```
+
+## AI guide context
+**Lesson facts**
+- Kindness to parents comes right after worshipping Allah alone; no harsh word, speak honorably, humble yourself out of mercy [Q 17:23–24]. It applies to non-Muslim parents: accompany them with kindness in this world, without obeying them in leaving Allah's worship [Q 31:15]. Asma' kept ties with her non-Muslim mother with the Prophet's approval [Bukhari 2620].
+- Invite with wisdom and good instruction; argue in the best way [Q 16:125]. Repel a bad deed with a better one [Q 41:34].
+- Guidance belongs to Allah [Q 28:56]: the convert isn't responsible for converting anyone.
+- Family relationships often dip, then recover: one UK convert survey (n=122) found 66% faced initial family negativity but 28% lasting rejection [Brice 2010/11, via Research Notes R9; medium confidence]. Advice from convert voices: keep the relationships, don't debate [Research Notes - Retention and Convert Voices, V11].
+- Day 4 covered telling family; Day 14 covered pushback and safety; Day 70 covers sharing Islam with family over the long haul; holiday modules cover Thanksgiving and Christmas.
+
+**Likely questions**
+- *"A relative sends me anti-Islam videos."* Don't argue in the comments or the group chat. A calm private reply ("I know some of this looks scary; happy to talk about it if you want") or no reply at all. Check the claims with the guide or the imam if they shake you (Day 33).
+- *"They keep saying it's a phase."* Don't fight the word. Time answers it. "I get why you'd think that. I hope you'll see it's real." Keep showing up.
+- *"Can I go to family holidays?"* Generally yes: keep family ties and attend the meal; skip religious rites; the greeting question isn't settled here `[SCHOLAR: Q5]`; ask your imam. The holiday modules cover this.
+- *"How do I make du'a for non-Muslim parents?"* Pray for their guidance, health, happiness and protection, in any words. Questions about praying for forgiveness for a parent who has died go to Day 77 and the imam (Q23).
+- *"I feel like the family outsider now."* Validate it. Suggest one shared activity they used to love, and connecting with other converts who've been through it (mentor, convert circle).
+
+**Escalate:** a teen forbidden from praying or fasting at home; being thrown out, threatened or hurt (safety rule 6 first: crisis resources); a spouse or co-parent conflict about religion (Q21 if married to a non-Muslim).
+
+**Don't**
+- Don't speak badly of the family's faith or call family members unbelievers or say where they'll end up (rule 9).
+- Don't coach a minor to defy or deceive parents beyond what the faith requires (rule 12).
+- Don't suggest cutting family off.
+
+**Role-play brief:** The older sibling is affectionate and a bit wounded, teasing to hide it. Pushes on food, disappearing to pray, and "are you going to convert me?". Softens with warmth and honesty; withdraws if lectured. Debrief: name a moment of good reassurance, offer one better line, remind them this takes years.
+
+## Sources
+- Qur'an [17:23–24](https://quran.com/17/23-24) (excellence to parents), [31:15](https://quran.com/31/15) (keep company with kindness), [16:125](https://quran.com/16/125) (wisdom and good instruction), [28:56](https://quran.com/28/56) (Allah guides whom He wills), [41:34](https://quran.com/41/34) (repel bad with better).
+- [Bukhari 2620](https://sunnah.com/bukhari:2620): Asma' and her non-Muslim mother (AI guide).
+- Kevin Brice, *A Minority Within a Minority: A Report on Converts to Islam in the UK* (Faith Matters, 2010/11): 66% initial family negativity, 28% lasting rejection; via [[Research Notes - Retention and Convert Voices]] R9.
+- [[Research Notes - Retention and Convert Voices]] (family theme; V11: keep relationships, don't debate).
+- [[Source - The New Muslims Field Guide]] ch. 4 (living in a non-Muslim family).
+
+## Scholar flags
+- **AI guide context, family holidays (Q5).** Drafted with the Q5 position: keep family ties and attend the meal, skip the religious rites, don't resolve the greeting question, ask your imam. Not taught on screen; the holiday modules carry it.

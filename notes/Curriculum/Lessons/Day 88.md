@@ -1,0 +1,239 @@
+---
+day: 88
+phase: 3
+unit: 10
+title: "Du'a for everything"
+hook: "Big or small, any language, any time. Allah is listening."
+minutes: 5
+skills: [S4]
+pain_points: [anxiety]
+logs: []
+madhab_sensitive: false
+scholar_flags: []
+status: draft-pending-scholar-review
+glossary: [du'a, Allah, ﷺ, Amin, al-Mujib]
+sources: [Q 40:60, Q 2:186, Abu Dawud 1479, Abu Dawud 1488, Tirmidhi 3477, Muslim 2735, Muslim 2732, Muslim 2491, Tirmidhi 2517, Tirmidhi 2140, Q 2:201, Bukhari 6389, Revealed Path ch. 8]
+format: 2
+---
+# Day 88 · Du'a for everything
+
+### 1 · hook
+```yaml
+pic: dua
+text: "On Day 6 you wrote your first **du'a** (a personal prayer to Allah). Since then you've learned the set words of the prayer. Today: the words that are all yours, to take with you past Day 90."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Sparkles
+text: |
+  **Allah asks you to ask.**
+
+  > "Call upon Me; I will respond to you." [Q 40:60, Saheeh Intl.]
+
+  The Prophet ﷺ said du'a is itself worship, then recited this verse [Abu Dawud 1479].
+```
+
+### 3 · sort
+```yaml
+prompt: "Fact, or a myth that stops people asking?"
+buckets: ["Fact", "Myth"]
+items:
+  - text: "Du'a is itself worship"
+    bucket: 0
+    why: "The Prophet ﷺ said so, then recited the verse you just read [Abu Dawud 1479]."
+  - text: "Du'a is for big things only"
+    bucket: 1
+    why: "Ask for anything: a parking spot, a calm exam, your mom's health. Nothing is too small for Allah."
+  - text: "It only counts in Arabic"
+    bucket: 1
+    why: "Outside the set words of the prayer, ask in any language. Allah understands every one."
+  - text: "I asked and nothing happened, so it doesn't work"
+    bucket: 1
+    why: "Du'a is answered as long as you don't grow impatient and give up [Muslim 2735]. Keep asking."
+  - text: "I'm too new, or I've messed up too much, for Allah to listen"
+    bucket: 1
+    why: "He answers whoever calls Him [Q 2:186]. Al-Mujib, the One who answers, isn't waiting for you to be perfect."
+```
+
+### 4 · learn
+```yaml
+pic: dua
+text: |
+  **He's near, and He's listening.**
+
+  > "Indeed I am near. I respond to the invocation of the supplicant when he calls upon Me." [Q 2:186, Saheeh Intl.]
+```
+
+### 5 · steps
+```yaml
+title: "A simple shape for du'a"
+intro: "The Prophet ﷺ taught this to a man who rushed his du'a [Tirmidhi 3477]."
+steps:
+  - text: "Raise your hands, if you like. That's a sunnah too [Abu Dawud 1488]."
+    pic: "pose:dua"
+  - text: "Praise Allah: thank Him for something."
+    pic: icon:Sparkles
+  - text: "Send blessings on the Prophet ﷺ."
+    pic: icon:Heart
+    say: "Allahumma salli 'ala Muhammad"
+  - text: "Ask for whatever you need, in your own words."
+    pic: dua
+  - text: "End with *Amin*."
+    pic: icon:CircleCheck
+    say: "Amin"
+done_text: "That's it. Thank, send blessings, ask. Any time, anywhere."
+```
+
+### 6 · order
+```yaml
+prompt: "Put the shape of a du'a in order."
+items:
+  - "Praise Allah and thank Him"
+  - "Send blessings on the Prophet ﷺ"
+  - "Ask for what you need"
+  - "End with Amin"
+pics: [icon:Sparkles, icon:Heart, dua, icon:CircleCheck]
+feedback: "Right. Praise first, then blessings, then ask [Tirmidhi 3477]."
+```
+
+### 7 · phrase
+```yaml
+arabic: "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ"
+translit: "Ya muqallibal-qulub, thabbit qalbi 'ala dinik"
+meaning: "O Turner of hearts, keep my heart firm on Your religion"
+audio_id: dua-thabbit-qalbi
+when: "Any time, especially on low days. The Prophet ﷺ said it often [Tirmidhi 2140]. A du'a for staying steady, long after Day 90."
+```
+
+### 8 · widget
+```yaml
+widget: tasbih
+prompt: "Make it stick"
+text: "Tap each time you say it, slowly, thinking of the meaning. Three is just for practice; once is enough any time you need it."
+phrases:
+  - translit: "Ya muqallibal-qulub, thabbit qalbi 'ala dinik"
+    arabic: "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ"
+    meaning: "O Turner of hearts, keep my heart firm on Your religion"
+    count: 3
+```
+
+### 9 · learn
+```yaml
+pic: family
+text: "**Pray for others too.** When you make du'a for someone who isn't there, an angel says, \"And the same for you\" [Muslim 2732]."
+bubbles:
+  - "Pray for your family by name, including for their guidance."
+  - "Abu Hurayrah asked the Prophet ﷺ to pray for his mother, who wasn't Muslim. She later accepted Islam [Muslim 2491]."
+  - "Your du'a for them is a quiet kindness nobody can stop."
+```
+
+### 10 · scenario
+```yaml
+pic: icon:Briefcase
+situation: "Destiny has made du'a for a job for three months. Nothing yet. She's starting to think Allah isn't listening to her."
+options:
+  - text: "Keep asking, keep applying, and trust Allah with the timing"
+    best: true
+    feedback: "Yes. Do your part and trust Allah [Tirmidhi 2517]. He answers in His way and time, so don't give up asking."
+  - text: "Stop asking; it's clearly not meant to be"
+    best: false
+    feedback: "Not quite. Giving up asking is the one thing the Prophet ﷺ warned against [Muslim 2735]."
+  - text: "Decide she's not a good enough Muslim to be heard"
+    best: false
+    feedback: "Not quite. Allah answers whoever calls Him [Q 2:186]. A delay isn't a rejection of her."
+```
+
+### 11 · reflect
+```yaml
+prompt: "Look back at the first du'a you wrote on Day 6. Then write a du'a list for now: one thing for yourself, one person you love, and one for who you want to be a year from now. Private to you."
+share_with_mentor: optional
+resurface: [day-6]
+```
+
+### 12 · ask_ai
+```yaml
+chips:
+  - "What are good times to make du'a?"
+  - "Can I make du'a for my non-Muslim family?"
+  - "Teach me another short du'a from the Prophet ﷺ"
+  - "Why hasn't my du'a been answered?"
+```
+
+### 13 · do_today
+```yaml
+pic: dua
+text: "One du'a after every prayer today."
+steps:
+  - "After each prayer, before you get up, make one du'a from your list"
+  - "Then say *Ya muqallibal-qulub* once"
+log: null
+optional_extra: "Make a du'a for one person by name who doesn't know you're doing it."
+```
+
+### 14 · takeaway
+```yaml
+pic: "pose:dua"
+text: "Ask Allah for everything, in any words, and keep asking. Du'a is worship."
+```
+
+### 15 · closing
+The program ends in two days. The conversation with Allah doesn't end at all.
+
+---
+
+## Check
+```yaml
+- prompt: "Can you make du'a in English, for something small?"
+  options:
+    - text: "Yes. Du'a can be in any language, about anything"
+      correct: true
+      feedback: "Right. Only the set words of the prayer are in Arabic. Your du'a is yours."
+    - text: "No. Only in Arabic, and only for serious needs"
+      correct: false
+      feedback: "Not quite. Allah hears every language, and nothing is too small to ask."
+- prompt: "What does the Prophet ﷺ say about a du'a that seems unanswered?"
+  options:
+    - text: "Don't grow impatient and stop asking"
+      correct: true
+      feedback: "Right. Du'a is answered as long as you don't give up [Muslim 2735]."
+    - text: "It means Allah has rejected you"
+      correct: false
+      feedback: "Not quite. He answers whoever calls [Q 2:186]. Keep asking."
+```
+
+## AI guide context
+**Lesson facts**
+- Allah commands du'a and promises to respond [Q 40:60]; He is near and answers the caller [Q 2:186]. Du'a is worship [Abu Dawud 1479].
+- A shape for du'a: praise Allah, send blessings on the Prophet ﷺ, then ask [Tirmidhi 3477]. Raising the hands is a sunnah [Abu Dawud 1488].
+- Du'a is answered as long as one doesn't grow impatient and stop [Muslim 2735]. Pair du'a with effort and trust [Tirmidhi 2517].
+- Du'a for someone absent: an angel says "and for you the same" [Muslim 2732]. Du'a for a non-Muslim relative's guidance is good [Muslim 2491].
+- Today's phrase: *Ya muqallibal-qulub, thabbit qalbi 'ala dinik* [Tirmidhi 2140].
+- Personal du'a may be in any language outside the prayer's set words.
+
+**Likely questions**
+- *"Good times for du'a?"* Keep it simple: after the prayers, and any time at all. Don't list times without a bank reference; offer to look deeper with the imam.
+- *"Can I pray for my non-Muslim family?"* Yes, for their guidance, health and good, while they live [Muslim 2491]. For a relative who has died, follow Day 77's guidance and Q23.
+- *"Why hasn't my du'a been answered?"* Gentle: keep asking [Muslim 2735]; Allah knows what's best and when; keep doing your part [Tirmidhi 2517]. Never suggest they're unworthy.
+- *"Another short du'a?"* Offer *Rabbana atina…* (Day 28) [Q 2:201; Bukhari 6389] or today's phrase. Don't supply du'a text that isn't in the Citation Bank.
+- *"Can I make personal du'a in English inside the prayer?"* Escalate gently: schools differ on du'a in other languages within the obligatory prayer; the safe default is Arabic phrases inside the prayer and personal du'a in any language after it.
+
+**Escalate:** du'a for a deceased non-Muslim relative (Q23); requests for "special du'as" to fix marriage, money or illness (care first; professional help where needed; imam for the rest).
+
+**Don't**
+- Don't promise a specific outcome from a du'a.
+- Don't imply unanswered du'a means Allah is angry or the convert is unworthy.
+- Don't recommend du'a "packages," amulets or paid prayers.
+
+## Sources
+- Qur'an [40:60](https://quran.com/40/60), [2:186](https://quran.com/2/186).
+- [Abu Dawud 1479](https://sunnah.com/abudawud:1479) (sahih, al-Albani): du'a is worship.
+- [Abu Dawud 1488](https://sunnah.com/abudawud:1488) (sahih, al-Albani): Allah is too generous to turn away empty the hands raised to Him.
+- [Tirmidhi 3477](https://sunnah.com/tirmidhi:3477) (sahih, al-Albani): praise Allah, send blessings on the Prophet ﷺ, then ask.
+- [Tirmidhi 2140](https://sunnah.com/tirmidhi:2140) (sahih, al-Albani; Tirmidhi: hasan): *Ya muqallibal-qulub, thabbit qalbi 'ala dinik*.
+- [Tirmidhi 2517](https://sunnah.com/tirmidhi:2517) (hasan): tie your camel and trust Allah.
+- [Muslim 2735](https://sunnah.com/muslim:2735): du'a is answered unless one grows impatient.
+- [Muslim 2732](https://sunnah.com/muslim:2732): du'a for an absent brother; the angel says "and for you the same."
+- [Muslim 2491](https://sunnah.com/muslim:2491): Abu Hurayrah's mother.
+- AI guide only: Qur'an [2:201](https://quran.com/2/201) and [Bukhari 6389](https://sunnah.com/bukhari:6389) (*Rabbana atina*, the du'a he made most).
+- [[Source - The Revealed Path]] ch. 8 (Allah's nearness and mercy).

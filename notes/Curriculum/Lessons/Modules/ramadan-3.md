@@ -1,0 +1,240 @@
+---
+module: ramadan-3
+phase: null
+unit: null
+title: "Your first fast, hour by hour"
+hook: "Today you fast. Here's exactly how the day goes, from the alarm to the first sip of water."
+minutes: 5
+skills: [B5, S1, P8]
+pain_points: [first-ramadan]
+logs: []
+madhab_sensitive: true
+scholar_flags: [Q14, Q32, Q35]
+status: draft-pending-scholar-review
+glossary: [Ramadan, suhoor, iftar, Fajr, Dhuhr, Asr, Maghrib, wudu, imam, du'a, in sha Allah]
+sources: [Q 2:183–185, Q 2:187, Bukhari 1894, Bukhari 1923, Bukhari 1933, Bukhari 1954, Abu Dawud 2357, First Instructions on Worship Part III, Yaqeen (Ramadan beginner's guide), IslamQA.info 112150, SeekersGuidance (Shafi'i Ramadan)]
+format: 2
+---
+# ramadan-3 · Your first fast, hour by hour
+
+### 1 · hook
+```yaml
+pic: crescent
+text: "**Ramadan has begun.** Whether you took your shahada months ago or this week, today you fast, maybe for the first time in your life. Here's how the day goes, hour by hour. You can do this."
+```
+
+### 2 · widget
+```yaml
+widget: fast-day
+prompt: "The fast in one line"
+text: "From dawn until sunset: no food, no drink (not even water), no sex [Q 2:187]. Every adult Muslim who is able fasts in **Ramadan** [Q 2:183–185]. Drag through your first day."
+```
+
+### 3 · learn
+```yaml
+pic: fresh-start
+text: "**Became Muslim during Ramadan?** Welcome! Start fasting tomorrow. Days before you were Muslim aren't owed. For the rest of today, hold off on food and drink if you can, and ask your imam. `[SCHOLAR: Q14]`"
+```
+
+### 4 · order
+```yaml
+prompt: "Put a fast day in order."
+items:
+  - "Before bed: intend to fast tomorrow and set an alarm"
+  - "Before dawn: eat and drink (suhoor)"
+  - "Fajr time begins: stop eating and drinking, then pray Fajr"
+  - "Daytime: work or school, pray Dhuhr and Asr, go easy on yourself"
+  - "Sunset: break the fast with dates or water (iftar) and make du'a"
+  - "Pray Maghrib, then eat a proper meal"
+pics: ["intention", "icon:Utensils", "icon:Sunrise", "icon:Briefcase", "icon:Sunset", "prayer-mat"]
+feedback: "That's the day [Q 2:187]. The prayers don't pause for the fast; all five are still due."
+```
+
+### 5 · learn
+```yaml
+madhab_variant: true
+pic: icon:Ban
+default: "**What breaks the fast** (on purpose): eating, drinking, sex, smoking or vaping.{women} A period starting ends that day's fast.{/women}"
+hanafi: "**What breaks the fast** (on purpose): eating, drinking, sex, smoking or vaping, and drops in the nose.{women} A period starting ends that day's fast.{/women}"
+bubbles:
+  - "**What doesn't:** eating or drinking because you forgot (stop and carry on) [Bukhari 1933], your own saliva, a shower, brushing teeth without swallowing."
+  - "{{masjid.name}} can help with the details."
+hanafi_bubbles:
+  - "Water slipping down your throat during wudu also breaks it, so rinse your mouth and nose gently."
+  - "Ear drops: scholars differ, so ask your imam. `[SCHOLAR: Q35]`"
+  - "**What doesn't:** eating or drinking because you forgot [Bukhari 1933], your own saliva, a shower."
+```
+
+### 6 · sort
+```yaml
+prompt: "It's 2 p.m. on Luis's first fast. Which of these break it?"
+buckets: ["Breaks the fast", "Doesn't break it"]
+items:
+  - text: "He forgets, grabs a handful of chips, then remembers"
+    bucket: 1
+    why: "Forgetting doesn't break it. He stops, and his fast still counts [Bukhari 1933]."
+  - text: "He chews gum to stay awake"
+    bucket: 0
+    why: "Chewing gum puts flavor and sugar down your throat. Skip it while fasting."
+  - text: "He swallows his own saliva"
+    bucket: 1
+    why: "Your own saliva doesn't break the fast."
+  - text: "He vapes on his break"
+    bucket: 0
+    why: "Smoking and vaping break the fast."
+```
+
+### 7 · scenario
+```yaml
+audience: women
+pic: icon:CalendarDays
+situation: "Maria is fasting. At 3 p.m. her period starts."
+options:
+  - text: "Her fast for today is over. She can eat and drink, and makes the day up after Ramadan"
+    best: true
+    feedback: "Yes. A fast doesn't count during a period. She makes it up later, with no blame at all."
+  - text: "Keep fasting until sunset so the day still counts"
+    best: false
+    feedback: "Not quite. Once her period starts, today's fast doesn't count. She makes it up later."
+  - text: "Feel guilty that she couldn't finish"
+    best: false
+    feedback: "Please don't. This is how Allah made it. She did nothing wrong."
+```
+
+### 8 · widget
+```yaml
+widget: iman-graph
+prompt: "How the first days feel"
+text: "Drag along the line. It gets easier."
+points:
+  - label: "Day one"
+    text: "The hardest. Hunger, tiredness, maybe a caffeine headache."
+  - label: "Mid-afternoon"
+    text: "Usually the toughest hours of the day. Rest if you can, and keep busy."
+  - label: "Day four"
+    text: "By now, most people have found their rhythm."
+```
+
+### 9 · learn
+```yaml
+pic: icon:Shield
+text: "**When it gets hard.** If someone provokes you, the advice is simply to say, \"I'm fasting\" [Bukhari 1894]. And if you truly fall ill, you're allowed to break the fast and make the day up later [Q 2:184]."
+bubbles:
+  - "{teen}Under 18 and your parents object to fasting? Talk to {{mentor.name}} before any standoff. `[SCHOLAR: Q32]`{/teen}"
+```
+
+### 10 · steps
+```yaml
+title: "Sunset: breaking the fast"
+steps:
+  - text: "When the sun has set, the fast is over [Bukhari 1954]"
+    pic: icon:Sunset
+  - text: "Break it straight away with a date or some water"
+    pic: icon:GlassWater
+  - text: "Make du'a (ask Allah for anything): this moment is a good time for it"
+    pic: dua
+  - text: "Pray Maghrib, then eat your meal"
+    pic: prayer-mat
+done_text: "Next: what the Prophet ﷺ said when he broke his fast."
+```
+
+### 11 · phrase
+```yaml
+arabic: "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ"
+translit: "Dhahaba-dh-dhama'u wabtallatil-'uruqu wa thabatal-ajru in sha Allah"
+meaning: "The thirst is gone, the veins are moistened, and the reward is certain, if Allah wills"
+audio_id: iftar-dua
+when: "What the Prophet ﷺ said when he broke his fast. Say it right after your first sip or date at sunset. [Abu Dawud 2357]"
+```
+
+### 12 · ask_ai
+```yaml
+chips:
+  - "I took my shahada during Ramadan. What do I do about today?"
+  - "Does brushing my teeth or using mouthwash break the fast?"
+  - "I have a headache. Can I take medicine?"
+  - "What's tarawih, and do I have to go?"
+```
+
+### 13 · do_today
+```yaml
+pic: icon:Sunset
+text: "Fast today, one hour at a time."
+steps:
+  - "At sunset, break it with a date or water"
+  - "Say the iftar du'a (reading it is fine)"
+  - "Pray Maghrib"
+log: null
+optional_extra: "Tonight, set your alarm for suhoor before you go to sleep."
+```
+
+### 14 · takeaway
+```yaml
+pic: icon:Sunrise
+text: "Eat before dawn, fast until sunset, keep your five prayers, and break the fast promptly. Forgetting doesn't break it."
+```
+
+### 15 · closing
+Day one is the hardest, and you're doing it. By day four, most people have found their rhythm. Slow and steady.
+
+---
+
+## Check
+```yaml
+- prompt: "Halfway through the day, you absent-mindedly drink some water. What now?"
+  options:
+    - text: "Stop when you remember and keep fasting; it still counts"
+      correct: true
+      feedback: "Right. Eating or drinking by mistake doesn't break the fast [Bukhari 1933]."
+    - text: "The fast is ruined, so eat normally"
+      correct: false
+      feedback: "Not quite. A forgetful sip doesn't break it. Carry on [Bukhari 1933]."
+- prompt: "What do you do first when the sun sets?"
+  options:
+    - text: "Break the fast with a date or water, then pray Maghrib"
+      correct: true
+      feedback: "Right. Break it promptly, then pray, then have your meal."
+    - text: "Wait an hour to be safe"
+      correct: false
+      feedback: "Not quite. Once the sun has set, the fast is over [Bukhari 1954]. Break it promptly."
+```
+
+## AI guide context
+**Lesson facts**
+- Fast from dawn (start of Fajr time) to sunset: no food, drink or sex [Q 2:187]. Obligatory on every adult, sane, able Muslim [Q 2:183–185; First Instructions Part III].
+- Breakers (deliberate): eating, drinking, sex, smoking/vaping. Hanafi additions: liquid in the nose or ears, accidentally swallowed wudu water (make-up only) [First Instructions Part III]. Forgetful eating doesn't break it [Bukhari 1933].
+- A period or postnatal bleeding ends the day's fast; the day is made up later. Real illness allows breaking with a make-up [Q 2:184].
+- When the sun sets the fasting person breaks the fast [Bukhari 1954]; suhoor has blessing [Bukhari 1923]; say "I'm fasting" when provoked [Bukhari 1894]. Iftar du'a: *Dhahaba-dh-dhama'u…* [Abu Dawud 2357, hasan per al-Albani].
+- The intention is in the heart; the Hanafi manual teaches making it the night before [First Instructions Part III]. If someone forgot to intend, route timing details to the imam.
+- Mid-Ramadan convert (Q14): fast from the next day; earlier days not owed; refrain the rest of the conversion day if you can; ask the imam.
+
+**Likely questions**
+- *"I converted today."* Fast from tomorrow; nothing earlier is owed; refrain for the rest of today if you can (Q14) and ask the imam. Point them to Days 1–3 for prayer, which is due today too.
+- *"Toothbrush or mouthwash?"* Brushing without swallowing doesn't break it; many advise caution with toothpaste and mouthwash. Masjid for details.
+- *"Painkillers, inhalers, injections?"* Swallowed pills break the fast. For inhalers and injections scholars differ: escalate. Never tell anyone to skip needed medication.
+- *"Tarawih?"* The extra night prayer of Ramadan at the masjid after Isha; recommended, not required. Covered on ramadan-4.
+- *"I broke my fast on purpose."* Don't give up on the month. Keep fasting, make the day up, and talk to the imam (kaffara details are the imam's to explain). Never scare.
+
+**Escalate:** medical conditions, medications and procedures; eating disorders (care, professional help, never push fasting); deliberate breaking and kaffara; Q14; a teen forbidden to fast.
+
+**Don't**
+- Don't dump the full Hanafi breakers list.
+- Don't say new Muslims can fast "some days" this year.
+
+## Madhab note
+- **Water in wudu:** the Hanafi school counts accidentally swallowed wudu water as breaking the fast (a make-up day). Other schools differ on this detail.
+- **The day you convert (Q14):** some scholars say refraining for the rest of that day is required, others (e.g. the Shafi'i school) that it's recommended. All agree earlier days aren't owed.
+
+## Sources
+- Qur'an [2:183–185](https://quran.com/2/183-185), [2:187](https://quran.com/2/187).
+- [Bukhari 1894](https://sunnah.com/bukhari:1894): fasting is a shield; say "I am fasting" if someone fights you.
+- [Bukhari 1923](https://sunnah.com/bukhari:1923): blessing in suhoor. [Bukhari 1933](https://sunnah.com/bukhari:1933): forgetful eating. [Bukhari 1954](https://sunnah.com/bukhari:1954): when the sun sets, the fasting person breaks the fast.
+- [Abu Dawud 2357](https://sunnah.com/abudawud:2357) (hasan, al-Albani): the Prophet's words ﷺ on breaking his fast (Arabic copied from the hadith text).
+- [[Source - First Instructions on Worship]] Part III (how to fast a day; what breaks the fast; who is excused).
+- [Yaqeen Institute: How does Ramadan work? A beginner's guide](https://yaqeeninstitute.org/read/paper/how-does-ramadan-work-a-beginners-guide).
+- Q14: [IslamQA.info 112150](https://islamqa.info/en/answers/112150/does-he-have-to-refrain-from-eating-on-the-day-he-becomes-muslim); [SeekersGuidance: fasting Ramadan in the Shafi'i school](https://seekersguidance.org/answers/shafii-fiqh/fiqh-fasting-ramadan-according-school-imam-shafii/).
+
+## Scholar flags
+- **Screen 3 (Q14).** "Start fasting tomorrow. Days before you were Muslim aren't owed. For the rest of today, hold off on food and drink if you can, and ask your imam." Drafted as in Spec §9.
+- **Screen 9, teen line (Q32).** A teen whose non-Muslim parents forbid fasting (or would if they knew). Drafted per Spec §9: no instruction to defy or deceive parents; talk to the mentor (and imam) before any standoff; the AI guide escalates.
+- **Screen 5, Hanafi bubble: ear drops (Q35).** Drafted as "scholars differ, ask your imam"; nose drops stay listed as breaking the fast per the Hanafi manual.

@@ -1,0 +1,217 @@
+---
+module: holiday-thanksgiving
+phase: null
+unit: null
+title: "A family table: gratitude, food, and being there"
+hook: "Thanksgiving is in a few days. You can be at that table as a Muslim, warmly. Here's how."
+minutes: 5
+skills: [B4, T5, P8]
+pain_points: [family, family-meals]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q5, Q6]
+status: draft-pending-scholar-review
+glossary: [shukr, halal, zabiha, Asr, Maghrib, imam]
+sources: [Q 14:7, Q 31:14–15, Q 60:8, Q 2:173, Q 5:5, Q 5:90, Tirmidhi 1954, Bukhari 2620, SeekersGuidance (Christmas with family), IslamOnline (Christmas with non-Muslim relatives), Dar al-Ifta Egypt 6815, IslamQA.info 947, AMJA 22994, AMJA 83915, Research Notes - Core Essentials and Madhab Map §8]
+format: 2
+---
+# holiday-thanksgiving · A family table: gratitude, food, and being there
+
+### 1 · hook
+```yaml
+pic: family
+text: "**Thanksgiving is coming.** Maybe it's your first as a Muslim, and you're wondering about the turkey, the questions, the prayer times. Whether you're days or months into Islam, you can show up as yourself: grateful, kind, and Muslim."
+```
+
+### 2 · learn
+```yaml
+pic: icon:HandHeart
+text: "**Gratitude is Muslim to the core.** *Shukr* (thankfulness) runs through the Qur'an: if you are grateful, Allah gives you more [Q 14:7]. And whoever doesn't thank people hasn't truly thanked Allah [Tirmidhi 1954]."
+bubbles:
+  - "Islam also asks you to stay close to your family and treat your parents well, whatever they believe [Q 31:14–15; Bukhari 2620]."
+```
+
+### 3 · fill
+```yaml
+before: "Whoever doesn't thank people hasn't truly thanked"
+after: "[Tirmidhi 1954]."
+options:
+  - text: "Allah"
+    correct: true
+    feedback: "Yes. Thanking the people who cooked for you is part of thanking Allah."
+  - text: "anyone"
+    correct: false
+    feedback: "Not quite. The hadith ties it to Allah: thanking people is part of thanking Him."
+  - text: "their family"
+    correct: false
+    feedback: "Not quite. It's about Allah: whoever doesn't thank people hasn't truly thanked Him."
+```
+
+### 4 · learn
+```yaml
+pic: family
+text: "**Going to the meal.** Keeping family ties is part of your faith, so a family meal is a good place to be. Eat what's halal (allowed), skip any religious ritual, and be the warmest person there. `[SCHOLAR: Q5]`"
+bubbles:
+  - "Scholars differ on the holiday itself and on saying \"Happy Thanksgiving.\" {{masjid.name}}'s imam can tell you his view."
+```
+
+### 5 · scenario
+```yaml
+pic: conversation
+situation: "Tyler dreads Thanksgiving: the ham, his uncle's jokes about Muslims, the questions. He's thinking of saying he's sick and staying home."
+options:
+  - text: "Go with a plan: bring a dish he can eat, know his prayer times, and have one calm answer ready"
+    best: true
+    feedback: "Yes. A plan turns dread into something manageable, and his family gets to see Islam made him kinder."
+  - text: "Stay home and tell them he's sick"
+    best: false
+    feedback: "Not quite. It's not honest, and it can feel to family like Islam took him away."
+  - text: "Go, and correct everyone's food and jokes at the table"
+    best: false
+    feedback: "Not quite. Lecturing at dinner rarely helps. Kindness and a calm answer later go further."
+```
+
+### 6 · learn
+```yaml
+pic: icon:Utensils
+text: "**What's on your plate.** Skip pork and anything with alcohol [Q 2:173; Q 5:90]. Watch for hidden ones: bacon in the stuffing or green beans, wine in the gravy, gelatin in desserts."
+bubbles:
+  - "**The turkey:** the safe choice is zabiha or halal-certified meat. Scholars differ on ordinary supermarket meat, so ask your imam about the family turkey. `[SCHOLAR: Q6]`"
+  - "Or bring a halal turkey yourself."
+```
+
+### 7 · multi
+```yaml
+prompt: "Hannah is checking the Thanksgiving table. Which dishes should she ask about before eating? Pick all that apply."
+options:
+  - text: "The stuffing"
+    correct: true
+    feedback: "Right. Stuffing is often made with sausage or bacon. A quick, friendly question settles it."
+  - text: "The plain mashed potatoes"
+    correct: false
+    feedback: "Usually fine. Butter, milk, potatoes. Unless someone added bacon bits, she's good."
+  - text: "The gravy"
+    correct: true
+    feedback: "Right. Gravy can have wine, and it's made from the turkey's drippings, so the meat question applies too."
+  - text: "The sweet potatoes with marshmallows"
+    correct: true
+    feedback: "Right. Most marshmallows contain gelatin, often from pork. Check the bag."
+```
+
+### 8 · roleplay
+```yaml
+character: "Aunt Linda, who's hosted Thanksgiving for 20 years. Proud of her cooking, loving, a little hurt. Not hostile, never insulting."
+setup: "You're at the table. Aunt Linda passes the platter: \"Here, take some turkey, sweetie. And the stuffing, it's Grandma's recipe with the sausage. You're not going to skip my cooking now, are you?\""
+goal: "Decline what you can't eat without hurting her, show real gratitude for her and her cooking, and keep the mood warm."
+success_looks_like: "You thank her warmly, explain briefly ('I don't eat pork now, it's part of my faith'), praise and take something you can eat, and maybe offer to cook a dish with her next year."
+coach_notes: "Linda pushes: 'One bite won't hurt', 'It's just stuffing', 'So my food isn't good enough?', 'Is this a Muslim thing?'. She softens with gratitude and specific praise, and gets hurt if the convert sounds judgmental. Never push the convert to eat something they've declined. Debrief: one warm line that worked, one to try next time. For teens, add: being respectful at a parent's table while declining is exactly right."
+```
+
+### 9 · widget
+```yaml
+widget: prayer-times
+prompt: "Thanksgiving dinner usually runs from late afternoon into the evening. Drag the sun: which prayers land around then?"
+text: "Asr and Maghrib often fall right around Thanksgiving dinner. Plan for them."
+```
+
+### 10 · steps
+```yaml
+title: "Praying at a family dinner"
+intro: "{teen}Under 18? Talk to your parents before the day about the food and a few minutes to pray. If that's hard, ask {{mentor.name}} for help planning it.{/teen}"
+steps:
+  - text: "Look up that day's prayer times before you go."
+    pic: prayer-times
+  - text: "When it's time, excuse yourself: \"I'm just going to pray, I'll be right back.\""
+    pic: conversation
+  - text: "Use a quiet room. It takes about five minutes."
+    pic: prayer-mat
+  - text: "Come back to the table."
+    pic: family
+done_text: "Five minutes away, and you're back for pie."
+```
+
+### 11 · ask_ai
+```yaml
+chips:
+  - "Can I eat the turkey at my family's Thanksgiving?"
+  - "Can I say \"Happy Thanksgiving\"?"
+  - "What do I say if someone asks me to say grace?"
+  - "How do I bring a halal dish without offending the host?"
+```
+
+### 12 · do_today
+```yaml
+pic: icon:ClipboardList
+text: "Make your Thanksgiving plan."
+steps:
+  - "Look up the prayer times for that day"
+  - "Decide what you'll bring or eat"
+  - "Use \"Ask my imam\" if you have a question about the turkey"
+log: null
+optional_extra: "Text your host this week: \"Can't wait! Can I bring a dish?\" A halal dish you made is a gift and a solution."
+```
+
+### 13 · takeaway
+```yaml
+pic: icon:HandHeart
+text: "Go, be grateful, and be kind. Eat what's halal, skip religious rites, pray on time, and ask your imam about the meat and the greetings."
+```
+
+### 14 · closing
+Your family gets to see what Islam did to you: made you more grateful, not less present.
+
+---
+
+## Check
+```yaml
+- prompt: "Which of these does Islam ask of you toward your non-Muslim family?"
+  options:
+    - text: "Keep ties and treat them well"
+      correct: true
+      feedback: "Right. Kindness to parents continues, whatever they believe [Q 31:14–15; Bukhari 2620]."
+    - text: "Avoid family meals so you don't eat anything wrong"
+      correct: false
+      feedback: "Not quite. Keeping ties is part of your faith. Go, and choose your food carefully."
+- prompt: "What's the safe choice for meat at a family dinner?"
+  options:
+    - text: "Zabiha or halal-certified meat; ask your imam about anything else"
+      correct: true
+      feedback: "Right. Scholars differ on ordinary meat, so the safe default is halal-certified."
+    - text: "Anything except pork, no questions needed"
+      correct: false
+      feedback: "Not quite. Pork is out for sure, but scholars differ on other ordinary meat. Ask your imam."
+```
+
+## AI guide context
+**Lesson facts**
+- Gratitude: Allah increases the grateful [Q 14:7]; whoever doesn't thank people doesn't thank Allah [Tirmidhi 1954, sahih per al-Albani].
+- Kindness and good companionship toward non-Muslim parents and family [Q 31:14–15; Bukhari 2620]; kindness and justice toward non-Muslims who aren't hostile [Q 60:8].
+- Food: pork, blood, carrion and what's dedicated to other than Allah are prohibited [Q 2:173]; intoxicants are prohibited [Q 5:90]. The food of the People of the Book is lawful in principle [Q 5:5], but whether ordinary US commercial meat qualifies is contested (Q6): many contemporary Hanafi scholars say it doesn't; AMJA permits it [AMJA 83915].
+- Holidays (Q5): SeekersGuidance (Hanafi) and IslamOnline (Badawi, Kutty) allow attending family gatherings to keep ties while not joining religious rites. AMJA 2006 [22994] says celebrating Thanksgiving isn't lawful (it doesn't address attending a family meal). Greetings: Dar al-Ifta Egypt [6815] permits; IslamQA.info [947] prohibits. **Not resolved in the app.**
+
+**Likely questions**
+- *"Can I eat the turkey?"* Give the drafted Q6 position: halal-certified is the safe default; scholars differ on ordinary meat; the family dinner is a question for the imam. Suggest bringing a halal turkey or dish. Offer "Ask my imam."
+- *"Can I say 'Happy Thanksgiving'?"* Scholars differ; present both views without choosing; offer "Ask my imam." Neutral warm alternatives exist ("So good to see you all").
+- *"Grace before the meal?"* If it's a prayer in Jesus's name, sit quietly and respectfully without joining; say Bismillah to yourself. Don't lead it. If asked to say something, a simple thank-you to everyone for the meal is kind (keep it non-religious, or say Bismillah aloud if comfortable).
+- *"The family thinks I'm judging them."* Day 35 skills: reassure, don't preach, be the most helpful guest.
+- *"Alcohol at the table?"* Don't drink it. Sitting at a family table where others drink is a scholar question (many advise excusing yourself from the immediate drinking setting); give the general picture and route specifics to the imam.
+
+**Escalate:** the turkey and ordinary meat (Q6); greetings and the holiday's status (Q5); alcohol at the table; a teen whose parents insist they eat something haram; any family conflict that turns unsafe (safety rule).
+
+**Don't**
+- Don't declare the holiday itself halal or haram, or rule on the greeting.
+- Don't tell the convert to skip family events.
+- Don't mock family traditions.
+
+**Role-play brief:** Aunt Linda, a proud, loving host who's a bit hurt the convert might skip her food. Pushes gently ("one bite"). Softens with gratitude. Debrief on warmth plus a firm, kind no.
+
+## Sources
+- Qur'an [14:7](https://quran.com/14/7), [31:14–15](https://quran.com/31/14-15), [60:8](https://quran.com/60/8), [2:173](https://quran.com/2/173), [5:5](https://quran.com/5/5), [5:90](https://quran.com/5/90).
+- [Tirmidhi 1954](https://sunnah.com/tirmidhi:1954) (sahih, al-Albani): whoever doesn't thank people doesn't thank Allah.
+- [Bukhari 2620](https://sunnah.com/bukhari:2620): keeping good ties with a non-Muslim mother.
+- Holidays (Q5): [SeekersGuidance: Attending Christmas festivities of one's non-Muslim family](https://seekersguidance.org/answers/hanafi-fiqh/attending-christmas-festivities-of-ones-non-muslim-family/); [IslamOnline: Attending Christmas with non-Muslim relatives](https://fiqh.islamonline.net/en/attending-christmas-with-non-muslim-relatives/); [Dar al-Ifta Egypt 6815](https://www.dar-alifta.org/en/fatwa/details/6815/39-congratulating-christians-on-the-occasion-of-christmas); [IslamQA.info 947](https://islamqa.info/en/answers/947/ruling-on-celebrating-non-muslim-holidays-and-congratulating-them); [AMJA 22994](https://www.amjaonline.org/fatwa/en/22994/celebrating-non-muslim-holidays).
+- Meat (Q6): [AMJA 83915](https://www.amjaonline.org/fatwa/en/83915/difference-between-zabihah-and-non-zabihah); [[Research Notes - Core Essentials and Madhab Map]] (madhab map: meat of the People of the Book).
+
+## Scholar flags
+- **Screen 4 (Q5).** Drafted as: keep family ties and attend the meal; skip religious rites; scholars differ on the holiday and on the greeting (not resolved); ask your imam.
+- **Screen 6 (Q6).** Drafted as: default to zabiha or halal-certified meat; scholars differ on ordinary meat; the family turkey is a question for the imam; bringing a halal dish is offered as a practical option.

@@ -1,0 +1,396 @@
+---
+module: eid-adha
+phase: null
+unit: null
+title: "Eid al-Adha: Ibrahim's story and the sacrifice"
+hook: "Eid Mubarak! Today's festival goes back to Ibrahim, a father, a son, and a trust in Allah that changed history."
+minutes: 5
+skills: [B5, T2, B4]
+pain_points: [belonging, loneliness]
+logs: [attended_eid_prayer]
+madhab_sensitive: true
+scholar_flags: [Q36]
+status: draft-pending-scholar-review
+glossary: [Eid, Ibrahim, Isma'il, Hajar, Ka'bah, sa'i, udhiyah, nisab, takbir, Takbir al-Tashriq, Allahu akbar, imam]
+sources: [Muslim 890, Q 37:100–111, Q 14:37, Q 2:127, Q 22:37, Q 3:67, Bukhari 3364, Bukhari 5545, Abu Dawud 1134, SeekersGuidance (who has to sacrifice), Qibla via IslamQA.org 35379, SeekersGuidance (fiqh of the two Eids), First Instructions on Worship Part II and Part III, Revealed Path ch. 6]
+format: 2
+---
+# eid-adha · Eid al-Adha: Ibrahim's story and the sacrifice
+
+### 1 · hook
+```yaml
+pic: crescent
+text: "**Eid Mubarak, {{convert.first_name}}!** Today is Eid al-Adha, the Festival of Sacrifice, the second of Islam's two Eids [Abu Dawud 1134]. It goes back to a father, a son and a trust in Allah. If your family is Christian or Jewish, they know a version of this story too."
+```
+
+### 2 · widget
+```yaml
+widget: timeline
+prompt: "Ibrahim's test"
+text: "Tap through the story, as the Qur'an tells it [Q 37:100–111]."
+events:
+  - when: "First"
+    title: "A prayer for a child"
+    text: "Ibrahim (Abraham) prayed for a righteous child, and he was given a son."
+    pic: icon:Sprout
+  - when: "Years later"
+    title: "The dream"
+    text: "When the boy was old enough to walk with him, Ibrahim saw in a dream that he was to sacrifice him."
+    pic: icon:Moon
+  - when: "Then"
+    title: "The son's answer"
+    text: "Ibrahim told his son. The boy answered: do what you're commanded; you'll find me patient."
+    pic: icon:MessageCircle
+  - when: "At the last moment"
+    title: "The ransom"
+    text: "As they both submitted, Allah called out to stop him, and ransomed the boy with a great sacrifice."
+    pic: icon:Sparkles
+```
+
+### 3 · choice
+```yaml
+pic: icon:Heart
+prompt: "What does the Qur'an say actually reaches Allah from a sacrifice?"
+options:
+  - text: "The piety and sincerity of the person offering it"
+    correct: true
+    feedback: "Right. Not the meat or the blood, but your heart's awareness of Him [Q 22:37]."
+  - text: "The meat and the blood"
+    correct: false
+    feedback: "Not quite. The Qur'an says neither the meat nor the blood reaches Allah, only your piety [Q 22:37]."
+  - text: "How expensive the animal was"
+    correct: false
+    feedback: "Not quite. Allah looks at the heart. What reaches Him is your piety [Q 22:37]."
+```
+
+### 4 · reveal
+```yaml
+title: "The family behind the Hajj. Tap each card."
+cards:
+  - front: "Who was the son?"
+    back: "Most Muslim scholars say it was **Isma'il** (Ishmael)."
+    pic: icon:Sprout
+  - front: "A dry valley"
+    back: "Ibrahim had earlier settled Isma'il and his mother **Hajar** (Hagar) in a dry valley by the House [Q 14:37]."
+    pic: icon:Sun
+  - front: "Hajar's search"
+    back: "She ran between two hills searching for water, until a spring burst out [Bukhari 3364]. Pilgrims retrace her steps in the **sa'i**."
+    pic: icon:Droplets
+  - front: "The Ka'bah"
+    back: "Later, Ibrahim and Isma'il raised the Ka'bah together [Q 2:127]."
+    pic: kaaba
+```
+
+### 5 · learn
+```yaml
+madhab_variant: true
+pic: icon:HandHeart
+default: "**The udhiyah** (Eid sacrifice) is a sheep or goat, or a share of a cow or camel, sacrificed after the Eid prayer in the days of Eid. At the least, it's a strongly recommended sunnah. Ask your imam about your case."
+hanafi: "**The udhiyah** (Eid sacrifice) is required (wajib) for every sane adult Muslim, not traveling, who owns the nisab (zakat minimum) beyond basic needs and debts. Ask your imam about your case."
+```
+
+### 6 · steps
+```yaml
+title: "The udhiyah, step by step"
+steps:
+  - text: "Check whether it's required for you. {{masjid.name}} will tell you."
+    pic: icon:MessageCircle
+  - text: "Choose a sheep or goat, or a share of a cow or camel."
+    pic: icon:HandHeart
+  - text: "Arrange it. Most people do it through the masjid or a charity."
+    pic: icon:HandCoins
+  - text: "It's sacrificed after the Eid prayer, in the days of Eid. One sacrificed before the prayer is just meat [Bukhari 5545]."
+    pic: icon:CalendarDays
+  - text: "Share it: eat some, gift some, and give some to people in need."
+    pic: icon:Gift
+variants:
+  hanafi:
+    steps:
+      - text: "Check whether it's required for you. Ask the imam if you're not sure."
+        pic: icon:MessageCircle
+      - text: "One sheep or goat per person, or a seventh share of a cow or camel."
+        pic: icon:HandHeart
+      - text: "Arrange it. Most people do it through the masjid or a charity."
+        pic: icon:HandCoins
+      - text: "It's sacrificed after the Eid prayer: today or the next two days. One sacrificed before the prayer is just meat [Bukhari 5545]."
+        pic: icon:CalendarDays
+      - text: "Share it: eat some, gift some, and give some to people in need."
+        pic: icon:Gift
+```
+
+### 7 · scenario
+```yaml
+pic: icon:Hourglass
+situation: "Destiny is a new Muslim working part-time, with a little in savings. She's not sure whether the udhiyah is required for her, and the sacrifice days end soon."
+options:
+  - text: "Ask the imam today; if it's required, arrange a share through the masjid or a charity before the days end"
+    best: true
+    feedback: "Yes. One quick question, and many masjids can still arrange it within the days."
+  - text: "Assume it's only for rich people and skip it"
+    best: false
+    feedback: "Not quite. It depends on savings above basic needs, not on being rich. Ask the imam."
+  - text: "Borrow money to buy a whole cow"
+    best: false
+    feedback: "Not quite. No one needs debt for this, and one share covers one person."
+```
+
+### 8 · steps
+```yaml
+title: "Today's rhythm"
+intro: "The Eid prayer is like Eid al-Fitr's. One thing changes: when you eat."
+steps:
+  - text: "On the way to the prayer, say *Allahu akbar*."
+    pic: icon:Footprints
+  - text: "Pray the two rak'ahs with the extra takbirs, then stay for the khutbah."
+    pic: masjid
+  - text: "Eat **after** the prayer this time, ideally from your sacrifice [Bukhari 5545]."
+    pic: icon:Utensils
+variants:
+  hanafi:
+    steps:
+      - text: "On the way to the prayer, say *Allahu akbar* aloud."
+        pic: icon:Footprints
+      - text: "Pray the two rak'ahs, with three extra takbirs in each, then stay for the khutbah."
+        pic: masjid
+      - text: "Eat **after** the prayer this time, ideally from your sacrifice [Bukhari 5545]."
+        pic: icon:Utensils
+```
+
+### 9 · learn
+```yaml
+audience: women
+pic: community
+text: "**Sisters: come to the Eid prayer!** It isn't required of you, but it's highly encouraged. The Prophet ﷺ had women and girls come out for both Eids [Muslim 890]. `[SCHOLAR: Q36]`"
+bubbles:
+  - "On your period? Come anyway: join the takbir, the du'a and the celebration, and sit out only the prayer itself [Muslim 890]."
+```
+
+### 10 · prayer
+```yaml
+title: "The Eid prayer"
+intro: "Watch it once before you go. Tap Next move, or Play."
+moves:
+  - pose: stand
+    text: "Line up behind the imam. No call to prayer today. Intend the Eid prayer in your heart."
+  - pose: takbir
+    text: "Say the opening *Allahu akbar* after the imam."
+    say: "Allahu akbar"
+  - pose: takbir
+    text: "**The extra takbirs.** The imam says a few more *Allahu akbar*s. Raise your hands when he does, then lower them. Just copy him."
+    say: "Allahu akbar"
+  - pose: qiyam
+    text: "While he recites, do what {{masjid.name}} teaches about reciting behind the imam."
+  - pose: ruku
+    text: "Bow after him, rise, and make two prostrations, as in any prayer. That's rak'ah 1."
+  - pose: qiyam
+    text: "Stand for rak'ah 2. Watch for more extra *Allahu akbar*s: raise your hands when he does, and lower them."
+  - pose: sujud
+    text: "Bow, rise and make two prostrations after him."
+  - pose: tashahhud
+    text: "Sit for the final sitting, as at the end of any prayer."
+  - pose: salam-right
+    text: "Give your salam after the imam's. The prayer is done."
+    say: "As-salamu 'alaykum wa rahmatullah"
+  - pose: tashahhud
+    text: "Stay for the **khutbah** (talk). It comes after the prayer."
+done_text: "Two rak'ahs, a few extra takbirs, then the khutbah. Then the sacrifice."
+variants:
+  hanafi:
+    moves:
+      - pose: stand
+        text: "Line up behind the imam. No call to prayer today. Intend the Eid prayer in your heart."
+      - pose: takbir
+        text: "Raise your hands {men}to your ears{/men}{women}to your shoulders{/women} with the imam: *Allahu akbar*."
+        say: "Allahu akbar"
+      - pose: qiyam
+        text: "Fold your hands and say the opening du'a quietly."
+        say: "Subhanaka Allahumma…"
+      - pose: takbir
+        text: "**Extra takbir 1:** raise your hands with the imam, say *Allahu akbar*, then lower them to your sides."
+        say: "Allahu akbar"
+      - pose: takbir
+        text: "**Extra takbir 2:** the same. Hands up, *Allahu akbar*, hands down to your sides."
+        say: "Allahu akbar"
+      - pose: takbir
+        text: "**Extra takbir 3:** hands up once more, *Allahu akbar*."
+        say: "Allahu akbar"
+      - pose: qiyam
+        text: "Now the imam recites al-Fatiha and a surah. Stand and listen."
+      - pose: ruku
+        text: "Bow after him, rise, and make two prostrations. That's rak'ah 1."
+      - pose: qiyam
+        text: "Stand for rak'ah 2. This time the imam recites **first**. Listen."
+      - pose: takbir
+        text: "**After the recitation, just before bowing:** three extra takbirs. Each time: hands up, *Allahu akbar*, hands down to your sides."
+        say: "Allahu akbar ×3"
+      - pose: ruku
+        text: "Then *Allahu akbar* again, and bow with the imam."
+      - pose: sujud
+        text: "Rise, and make two prostrations after him."
+      - pose: tashahhud
+        text: "Sit for the final sitting, as at the end of any prayer."
+      - pose: salam-right
+        text: "Give your salam after the imam's. The prayer is done."
+        say: "As-salamu 'alaykum wa rahmatullah"
+      - pose: tashahhud
+        text: "Stay for the **khutbah** (talk). It comes after the prayer."
+    done_text: "Three extra takbirs in each rak'ah: before the recitation in the first, after it in the second. Then the khutbah, then the sacrifice."
+```
+
+### 11 · sort
+```yaml
+prompt: "Which Eid is it?"
+buckets: ["Eid al-Fitr", "Eid al-Adha"]
+items:
+  - text: "Comes the day after Ramadan ends"
+    bucket: 0
+    why: "Eid al-Fitr celebrates finishing the month of fasting."
+  - text: "Remembers Ibrahim's trust in Allah"
+    bucket: 1
+    why: "Today's Eid goes back to Ibrahim and his son [Q 37:100–111]."
+  - text: "Eat a few dates before the prayer"
+    bucket: 0
+    why: "On Eid al-Fitr you eat first. Today you wait."
+  - text: "Eat after the prayer, ideally from your sacrifice"
+    bucket: 1
+    why: "That's this Eid [Bukhari 5545]."
+  - text: "The udhiyah sacrifice"
+    bucket: 1
+    why: "It's offered after today's Eid prayer, in the days of Eid."
+```
+
+### 12 · widget
+```yaml
+widget: timeline
+prompt: "The days of Eid"
+text: "Eid al-Adha is more than one day. Tap through them."
+events:
+  - when: "10th of Dhul Hijjah"
+    title: "Eid day"
+    text: "The Eid prayer, then the udhiyah. No fasting today."
+    pic: crescent
+  - when: "11th"
+    title: "Still Eid"
+    text: "The sacrifice can still be offered. No fasting."
+    pic: icon:HandHeart
+  - when: "12th"
+    title: "Still Eid"
+    text: "Keep remembering Allah. No fasting."
+    pic: icon:Sparkles
+  - when: "13th"
+    title: "The last day"
+    text: "Many Muslims say a takbir after each prayer through today. Still no fasting."
+    pic: icon:CalendarDays
+variants:
+  hanafi:
+    events:
+      - when: "10th of Dhul Hijjah"
+        title: "Eid day"
+        text: "The Eid prayer, then the udhiyah: the first day is best. Takbir al-Tashriq after each obligatory prayer. No fasting today."
+        pic: crescent
+      - when: "11th"
+        title: "Still Eid"
+        text: "The udhiyah can still be offered. Takbir al-Tashriq after each obligatory prayer. No fasting."
+        pic: icon:HandHeart
+      - when: "12th"
+        title: "Last day for the udhiyah"
+        text: "The sacrifice can be offered until sunset. Keep up Takbir al-Tashriq. No fasting."
+        pic: icon:Sunset
+      - when: "13th"
+        title: "The last day"
+        text: "Keep saying Takbir al-Tashriq after each obligatory prayer until Asr today. Still no fasting."
+        pic: icon:CalendarDays
+```
+
+### 13 · ask_ai
+```yaml
+chips:
+  - "How do I explain this story to my Christian family?"
+  - "Can I give udhiyah meat to my non-Muslim family?"
+  - "Can I do the sacrifice through a charity overseas?"
+  - "I missed the Eid prayer. What now?"
+```
+
+### 14 · do_today
+```yaml
+pic: community
+text: "Pray, celebrate, and check on your udhiyah."
+steps:
+  - "Go to the Eid prayer and greet people with \"Eid Mubarak\""
+  - "Spend part of the day with someone"
+  - "If the udhiyah applies to you and isn't arranged yet, ask {{masjid.name}} today"
+log: attended_eid_prayer
+optional_extra: "Share some food or sweets with your family or neighbors, and tell them the story of Ibrahim in two sentences."
+```
+
+### 15 · takeaway
+```yaml
+pic: icon:HandHeart
+text: "Eid al-Adha honors Ibrahim's trust in Allah. What reaches Allah is your sincerity. Pray, sacrifice if it applies to you, share, and celebrate."
+```
+
+### 16 · closing
+Ibrahim's story is one of trust in Allah, one step at a time. Yours is too.
+
+---
+
+## Check
+```yaml
+- prompt: "Which prophet's story is at the heart of Eid al-Adha?"
+  options:
+    - text: "Ibrahim (Abraham) and his son"
+      correct: true
+      feedback: "Right. Ibrahim's readiness to obey and Allah's ransom of his son [Q 37:100–111]."
+    - text: "Musa (Moses) and Pharaoh"
+      correct: false
+      feedback: "Not quite. Eid al-Adha remembers Ibrahim and his son [Q 37:100–111]."
+- prompt: "When is the udhiyah sacrificed?"
+  options:
+    - text: "After the Eid prayer, in the days of Eid"
+      correct: true
+      feedback: "Right. Before the prayer it's only meat, not the Eid sacrifice [Bukhari 5545]."
+    - text: "Any time before Eid"
+      correct: false
+      feedback: "Not quite. It comes after the Eid prayer [Bukhari 5545]."
+```
+
+## AI guide context
+**Lesson facts**
+- Women: not required, but **highly encouraged** to attend the Eid prayer (the program's position); the Prophet ﷺ had women and girls, even those on their period, come out for both Eids, with those on their period joining the takbir and du'a but not the prayer [Muslim 890]. Some later Hanafi scholars discouraged women attending; if asked, present the encouragement warmly and suggest asking the imam (scholar question Q36).
+- Ibrahim's dream and his son's acceptance; Allah ransomed the son with a great sacrifice [Q 37:100–111]. The son isn't named in this passage; most Muslim scholars hold it was Isma'il. Neither meat nor blood reaches Allah, but piety [Q 22:37]. Ibrahim was "a Muslim," neither Jew nor Christian [Q 3:67].
+- Hajar and Isma'il settled near the House [Q 14:37]; Hajar's search between the hills and Zamzam [Bukhari 3364]; Ibrahim and Isma'il raised the House [Q 2:127].
+- The sacrifice comes after the Eid prayer; one slaughtered before it is just meat [Bukhari 5545].
+- Hanafi udhiyah: necessary (wajib) on a sane, mature, resident Muslim owning the nisab beyond immediate needs [SeekersGuidance (who has to sacrifice)]; each qualifying person in a household sacrifices for themselves; one sheep or goat per person or a seventh of a cow or camel; time: after the Eid prayer on the 10th until sunset on the 12th, the first day best; eat some, give some, gift some (thirds is the recommended split); one may appoint someone (the masjid, a charity) to do it [Qibla via IslamQA.org 35379].
+- Eid al-Adha: eat after the prayer; takbir aloud on the way (Hanafi); Takbir al-Tashriq through Asr of the 13th; no fasting on the 10th–13th [SeekersGuidance (fiqh of the two Eids); First Instructions Part III].
+
+**Likely questions**
+- *"Explaining it to Christian family?"* Common ground: the same Abraham, a test of faith, God providing the ram. The one difference (Isaac or Ishmael) can be stated gently, without debate. Abraham is honored by Jews, Christians and Muslims.
+- *"Meat to non-Muslim family?"* Many scholars, including in the Hanafi school, allow gifting udhiyah meat to non-Muslims; confirm with the imam. It's a lovely way to include them.
+- *"Through a charity overseas?"* Appointing an agent is allowed; many do it through reputable charities. The imam can advise on timing differences across time zones.
+- *"I missed the Eid prayer."* Hanafi: it isn't made up alone. Celebrate the day anyway and say the takbir after prayers.
+- *"I owed it in past years and didn't know."* Escalate gently to the imam; don't overwhelm.
+
+**Escalate:** whether a specific person owes the udhiyah; past years' missed udhiyah; slaughtering personally (rules, local law).
+
+**Don't**
+- Don't quote prices or name charities.
+- Don't debate Isaac vs. Ishmael or put down the Bible's version.
+- Don't describe the Prophet ﷺ, Ibrahim or any prophet visually.
+
+## Madhab note
+- **Udhiyah:** the Hanafi school holds it necessary (wajib) for those who meet its conditions; the Maliki, Shafi'i and Hanbali schools hold it a confirmed sunnah for those who can afford it.
+- **Days:** the Hanafi, Maliki and Hanbali schools allow the sacrifice from after the Eid prayer until the 12th; the Shafi'i school until the 13th.
+
+## Sources
+- Qur'an [37:100–111](https://quran.com/37/100-111), [14:37](https://quran.com/14/37), [2:127](https://quran.com/2/127), [22:37](https://quran.com/22/37), [3:67](https://quran.com/3/67).
+- [Bukhari 3364](https://sunnah.com/bukhari:3364): Hajar, Isma'il and the spring of Zamzam.
+- [Bukhari 5545](https://sunnah.com/bukhari:5545): first the prayer, then the sacrifice.
+- [Abu Dawud 1134](https://sunnah.com/abudawud:1134) (sahih, al-Albani): the two Eids.
+- [SeekersGuidance: Who has to sacrifice (udhiya)?](https://seekersguidance.org/answers/hanafi-fiqh/who-has-to-sacrifice-udhiya/) (Ustadh Tabraze Azam, rev. Shaykh Faraz Rabbani).
+- [Qibla via IslamQA.org 35379: The fiqh of the qurbani of Eid al-Adha](https://islamqa.org/hanafi/qibla-hanafi/35379/the-fiqh-of-the-qurbani-of-eid-ul-adha/).
+- [SeekersGuidance: The fiqh of Eid al-Fitr and Eid al-Adha](https://seekersguidance.org/answers/general-counsel/fiqh-eid-al-fitr-eid-al-adha/).
+- [[Source - First Instructions on Worship]] Part II (the Eid prayer) and Part III (prohibited fasts). [[Source - The Revealed Path]] ch. 6 (the sacrifice).
+- Udhiyah (verified, T2 final review): [SeekersGuidance 76175: who has to sacrifice (Hanafi: wajib on a sane, adult, resident Muslim with nisab beyond needs)](https://islamqa.org/hanafi/seekersguidance-hanafi/76175/); [SeekersGuidance: udhiya without a year of nisab (nisab on the 10th–12th suffices)](https://seekersguidance.org/answers/hanafi-fiqh/is-it-obligatory-to-perform-udhiya-if-one-hasnt-maintained-nisab-for-over-a-lunar-year/). Extra takbirs and Takbir al-Tashriq: SeekersGuidance, fiqh of the two Eids (checked).
+
+## Scholar flags
+- **Screen 9 (Q36).** Women are told the Eid prayer isn't required of them but is highly encouraged, citing Muslim 890 (women and girls, even on their period, brought out for both Eids). Set by the program (Shayan, 2026-10-07); later Hanafi scholars generally discouraged women attending, so a scholar's view on the wording is welcome.

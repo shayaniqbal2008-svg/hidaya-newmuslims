@@ -1,0 +1,223 @@
+---
+track: seerah
+order: 2
+phase: null
+unit: null
+title: "The Year of the Elephant"
+hook: "An army with an elephant marched on the Ka'bah. It never arrived. That same year, a boy named Muhammad was born."
+minutes: 6
+skills: [T2, B6]
+pain_points: [loneliness, family]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q43, Q44]
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, Ka'bah, Makkah, Isma'il, surah, Quraysh]
+sources: [Q 105:1–5, Muslim 1162, Muslim 2276, Bukhari 3902, IslamQA 147601, IslamQA 11575, IslamQA 289868, Yaqeen (What Islam Says About Prophet Muhammad), Dar al-Ifta Egypt (seerah parts 1–2), Qalam Institute Sirah Podcast ep. 8–10]
+format: 2
+---
+# seerah-02 · The Year of the Elephant
+
+### 1 · hook
+```yaml
+pic: kaaba
+text: "**An army marched on the Ka'bah, with an elephant at the front.** It never arrived. That same year, in the same town, a baby boy was born."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Bird
+text: "**The army of the elephant.** A powerful army came to destroy the Ka'bah, bringing an elephant. It was turned back. The Qur'an says Allah sent against them *\"birds in flocks\"* [Q 105:3, Saheeh Intl.]."
+bubbles:
+  - "A whole **surah** (chapter) tells it in five short verses: Surah al-Fil, \"The Elephant\" [Q 105:1–5]."
+  - "The Arabs remembered it so well that they called that year the Year of the Elephant [IslamQA 147601]."
+```
+
+### 3 · fill
+```yaml
+before: "The army came to destroy the Ka'bah. Allah turned it back with"
+after: "[Q 105:3]."
+options:
+  - text: "birds in flocks"
+    correct: true
+    feedback: "Yes. Surah al-Fil tells it in five verses. The House was protected without a single Makkan army."
+  - text: "a great flood"
+    correct: false
+    feedback: "Not quite. The Qur'an says Allah sent birds in flocks against them."
+  - text: "the army of Makkah"
+    correct: false
+    feedback: "Not quite. Makkah didn't defeat them. Allah sent birds in flocks."
+```
+
+### 4 · learn
+```yaml
+pic: icon:Baby
+text: "**A baby in Makkah.** That same year, about 570 CE, Muhammad ﷺ was born in Makkah, on a Monday [Muslim 1162; IslamQA 147601]. The month was Rabi' al-Awwal, by most accounts. `[SCHOLAR: Q44]`"
+bubbles:
+  - "Years later he fasted on Mondays. Asked why, he said it was the day he was born [Muslim 1162]."
+  - "His father, 'Abdullah, had died before he was born [IslamQA 11575; Dar al-Ifta 168]."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "His whole life, at a glance"
+text: "This is where the series is going. You're at the first stop."
+events:
+  - when: "About 570 CE"
+    title: "Born in Makkah (you are here)"
+    text: "Born in the Year of the Elephant, after his father had already died [IslamQA 147601; IslamQA 11575]."
+    pic: icon:MapPin
+  - when: "Age about 25"
+    title: "Marries Khadijah"
+    text: "A respected businesswoman notices his honesty. Episode 6 [IslamQA 11575]."
+    pic: icon:HeartHandshake
+  - when: "About 610 CE, age 40"
+    title: "The first revelation"
+    text: "In the cave of Hira, the Qur'an begins [Bukhari 3902]."
+    pic: icon:Mountain
+  - when: "622 CE"
+    title: "The hijra"
+    text: "After thirteen years of preaching in Makkah, he moves to Madinah [Bukhari 3902]."
+    pic: icon:Route
+  - when: "632 CE, age 63"
+    title: "His death"
+    text: "He dies in Madinah, ten years after the move [Bukhari 3902; Yaqeen]."
+    pic: icon:Sunset
+```
+
+### 6 · learn
+```yaml
+pic: kaaba
+text: "**A family line back to Isma'il.** His clan was Banu Hashim, part of Quraysh, the tribe that ran Makkah. Their line went back to Isma'il, the son who helped raise the Ka'bah [Muslim 2276; IslamQA 289868]."
+bubbles:
+  - "The early biographers say his grandfather, 'Abd al-Muttalib, chose his name: Muhammad, which means \"the much-praised\" [Qalam ep. 9; Dar al-Ifta 167]."
+```
+
+### 7 · order
+```yaml
+prompt: "Put his family line in order, from the widest to the closest [Muslim 2276]."
+items:
+  - "The descendants of Isma'il"
+  - "The tribe of Kinanah"
+  - "The tribe of Quraysh"
+  - "The clan of Banu Hashim"
+  - "Muhammad ﷺ"
+feedback: "He described his own line this way: chosen from Isma'il's descendants, down through Kinanah, Quraysh and Banu Hashim [Muslim 2276]."
+```
+
+### 8 · learn
+```yaml
+pic: icon:Shield
+text: "**Protected, with no father there.** He never met his father. The same Lord who turned back an army was caring for a baby who had already lost so much. Allah's plan never depended on who was standing beside him."
+bubbles:
+  - "If you're building a life of faith without the family support you hoped for, his story starts in that same place. Your worth was never about who stands behind you."
+```
+
+### 9 · scenario
+```yaml
+pic: icon:Users
+situation: "Jordan became Muslim last month. Their parents aren't speaking to them, and their old friends think it's a phase. Jordan feels like nobody has their back. What's the most helpful way to see it?"
+options:
+  - text: "Allah's care doesn't depend on who's around me. I'll lean on Him, and let my masjid and mentor in"
+    best: true
+    feedback: "Yes. Allah protected His House, and a baby whose father was gone. Then let people help too."
+  - text: "Feeling this alone means I made a mistake"
+    best: false
+    feedback: "Not quite. Loneliness is a feeling, not a verdict. The Prophet ﷺ himself began life with a loss."
+  - text: "Keep it all inside until things get better on their own"
+    best: false
+    feedback: "Not quite. Hard seasons are easier shared. Talk to {{mentor.name}}, or ask the AI guide for ideas."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "What does the name Muhammad mean?"
+  - "What is Surah al-Fil about?"
+  - "Why don't sources agree on his birthday?"
+  - "My family isn't talking to me. What can I do?"
+```
+
+### 11 · do_today
+```yaml
+pic: quran
+text: "Read the elephant's story for yourself: five verses."
+steps:
+  - "Open Surah al-Fil (chapter 105) in the Qur'an or on quran.com"
+  - "Read all five verses slowly, in English"
+  - "Ask yourself: who protected the House, and how?"
+log: null
+```
+
+### 12 · takeaway
+```yaml
+pic: icon:Bird
+text: "In the year Allah protected His House, He brought into the world the man who would call people back to it."
+```
+
+### 13 · closing
+Next episode: a baby no nurse wanted, and the woman who took him anyway.
+
+---
+
+## Check
+```yaml
+- prompt: "What happened in the Year of the Elephant?"
+  options:
+    - text: "An army came to destroy the Ka'bah and Allah turned it back; the Prophet ﷺ was born that year"
+      correct: true
+      feedback: "Right. Surah al-Fil tells the story [Q 105:1–5], and he was born in Makkah that same year."
+    - text: "The Ka'bah was destroyed and rebuilt"
+      correct: false
+      feedback: "Not quite. The army never reached it. Allah turned it back with birds in flocks [Q 105:1–5]."
+- prompt: "Who was the Prophet's ﷺ father, and what happened to him?"
+  options:
+    - text: "'Abdullah, who died before his son was born"
+      correct: true
+      feedback: "Right. He was born already without a father, and still protected."
+    - text: "'Abd al-Muttalib, who raised him from birth"
+      correct: false
+      feedback: "Not quite. 'Abd al-Muttalib was his grandfather. His father 'Abdullah died before he was born."
+```
+
+## AI guide context
+**Lesson facts**
+- An army "of the elephant" came to destroy the Ka'bah; Allah turned it back with birds in flocks [Q 105:1–5].
+- The Prophet ﷺ was born in Makkah in the Year of the Elephant, about 570 CE (some calculate 571) [IslamQA 147601; Yaqeen; Qalam ep. 9]; on a Monday [Muslim 1162]; in Rabi' al-Awwal by most accounts. The exact day is disputed (2nd, 8th, 9th, 10th, 12th or 17th are all reported; IslamQA 147601 calls 8th–12th the strongest range). `[SCHOLAR: Q44]`
+- Lineage: Muhammad son of 'Abdullah son of 'Abd al-Muttalib, of Banu Hashim of Quraysh, from the descendants of Isma'il [Muslim 2276; IslamQA 289868].
+- His father 'Abdullah died before he was born [IslamQA 11575; Qalam ep. 8; Dar al-Ifta Egypt, seerah part 2].
+- The early biographers say 'Abd al-Muttalib named him; "Muhammad" means the much-praised [Qalam ep. 9; Dar al-Ifta Egypt, seerah part 1 for the meaning]. Keep the naming as "the early biographers say".
+- Life outline used in the timeline: revelation at forty, thirteen years in Makkah, ten in Madinah, died at sixty-three [Bukhari 3902]; 622 CE and 632 CE [Yaqeen; Dar al-Ifta Egypt].
+
+**Likely questions**
+- *"When exactly is his birthday?"* Rabi' al-Awwal by most accounts; the day is disputed, and scholars give several dates. Don't pick one. `[SCHOLAR: Q44]`
+- *"Should I celebrate the Mawlid?"* Scholars differ on celebrating his birthday. Don't argue either side; offer "Ask my imam" so the convert hears their masjid's view.
+- *"Did amazing things happen when he was born?"* Some well-known stories (a Persian palace shaking, a sacred fire going out) have chains scholars question, so this track leaves them out. `[SCHOLAR: Q43]`
+- *"Who led the army?"* The Qur'an doesn't name him. Say the Qur'an's account is what's certain and that the early biographers give more detail; offer to go deeper only with sources from this lesson.
+- *"My family won't talk to me."* Respond with care: listen first, then offer practical steps (keep kind contact open, lean on the mentor, Day 35's skills for family). If there's any danger (being thrown out, violence), follow the safety rule.
+
+**Escalate:** celebrating the Mawlid (Q44); any family conflict that is unsafe (safety rule, never only the imam queue).
+
+**Don't**
+- Don't give a single birth date as fact.
+- Don't tell the birth-wonder stories as fact; if asked, they are "well-known stories whose chains scholars consider weak".
+- Don't argue for or against Mawlid celebrations.
+- Don't describe the Prophet's ﷺ appearance as a baby or picture him.
+
+## Sources
+- Qur'an [105:1–5](https://quran.com/105/1-5) (the army of the elephant).
+- [Muslim 1162](https://sunnah.com/muslim:1162) (Sahih): fasting Mondays, the day he was born.
+- [Muslim 2276](https://sunnah.com/muslim:2276) (Sahih): his line through Isma'il, Kinanah, Quraysh and Banu Hashim.
+- [Bukhari 3902](https://sunnah.com/bukhari:3902) (Sahih): revelation at forty, thirteen years in Makkah, ten in Madinah, died at sixty-three.
+- [IslamQA 147601, *Date of the Prophet's birth and death*](https://islamqa.info/en/answers/147601): Year of the Elephant; 570/571; the disputed day.
+- [IslamQA 11575, *Who Is Muhammad?*](https://islamqa.info/en/answers/11575): his father's death; marriage at 25.
+- [IslamQA 289868, *The lineage of Prophet Muhammad*](https://islamqa.info/en/answers/289868).
+- [Yaqeen Institute, *What Islam Says About Prophet Muhammad ﷺ*](https://yaqeeninstitute.org/what-islam-says-about/prophet-muhammad): born 570, died 632.
+- Dar al-Ifta Egypt: [*A Closer Look at the World before the Advent of Prophet Muhammad (part 1)*](https://www.dar-alifta.org/en/article/details/167/a-closer-look-at-the-world-before-the-advent-of-prophet-muhammadpart-1) (the meaning of "Muhammad"); [*The Early Years of the Prophet's Childhood (part 2)*](https://www.dar-alifta.org/en/article/details/168/the-early-years-of-the-prophet%e2%80%99s-childhood-part-2).
+- Qalam Institute, *The Sīrah Podcast*: [ep. 8, The Prophet's parents](https://www.qalaminstitute.org/2012/01/seerah-life-of-the-prophet-the-prophets-parents/); [ep. 9, Birth of the Messenger pt. 1](https://www.qalaminstitute.org/2012/01/seerah-life-of-the-prophet-birth-of-the-messenger-pt-1/); [ep. 10, Birth of the Messenger pt. 2](https://www.qalaminstitute.org/2012/01/seerah-life-of-the-prophet-birth-of-the-messenger-pt-2/) (notes that the birth-wonder reports are questioned).
+- Fact rows 02.1–02.6 in [[Seerah Fact-Check Log]]; birth-wonder stories: row X2.
+
+## Scholar flags
+- **Screen 4 and AI guide (Q44).** Drafted as: "Rabi' al-Awwal, by most accounts", no day given; whether to celebrate the Mawlid is not discussed and goes to the imam.
+- **AI guide (Q43).** The wonders reported at his birth are left off screens; if asked, they are "well-known stories whose chains scholars consider weak".

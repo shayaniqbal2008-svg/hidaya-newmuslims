@@ -1,0 +1,216 @@
+---
+track: seerah
+order: 22
+phase: null
+unit: null
+title: "Arrival: Quba and the camel that knelt"
+hook: "Every morning for days, a whole town walked out to wait for one traveller."
+minutes: 6
+skills: [T2, B6]
+pain_points: [belonging, loneliness]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q43]
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, Makkah, masjid, Hijri]
+sources: [Bukhari 3906, Bukhari 428, Bukhari 3925, Bukhari 3911, Bukhari 3934, IslamQA 11575, IslamQA 119722, Dar al-Ifta Egypt (seerah part 9), Yaqeen (What Islam Says About Prophet Muhammad)]
+format: 2
+---
+# seerah-22 · Arrival: Quba and the camel that knelt
+
+### 1 · hook
+```yaml
+pic: icon:Sunrise
+text: "**Every morning, they walked out of town to wait.** The Muslims of Madinah had heard the Prophet ﷺ had left Makkah. Day after day they stood at the edge of town until the noon heat sent them home [Bukhari 3906]."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Eye
+text: "**Spotted at last.** One day, just after they'd gone home, a Jewish man on a fort roof saw white-clad travellers coming out of the desert haze. He shouted the news, and the Muslims rushed out to meet him [Bukhari 3906]."
+bubbles:
+  - "The people of Madinah had never been so joyful about anything [Bukhari 3925]."
+```
+
+### 3 · choice
+```yaml
+pic: community
+prompt: "Nobody in Madinah knew his face yet. People asked Abu Bakr who the man with him was. Abu Bakr said: someone who guides me on the way. What did he mean?"
+options:
+  - text: "The way of good: the man guiding his life"
+    correct: true
+    feedback: "Right. Listeners thought he meant the road, but Abu Bakr meant the way of good [Bukhari 3911]."
+  - text: "Their desert guide"
+    correct: false
+    feedback: "Not quite. Many listeners thought so. Abu Bakr meant the man who guided him to good [Bukhari 3911]."
+  - text: "Nothing; it was a joke"
+    correct: false
+    feedback: "Not quite. It was true and careful: he meant the way of good [Bukhari 3911]."
+```
+
+### 4 · learn
+```yaml
+pic: masjid
+text: "**First stop: Quba.** He stayed about two weeks at Quba, on the edge of Madinah, with the clan of Banu 'Amr ibn 'Awf. There he founded a **masjid**, described in the hadith as \"founded on piety\" [Bukhari 3906; Bukhari 428]."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "Year one begins"
+text: "The journey's end, in about 622 CE."
+events:
+  - when: "Each morning"
+    title: "Waiting"
+    text: "Madinah's Muslims wait at the edge of town until the heat drives them home [Bukhari 3906]."
+    pic: icon:Sunrise
+  - when: "Arrival"
+    title: "Spotted"
+    text: "A man on a fort roof sees them and calls out [Bukhari 3906]."
+    pic: icon:Eye
+  - when: "About two weeks"
+    title: "Quba"
+    text: "He stays with Banu 'Amr ibn 'Awf and founds a masjid [Bukhari 428]."
+    pic: masjid
+  - when: "Then"
+    title: "Into Madinah"
+    text: "His camel kneels at the spot that becomes his masjid [Bukhari 3906]."
+    pic: icon:MapPin
+  - when: "That year"
+    title: "Year 1"
+    text: "The Companions later count the Muslim calendar from this journey [Bukhari 3934]."
+    pic: icon:CalendarDays
+```
+
+### 6 · learn
+```yaml
+pic: icon:MapPin
+text: "**The camel that knelt.** Riding into Madinah, everyone wanted him as their guest. He let his camel walk on. Where it knelt, his masjid would stand. He stayed nearby with Abu Ayyub al-Ansari [Bukhari 3906; Bukhari 428; IslamQA 11575]."
+bubbles:
+  - "Everyone wanted to host him. Instead of choosing one family over the rest, he let the camel walk on."
+```
+
+### 7 · fill
+```yaml
+before: "The Muslim calendar, the Hijri year, counts from"
+after: "[Bukhari 3934]"
+options:
+  - text: "his journey to Madinah"
+    correct: true
+    feedback: "Yes. Day 79 covered this: year 1 is the year of the hijra, about 622 CE."
+  - text: "his birth"
+    correct: false
+    feedback: "Not quite. The Companions chose the hijra, not his birth or his death."
+  - text: "the first revelation"
+    correct: false
+    feedback: "Not quite. They chose the move to Madinah as the start of year 1."
+```
+
+### 8 · learn
+```yaml
+pic: community
+text: "**A town that waited for a stranger.** He arrived with almost nothing, and a whole city made room for him. Welcoming newcomers is sunnah. A masjid that greets a new convert warmly is walking in Madinah's footsteps."
+bubbles:
+  - "And if you're the newcomer: you're not a burden. You're the guest they've been hoping for."
+```
+
+### 9 · scenario
+```yaml
+pic: masjid
+situation: "Aaliyah, a few months Muslim, notices a nervous woman standing near the shoe racks at Jumu'ah, clearly her first time. Aaliyah is shy herself."
+options:
+  - text: "Walk over, say salam, and show her where to go"
+    best: true
+    feedback: "Yes. A small welcome, like Madinah's. She remembers how that first visit felt."
+  - text: "Leave it to the regulars; she's still new herself"
+    best: false
+    feedback: "Not quite. Being new makes her the perfect welcomer. She knows exactly what that moment feels like."
+  - text: "Wait to see if she comes back next week"
+    best: false
+    feedback: "Not quite. A first visit is when a welcome matters most. Madinah walked out to meet him."
+```
+
+### 10 · ask_ai
+```yaml
+chips:
+  - "Was \"Tala'a al-badru\" sung when he arrived?"
+  - "What is special about Masjid Quba?"
+  - "Who was Abu Ayyub al-Ansari?"
+  - "How can I help new Muslims feel welcome?"
+```
+
+### 11 · do_today
+```yaml
+pic: icon:UserPlus
+text: "Welcome one newcomer."
+steps:
+  - "Notice someone new: at the masjid, at work, at school"
+  - "Say hello and offer one small help: a seat, directions, your name"
+log: null
+```
+
+### 12 · takeaway
+```yaml
+pic: icon:Sunrise
+text: "A whole town waited in the heat for one traveller. Be someone's welcome, for Allah's sake."
+```
+
+### 13 · closing
+Next episode: the first thing he built was a masjid. The second was a brotherhood.
+
+---
+
+## Check
+```yaml
+- prompt: "Where did he stay first, before entering Madinah?"
+  options:
+    - text: "Quba, where he founded a masjid"
+      correct: true
+      feedback: "Right. About two weeks with Banu 'Amr ibn 'Awf, and the masjid founded on piety."
+    - text: "Ta'if"
+      correct: false
+      feedback: "Not quite. Ta'if was years earlier. On arrival he first stayed at Quba."
+- prompt: "How was the site of his masjid in Madinah chosen?"
+  options:
+    - text: "His camel knelt there"
+      correct: true
+      feedback: "Right. He let the camel walk on, and where it knelt became his masjid [Bukhari 3906]."
+    - text: "The richest family offered it"
+      correct: false
+      feedback: "Not quite. Everyone wanted to host him. He let his camel choose the spot."
+```
+
+## AI guide context
+**Lesson facts**
+- He arrived in 622 CE, year 1 of the Muslim calendar [Bukhari 3934; Dar al-Ifta Egypt (seerah part 9); Yaqeen (What Islam Says About Prophet Muhammad)].
+- The Muslims of Madinah went out every morning to wait for him until the noon heat drove them back; a Jewish man on a fort roof spotted the travellers and called out [Bukhari 3906].
+- He first stayed at Quba with Banu 'Amr ibn 'Awf and founded the masjid "founded on piety"; the stay is ten nights in Bukhari 3906 and fourteen in Bukhari 428, so say "about two weeks" [Bukhari 3906; Bukhari 428; IslamQA 11575].
+- The people of Madinah had never been so joyful [Bukhari 3925]. Asked who the man with him was, Abu Bakr said someone who guides me on the way, meaning the way of good [Bukhari 3911].
+- In Madinah everyone wanted to host him; he let the camel go, it knelt at the place that became his masjid, and he stayed with Abu Ayyub al-Ansari [Bukhari 3906; Bukhari 428; IslamQA 11575].
+
+**Likely questions**
+- *"Did they sing Tala'a al-badru when he arrived?"* It's a beloved **nasheed** Muslims have sung for centuries to remember this day; the report that it was sung then has a weak chain [IslamQA 119722]. Enjoy it as a song, not as history. `[SCHOLAR: Q43]`
+- *"What is special about Masjid Quba?"* The masjid he founded on arrival, described as founded on piety [Bukhari 3906]. Don't add reward claims that aren't in the bank.
+- *"Who was Abu Ayyub?"* A man of Madinah at whose house he stopped and stayed on arrival [Bukhari 428; IslamQA 11575].
+- *"How can I help new Muslims feel welcome?"* Simple things: greet them, sit with them, introduce them to one person, follow up. Point to the mentor programme.
+
+**Escalate:** nothing specific.
+
+**Don't**
+- Don't present Tala'a al-badru as sung on the day.
+- Don't give the exact number of nights at Quba as certain.
+
+## Sources
+- [Bukhari 3906](https://sunnah.com/bukhari:3906) (Sahih): waiting each morning; the man on the fort roof; Quba and its masjid; the camel kneeling.
+- [Bukhari 428](https://sunnah.com/bukhari:428) (Sahih): Quba (fourteen nights); riding into Madinah; Abu Ayyub's house.
+- [Bukhari 3925](https://sunnah.com/bukhari:3925) (Sahih): never so joyful.
+- [Bukhari 3911](https://sunnah.com/bukhari:3911) (Sahih): a man who guides me on the way.
+- [Bukhari 3934](https://sunnah.com/bukhari:3934) (Sahih): the calendar from the hijra.
+- [IslamQA 11575, *Who Is Muhammad?*](https://islamqa.info/en/answers/11575): over ten nights at Quba; Abu Ayyub.
+- [IslamQA 119722, *The nasheed Tala'a al-badru*](https://islamqa.info/en/answers/119722) (AI guide only): its chain is weak.
+- [Dar al-Ifta Egypt, *The years 3–6 before the Hijrah (part 9)*](https://www.dar-alifta.org/en/article/details/175/) (footnote: 622 CE).
+- [Yaqeen Institute, *What Islam Says About Prophet Muhammad ﷺ*](https://yaqeeninstitute.org/what-islam-says-about/prophet-muhammad): died 632, eleven years after the hijra.
+- Fact rows 22.1–22.6 and X14 in [[Seerah Fact-Check Log]].
+
+## Scholar flags
+- **AI guide (Q43).** *Tala'a al-badru* is treated as a song sung for centuries, with the note that the report of it being sung on the day has a weak chain.

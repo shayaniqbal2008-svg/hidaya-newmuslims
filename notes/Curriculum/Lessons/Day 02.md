@@ -1,0 +1,282 @@
+---
+day: 2
+phase: 1
+unit: 1
+title: "Getting ready to pray: wudu, times and direction"
+hook: "Five times a day, you'll have a few minutes with Allah. Today you get ready."
+minutes: 7
+skills: [P1, P2]
+pain_points: [skill]
+logs: [did_first_wudu]
+madhab_sensitive: true
+scholar_flags: [Q7, Q17]
+status: draft-pending-scholar-review
+glossary: [salah, wudu, qibla, Ka'bah, Fajr, Dhuhr, Asr, Maghrib, Isha, Bismillah, Allah, ﷺ]
+sources: [Q 5:6, Q 2:144, Q 4:103, First Instructions on Worship ch. 3 and 5, Welcome to Islam D2, IslamQA 76115, IslamQA 88040, SeekersGuidance (Hanafi nullifiers), SeekersGuidance 167692, Research Notes - Core Essentials §3–4]
+format: 2
+---
+# Day 2 · Getting ready to pray: wudu, times and direction
+
+### 1 · hook
+```yaml
+pic: prayer-mat
+text: "Five times a day, you step away for a few minutes with Allah: that's **salah** (the prayer). Today you get three things ready: your **wudu**, your **times** and your **direction**. Tomorrow, you pray."
+```
+
+### 2 · learn
+```yaml
+pic: water
+text: "**Wudu** is a short wash you do before praying: about two minutes at any sink. The Qur'an names four parts: **face, arms, head and feet** [Q 5:6]. The Prophet ﷺ added a few more steps, and we do them all."
+```
+
+### 3 · steps
+```yaml
+title: "Wudu, step by step"
+intro: "Take off nail polish first: water has to reach the skin. Wash each part 3 times, right side before left."
+steps:
+  - text: "Intend it in your heart and say *Bismillah* (in the name of Allah)"
+    pic: intention
+  - text: "Wash your hands up to the wrists, between the fingers too"
+    pic: wudu:hands
+  - text: "Rinse your mouth"
+    pic: wudu:mouth
+  - text: "Sniff a little water into your nose, then blow it out"
+    pic: wudu:nose
+  - text: "Wash your face: hairline to chin, ear to ear"
+    pic: wudu:face
+  - text: "Wash your right arm up to and including the elbow, then the left"
+    pic: wudu:arms
+  - text: "Wipe your head **once** with wet hands, front to back"
+    pic: wudu:head
+  - text: "Wipe your ears **once**"
+    pic: wudu:ears
+  - text: "Wash your right foot up to and including the ankle, between the toes too, then the left"
+    pic: wudu:feet
+done_text: "That's wudu. Most people have it down in a day or two."
+```
+
+### 4 · order
+```yaml
+prompt: "Put the steps of wudu in order."
+items:
+  - "Intend it and say Bismillah"
+  - "Wash your hands"
+  - "Rinse your mouth"
+  - "Rinse your nose"
+  - "Wash your face"
+  - "Wash your arms to the elbows"
+  - "Wipe your head and ears"
+  - "Wash your feet to the ankles"
+pics: [intention, "wudu:hands", "wudu:mouth", "wudu:nose", "wudu:face", "wudu:arms", "wudu:head", "wudu:feet"]
+feedback: "Keep this order every time: it's how the Prophet ﷺ made wudu."
+```
+
+### 5 · learn
+```yaml
+madhab_variant: true
+pic: icon:Repeat
+default: |
+  **Wudu lasts** until something breaks it, even across several prayers. Then you make a new one. Schools differ on a few things, like bleeding: {{masjid.name}} will show you its practice. `[SCHOLAR: Q7]`
+hanafi: |
+  **Wudu lasts** until something breaks it, even across several prayers. Then you make a new one before your next prayer. `[SCHOLAR: Q7]`
+```
+
+### 6 · sort
+```yaml
+prompt: "Does it break your wudu?"
+buckets: ["Breaks wudu", "Doesn't break it"]
+items:
+  - text: "Using the toilet"
+    bucket: 0
+    why: "Anything leaving the front or back passage breaks wudu."
+  - text: "Eating lunch"
+    bucket: 1
+    why: "Eating doesn't break wudu."
+  - text: "Passing wind"
+    bucket: 0
+    why: "Anything leaving the back passage breaks it."
+  - text: "Taking a phone call"
+    bucket: 1
+    why: "Talking doesn't break wudu."
+  - text: "Falling deeply asleep"
+    bucket: 0
+    why: "Deep sleep, or passing out, breaks it."
+variants:
+  hanafi:
+    items:
+      - text: "Using the toilet"
+        bucket: 0
+        why: "Anything leaving the front or back passage breaks wudu."
+      - text: "Eating lunch"
+        bucket: 1
+        why: "Eating doesn't break wudu."
+      - text: "Blood flowing out of a cut"
+        bucket: 0
+        why: "Blood or pus that flows out of a cut breaks it."
+      - text: "Taking a phone call"
+        bucket: 1
+        why: "Talking doesn't break wudu."
+      - text: "Falling deeply asleep"
+        bucket: 0
+        why: "Deep sleep, or passing out, breaks it."
+      - text: "Touching someone"
+        bucket: 1
+        why: "Touching someone doesn't break it."
+      - text: "Laughing out loud during prayer"
+        bucket: 0
+        why: "Laughing out loud in prayer breaks wudu too (vomiting a mouthful does as well)."
+```
+
+### 7 · choice
+```yaml
+prompt: "Keisha made wudu for the midday prayer. Then she ate lunch and took a work call. Now it's time for the afternoon prayer. Does she need a new wudu?"
+options:
+  - text: "No, nothing she did broke it"
+    correct: true
+    feedback: "Right. Eating and talking don't break wudu. She can pray."
+  - text: "Yes, eating breaks wudu"
+    correct: false
+    feedback: "Not quite. Eating doesn't break it. The toilet, passing wind or deep sleep do."
+  - text: "Yes, wudu only lasts for one prayer"
+    correct: false
+    feedback: "Not quite. Wudu lasts until something breaks it, even across several prayers."
+```
+
+### 8 · learn
+```yaml
+pic: icon:ShowerHead
+text: "**Clean body, clean clothes.** After the toilet, clean yourself with water (or tissue, then water if you can). If urine or anything dirty gets on your body or clothes, wash it off before you pray. Pray on a clean spot."
+```
+
+### 9 · widget
+```yaml
+widget: prayer-times
+prompt: "Five prayers, through the day"
+text: "Each prayer has its own window of time [Q 4:103]. Drag the slider through a day to find all five. Isha lasts until dawn, but try to pray it before midnight. `[SCHOLAR: Q17]`"
+```
+
+### 10 · match
+```yaml
+prompt: "Match each prayer to its time."
+pairs:
+  - left: "Fajr"
+    right: "Dawn, before sunrise"
+  - left: "Dhuhr"
+    right: "Just after midday"
+  - left: "Asr"
+    right: "Afternoon"
+  - left: "Maghrib"
+    right: "Just after sunset"
+  - left: "Isha"
+    right: "Night"
+```
+
+### 11 · widget
+```yaml
+widget: qibla
+prompt: "Which way do you face?"
+text: "Muslims everywhere face the **Ka'bah** in Makkah to pray. That direction is the **qibla** [Q 2:144]. From most of the US, it's roughly northeast."
+```
+
+### 12 · learn
+```yaml
+pic: qibla
+text: "The times shift a little every day, so you'll use a **prayer app**. Its compass finds the qibla. Find it once at home and remember a landmark, like a window or a wall. Your honest best effort is what counts."
+```
+
+### 13 · ask_ai
+```yaml
+chips:
+  - "Do I have to wash my feet in a public bathroom?"
+  - "What if I'm wearing nail polish or makeup?"
+  - "Which prayer app should I use?"
+  - "What if I miss a prayer time?"
+```
+
+### 14 · do_today
+```yaml
+pic: icon:Smartphone
+text: "Get set for tomorrow's first prayer."
+steps:
+  - "Download a prayer-times app and allow your location"
+  - "Use its compass to find the qibla at home, and remember a landmark"
+  - "Do one wudu, step by step"
+log: did_first_wudu
+optional_extra: "In the app's settings, set the Asr method (usually \"Hanafi\" or \"Standard\") so your times match {{masjid.name}}'s posted times."
+```
+
+### 15 · takeaway
+```yaml
+pic: prayer-mat
+text: "Wudu gets you ready, the app tells you when, and the qibla tells you which way. You're set for your first prayer."
+```
+
+### 16 · closing
+Tomorrow you pray. You already know more than you did yesterday. Slow and steady.
+
+---
+
+## Check
+```yaml
+- prompt: "Which of these breaks wudu?"
+  options:
+    - text: "Using the toilet"
+      correct: true
+      feedback: "Right. After using the toilet, do wudu again before you pray."
+    - text: "Eating a meal"
+      correct: false
+      feedback: "Not quite. Eating doesn't break wudu; using the toilet does."
+- prompt: "Which way do Muslims face to pray?"
+  options:
+    - text: "Toward the Ka'bah in Makkah"
+      correct: true
+      feedback: "Right. That direction is the qibla."
+    - text: "East, wherever you are"
+      correct: false
+      feedback: "Not quite. You face the Ka'bah. From the US that's roughly northeast."
+- prompt: "Which prayer is just after sunset?"
+  options:
+    - text: "Maghrib"
+      correct: true
+      feedback: "Right. Maghrib starts just after sunset."
+    - text: "Asr"
+      correct: false
+      feedback: "Not quite. Asr is in the afternoon; Maghrib is just after sunset."
+```
+
+## AI guide context
+**Lesson facts**
+- The four parts of wudu named in the Qur'an are agreed on by every school: face, arms to the elbows, wiping the head, feet to the ankles [Q 5:6]. The other steps follow the Prophet's practice ﷺ [First Instructions on Worship ch. 3].
+- Anything that stops water reaching the skin (nail polish, waterproof makeup, paint) must come off first [First Instructions on Worship ch. 3].
+- Agreed things that break wudu: anything leaving the front or back passage (including wind and any discharge), and deep sleep or loss of consciousness. Hanafi additions: flowing blood or pus, a mouthful of vomit, laughing aloud during prayer [SeekersGuidance, Hanafi nullifiers; First Instructions on Worship ch. 3].
+- Istinja: clean the private parts after the toilet with water, or with tissue then water; impurity on the body, clothes or prayer spot must be removed before prayer [First Instructions on Worship Part I; Research Notes - Core Essentials §3].
+- Five prayers with set windows [Q 4:103]. Fajr 2 rak'ahs, Dhuhr 4, Asr 4, Maghrib 3, Isha 4 (Day 3 explains rak'ahs).
+- Qibla: face the Ka'bah [Q 2:144].
+
+**Likely questions**
+- *"Do I have to wash my feet in a public bathroom?"* Yes, feet are part of wudu. Tips: make wudu at home before leaving, since it lasts until broken; use a disposable cup or a water bottle; wipe up after. Wiping over socks: schools differ (Day 58), so don't teach it now.
+- *"Nail polish or makeup?"* Remove anything waterproof before wudu. Henna and dye that only stain are fine.
+- *"Which app?"* Any reputable prayer-times app with a qibla compass. Set the Asr method ("Hanafi" or "Standard") to match the masjid's posted times. Don't recommend a specific paid app.
+- *"What if I miss a prayer time?"* Pray it as soon as you remember. Missing one by accident isn't a sin; missing on purpose is serious, and repentance is always open [First Instructions on Worship ch. 5]. Be gentle.
+- *"Do I need wudu to read the Qur'an?"* To touch a printed Qur'an, yes (Hanafi and most schools). Reading from memory, or listening, doesn't need wudu. For reading on a phone, scholars differ: suggest asking the imam.
+- *"I'm on my period. Do I pray?"* No. Women don't pray during their period and don't make those prayers up [First Instructions on Worship ch. 4–5]. Day 17 covers this.
+
+**Escalate:** medical situations (catheters, constant bleeding, incontinence, wounds and casts); wudu questions tied to a specific job (healthcare touching patients: schools differ, Q7).
+
+**Don't:** don't teach wiping over socks (Q12) or tayammum details yet. Don't make wudu sound hard. Don't list every school's nullifiers unless asked.
+
+## Madhab note
+- **What breaks wudu:** in the Hanafi school, flowing blood or pus, a mouthful of vomit and laughing aloud in prayer break wudu; touching someone of the opposite sex or your own private parts doesn't. In the Shafi'i school, skin contact with anyone of the opposite sex you could marry (your spouse included) breaks it, and so does touching your private parts with your palm. Malikis and Hanbalis count touching the opposite sex only with desire. Hanbalis also count touching your private parts with your hand (Malikis do too, with some conditions) and eating camel meat. Bleeding doesn't break it for Malikis and Shafi'is.
+- **Asr time:** in the Hanafi school, Asr starts later in the afternoon than in the other three schools. Set your app to match your masjid.
+
+## Sources
+- Qur'an [5:6](https://quran.com/5/6) (wudu), [4:103](https://quran.com/4/103) (prayer at set times), [2:144](https://quran.com/2/144) (qibla).
+- [[Source - First Instructions on Worship]] (Hanafi) ch. 3 (wudu steps, nullifiers, removing barriers), ch. 5 (prayer times, missing a prayer).
+- [[Source - Welcome to Islam]] Day 2 (wudu, times, direction).
+- [IslamQA.info 76115](https://islamqa.info/en/answers/76115); [IslamQA.info 88040](https://islamqa.info/en/answers/88040); [SeekersGuidance: Hanafi list of nullifiers](https://seekersguidance.org/answers/hanafi-fiqh/could-you-please-list-all-the-nullifiers-of-ablution-according-to-the-hanafi-school/).
+- [IslamQA.org/SeekersGuidance 167692](https://islamqa.org/hanafi/seekersguidance-hanafi/167692/is-it-permissible-to-just-read-the-quran-until-i-learn-how-to-pray/) (prayer due from day one; rak'ah counts).
+- [[Research Notes - Core Essentials and Madhab Map]] §3–4 and the madhab table (touching, bleeding, Asr time; the qibla is roughly northeast from most of the US).
+
+## Scholar flags
+- **Screen 6, what breaks wudu (Q7).** The default variant teaches only what every school agrees on. The Hanafi variant (the pilot default) adds flowing blood or pus, a mouthful of vomit and laughing aloud in prayer, and says touching doesn't break wudu, per the relied-upon Hanafi view.
+- **Screen 9, Isha's end time (Q17).** Drafted as "until dawn; try to pray before midnight," which fits every school's preferred time and the Hanafi view that delaying past midnight is disliked.

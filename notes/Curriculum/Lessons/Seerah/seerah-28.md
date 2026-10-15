@@ -1,0 +1,233 @@
+---
+track: seerah
+order: 28
+phase: null
+unit: null
+title: "A rumour about Aisha"
+hook: "A necklace went missing, a caravan left without her, and a lie spread through Madinah for a month."
+minutes: 6
+skills: [T2, B6]
+pain_points: [conversations, belonging, identity]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q37]
+status: draft-pending-scholar-review
+glossary: [Allah, ﷺ, ghibah, sabr]
+sources: [Q 24:11, Q 24:12, Q 49:6, Q 49:12, Bukhari 4750, Bukhari 6094, Bukhari 5133]
+format: 2
+---
+# seerah-28 · A rumour about Aisha
+
+### 1 · hook
+```yaml
+pic: icon:Gem
+text: "**A necklace went missing.** A caravan left without her. And a lie about her spread through Madinah for a month. This is the story of how Allah Himself cleared her name."
+```
+
+### 2 · learn
+```yaml
+pic: icon:Gem
+text: "**Left behind.** A few years after the hijra, Aisha, the Prophet's ﷺ wife, was travelling home with the army. She stepped away, found her necklace was gone, and went back to search. The army moved on, not knowing she wasn't in her litter [Bukhari 4750]."
+bubbles:
+  - "Safwan ibn al-Mu'attal, travelling behind the army, found her. He spoke no word to her beyond a prayer, and led his camel, with her riding, back to the army [Bukhari 4750]."
+```
+
+### 3 · reveal
+```yaml
+title: "How a lie travels"
+cards:
+  - front: "Who started it"
+    back: "Hypocrites, led by 'Abdullah ibn Ubayy, turned an innocent delay into a lie about her [Bukhari 4750; Q 24:11]."
+    pic: icon:MessageSquareOff
+  - front: "Who passed it on"
+    back: "Some sincere believers repeated it. That's how gossip spreads: through good people who don't stop it [Bukhari 4750]."
+    pic: icon:Share2
+  - front: "Who didn't know"
+    back: "Aisha. She fell ill for a month after they got home, and had no idea what people were saying [Bukhari 4750]."
+    pic: icon:BedSingle
+```
+
+### 4 · learn
+```yaml
+pic: icon:HeartCrack
+text: "**Heartbroken.** When she finally heard, she wept for days and couldn't sleep. For a month, no revelation came about it. Asked to speak, she said all she had was the beautiful patience of Ya'qub, Yusuf's father [Bukhari 4750]."
+bubbles:
+  - "That's **sabr**: not pretending it doesn't hurt, but leaving her case with Allah."
+```
+
+### 5 · widget
+```yaml
+widget: timeline
+prompt: "One month"
+text: "From a lost necklace to a cleared name."
+events:
+  - when: "On the road"
+    title: "Left behind"
+    text: "She searches for her necklace; the army leaves without her [Bukhari 4750]."
+    pic: icon:Gem
+  - when: "Next day"
+    title: "Brought back"
+    text: "Safwan finds her and leads her back to the army in silence [Bukhari 4750]."
+    pic: icon:Route
+  - when: "A month"
+    title: "The lie spreads"
+    text: "Hypocrites start it; some believers repeat it; she's ill and unaware [Bukhari 4750]."
+    pic: icon:MessageSquareOff
+  - when: "Then"
+    title: "She finds out"
+    text: "She weeps, and answers with patience [Bukhari 4750]."
+    pic: icon:HeartCrack
+  - when: "At last"
+    title: "Allah clears her"
+    text: "Verses come down declaring her innocent [Q 24:11]."
+    pic: quran
+```
+
+### 6 · learn
+```yaml
+pic: quran
+text: "**Allah answers.** Verses came down declaring her innocent and calling out the lie: *\"Do not think it bad for you; rather, it is good for you\"* [Q 24:11, Saheeh Intl.]. Then a question to everyone who had heard it."
+bubbles:
+  - "Told to go and thank her husband, Aisha said she would thank no one but Allah, who had cleared her [Bukhari 4750]."
+```
+
+### 7 · fill
+```yaml
+before: "Q 24:12 asks: when you heard it, why didn't the believers think good of one another and say, \"This is an obvious"
+after: "\"?"
+options:
+  - text: "falsehood"
+    correct: true
+    feedback: "Yes. Allah expected them to think well of each other and refuse the rumour."
+  - text: "question"
+    correct: false
+    feedback: "Not quite. The verse says they should have called it what it was: an obvious falsehood."
+  - text: "secret"
+    correct: false
+    feedback: "Not quite. Not a secret to keep: a falsehood to reject out loud."
+```
+
+### 8 · sort
+```yaml
+prompt: "A story about someone reaches you. Pass it on, or stop it?"
+buckets: ["Stop it", "Spreads it"]
+items:
+  - text: "Saying \"I don't know that's true, and it's not ours to share\""
+    bucket: 0
+    why: "That's Q 24:12: think well of each other and refuse what you can't prove."
+  - text: "Forwarding a screenshot \"just so you know\""
+    bucket: 1
+    why: "That's how good people spread a lie: one forward at a time."
+  - text: "Checking with the person directly, privately"
+    bucket: 0
+    why: "Verify before you act on news [Q 49:6]."
+  - text: "Asking \"have you heard what they're saying about her?\""
+    bucket: 1
+    why: "Even a question can pass on the rumour."
+```
+
+### 9 · learn
+```yaml
+pic: icon:MessageSquareOff
+text: "**Your honour matters to Allah.** New Muslims are often talked about: at work, in the family, even at the masjid. Islam takes your reputation seriously. And it asks you not to pass on what you can't prove about anyone else."
+bubbles:
+  - "Day 63 covered words that build. Talking about people behind their backs, **ghibah**, is something the Qur'an warns against strongly [Q 49:12]."
+```
+
+### 10 · scenario
+```yaml
+pic: conversation
+situation: "In the masjid parking lot, someone tells Ana that a new sister \"isn't really Muslim, she still goes to parties\". Ana barely knows her."
+options:
+  - text: "Say she doesn't know that's true, change the subject, and be kind to the sister"
+    best: true
+    feedback: "Yes. Think well of her, refuse the rumour, and don't pass it on. That's Q 24:12."
+  - text: "Ask for more details so she understands"
+    best: false
+    feedback: "Not quite. Digging for details keeps the rumour alive. Stop it gently instead."
+  - text: "Warn other sisters, just in case"
+    best: false
+    feedback: "Not quite. That's how good people spread a lie. Leave people's private lives to Allah."
+```
+
+### 11 · ask_ai
+```yaml
+chips:
+  - "Who was Aisha?"
+  - "What does the Qur'an say about gossip?"
+  - "People are gossiping about me. What do I do?"
+  - "How do I stop a rumour without being rude?"
+```
+
+### 12 · do_today
+```yaml
+pic: icon:MessageSquareOff
+text: "Be where a rumour stops."
+steps:
+  - "If you hear something about someone today, don't pass it on"
+  - "Say one good thing about that person instead, or say nothing"
+log: null
+```
+
+### 13 · takeaway
+```yaml
+pic: quran
+text: "A lie spread for a month, and Allah Himself cleared her name. Don't pass on what you can't prove; let a rumour stop with you."
+```
+
+### 14 · closing
+Next episode: Hudaybiyah, a treaty that looked like a defeat, and Allah called "a clear conquest".
+
+---
+
+## Check
+```yaml
+- prompt: "Who cleared Aisha's name?"
+  options:
+    - text: "Allah, in verses of the Qur'an"
+      correct: true
+      feedback: "Right. Verses came down declaring her innocent [Q 24:11]."
+    - text: "A council of the Companions"
+      correct: false
+      feedback: "Not quite. After a month of waiting, Allah Himself revealed her innocence."
+- prompt: "What does Q 24:12 say believers should have done on hearing the lie?"
+  options:
+    - text: "Thought well of one another and called it an obvious falsehood"
+      correct: true
+      feedback: "Right. Refuse it out loud, don't pass it on."
+    - text: "Waited to see if it was true"
+      correct: false
+      feedback: "Not quite. The verse says they should have thought well of each other and rejected it straight away."
+```
+
+## AI guide context
+**Lesson facts**
+- A few years after the hijra (during or after the campaign against Banu al-Mustaliq), returning from a campaign, Aisha went looking for a lost necklace; the army left without noticing she wasn't in her litter; Safwan ibn al-Mu'attal found her and brought her back, saying nothing to her beyond "inna lillahi wa inna ilayhi raji'un" [Bukhari 4750].
+- Hypocrites, led by 'Abdullah ibn Ubayy, spread a lie about her; some believers repeated it [Bukhari 4750; Q 24:11].
+- She was ill for a month and unaware; when she found out she wept for days. Revelation didn't come for a month. She answered with the "beautiful patience" of Yusuf's father [Bukhari 4750].
+- During that month the Prophet ﷺ consulted people close to him and said publicly that he knew nothing but good about his family [Bukhari 4750].
+- Allah revealed her innocence and rebuked those who spread it, in a passage of Surah al-Nur that begins at Q 24:11 [Q 24:11; Q 24:12]. Told to thank him, she said she would thank only Allah [Bukhari 4750].
+
+**Likely questions**
+- *"How old was Aisha?"* Only if asked, and never raised by the guide. The sahih reports in Bukhari and Muslim give six at the contract and nine when the marriage began [Bukhari 5133]; she became one of Islam's greatest scholars; norms of that time differed and his enemies never objected; some Muslim researchers argue for an older age while others defend the narration. Don't deny the hadith or mock the question. Offer the imam. `[SCHOLAR: Q37]`
+- *"Did the Prophet ﷺ doubt her?"* Keep to the hadith: he consulted, waited for revelation, and said publicly he knew only good of his family. Don't speculate about his inner state.
+- *"People are gossiping about me."* Listen first. Islam protects reputation; they don't need to defend themselves to everyone; talk to the mentor; if it's harassment or threatens safety, follow the safety rule.
+- *"What does the Qur'an say about gossip?"* Verify news [Q 49:6]; avoid suspicion and backbiting [Q 49:12]; truthfulness [Bukhari 6094]; Day 63.
+- *"Who was Aisha?"* One of the Prophet's ﷺ wives and a great scholar who narrated much of what we know of his life. Episode 40 covers his family.
+
+**Escalate:** questions about Aisha's age beyond the outline above (Q37); questions about his marriages generally (Q41 territory, covered in episode 40).
+
+**Don't**
+- Don't raise Aisha's age or put it on any screen.
+- Don't retell the accusation in any detail or make it salacious; it's about rumour, trust and Allah's vindication.
+- Don't name the believers who repeated it.
+
+## Sources
+- Qur'an [24:11](https://quran.com/24/11) (those who came with falsehood), [24:12](https://quran.com/24/12) (why didn't you think well of one another), [49:6](https://quran.com/49/6) (verify news), [49:12](https://quran.com/49/12) (suspicion and backbiting).
+- [Bukhari 4750](https://sunnah.com/bukhari:4750) (Sahih): Aisha's own account of the slander and her vindication.
+- [Bukhari 6094](https://sunnah.com/bukhari:6094) (Sahih): truthfulness (Day 63 link).
+- [Bukhari 5133](https://sunnah.com/bukhari:5133) (Sahih; AI guide only, if asked, Q37).
+- Fact rows 28.1–28.8 in [[Seerah Fact-Check Log]].
+
+## Scholar flags
+- **AI guide (Q37).** Aisha's age is never on screen or raised by the guide; if asked, it follows the drafted Q37 answer and offers the imam.

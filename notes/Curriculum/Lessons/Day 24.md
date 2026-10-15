@@ -1,0 +1,216 @@
+---
+day: 24
+phase: 1
+unit: 4
+title: "Muslim at work and school"
+hook: "You can pray at work or school without making it a big scene. Most of it is planning and one calm conversation."
+minutes: 5
+skills: [P8]
+pain_points: [workplace, school]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q9]
+status: draft-pending-scholar-review
+glossary: [Dhuhr, Asr, wudu]
+sources: [Q 4:103, Bukhari 831, EEOC (Religious discrimination and accommodation), US Department of Education (prayer in public schools, 2023), CAIR (know your rights), Mathabah 133926, Dar al-Ifta Egypt 6808]
+format: 2
+---
+# Day 24 · Muslim at work and school
+
+### 1 · hook
+```yaml
+pic: icon:Briefcase
+text: "Being the only Muslim at work or school can feel like a spotlight. It doesn't have to be. A little planning and one calm conversation solve most of it."
+```
+
+### 2 · learn
+```yaml
+pic: prayer-times
+text: "**Plan the prayers in your day.** Each prayer has a set window [Q 4:103], usually a few hours. At work or school that's mostly **Dhuhr** and maybe **Asr**, about 5–10 minutes each with wudu."
+```
+
+### 3 · widget
+```yaml
+widget: prayer-times
+prompt: "Which prayers land in your workday?"
+text: "Drag through a day and stop at your work or school hours. For most people, that's Dhuhr and maybe Asr."
+```
+
+### 4 · steps
+```yaml
+title: "Set up your prayer spot"
+steps:
+  - text: "Find the gap in your schedule: a break, lunch, a free period"
+    pic: icon:CalendarDays
+  - text: "Find a clean, quiet spot: an empty office, a storage room, a clean spot beside your parked car"
+    pic: icon:MapPin
+  - text: "Keep a small mat or a clean jacket to pray on"
+    pic: prayer-mat
+```
+
+### 5 · learn
+```yaml
+pic: icon:Scale
+text: "**Your rights (US).** Under **Title VII** of the Civil Rights Act, employers with 15+ workers must reasonably accommodate religious practice (prayer breaks, schedule swaps, hijab, beards) unless it causes the business substantial hardship."
+bubbles:
+  - "The **EEOC** enforces it, and retaliation is illegal."
+  - "{teen}Public schools generally let students pray in free time like lunch [US Dept. of Education]. If your parents don't know you're Muslim yet, talk to {{mentor.name}} first.{/teen}"
+```
+
+### 6 · scenario
+```yaml
+pic: icon:Store
+situation: "Luis works retail. Dhuhr starts at 1:15, but his lunch break is at 11:30 and the floor gets busy after 1."
+options:
+  - text: "Ask his manager to move his break to about 1:30, or for a 10-minute break then"
+    best: true
+    feedback: "Yes. A specific, small request is easy to say yes to, and the law backs it."
+  - text: "Pray Dhuhr at 11:30 to save trouble"
+    best: false
+    feedback: "Not quite. A prayer isn't valid before its time starts. Ask for a break inside the window instead."
+  - text: "Sneak off for ten minutes without telling anyone"
+    best: false
+    feedback: "Risky. If someone notices you missing, it can look like slacking. A quick conversation protects you."
+```
+
+### 7 · steps
+```yaml
+title: "How to ask"
+intro: "Keep it short, specific and friendly."
+steps:
+  - text: "Say what you need: \"a 10-minute break around 1:30 to pray.\""
+    pic: icon:MessageSquareText
+  - text: "Show how it works for them: \"I'll use my regular break time\" or \"I'll make up the minutes.\""
+    pic: icon:Handshake
+  - text: "Ask, don't demand. If they hesitate, offer to try it for two weeks"
+    pic: icon:CalendarCheck
+  - text: "If it goes badly, write down what was said and talk to {{mentor.name}}"
+    pic: icon:NotebookPen
+```
+
+### 8 · roleplay
+```yaml
+character: "Dana, your manager (or, if you're a student, Ms. Rivera, your teacher)"
+setup: "You've asked for a quick word after a meeting. Dana is busy and a bit distracted: \"Sure, what's up? I've got five minutes.\""
+goal: "Ask for a short daily prayer break (or a quiet place to pray at school) clearly, and agree on a plan."
+success_looks_like: "You state what you need in one or two sentences, offer a way it works for them, answer a question calmly, and end with a clear plan (time, place)."
+coach_notes: "Dana is reasonable but practical. She asks one or two real questions: \"How long does it take?\", \"Where would you even do that?\", \"What if we're slammed?\" She can hesitate but never mocks or threatens. If the convert gives a specific, flexible request, she agrees to try it. Debrief: one strength, one phrase to sharpen, and a reminder to follow up in writing (a short email or text) if it's a job."
+```
+
+### 9 · learn
+```yaml
+pic: icon:HandHeart
+text: "**Handshakes.** Many scholars hold that Muslims shouldn't shake hands with the opposite sex; some allow it where there's no desire, especially at work. Scholars differ, so ask your imam what to do in your situation. `[SCHOLAR: Q9]`"
+bubbles:
+  - "A simple, friendly option: smile, put your hand on your heart and say, \"Nice to meet you. I don't shake hands, but it's great to meet you.\""
+```
+
+### 10 · choice
+```yaml
+pic: icon:HandHeart
+prompt: "At a job interview, the interviewer (opposite sex) holds out a hand. What's a good default?"
+options:
+  - text: "Smile, hand on your heart, and greet them warmly"
+    correct: true
+    feedback: "Right. It's polite and clear. Ask your imam about your own situation, since scholars differ."
+  - text: "Stare at the hand and say nothing"
+    correct: false
+    feedback: "Not quite. Silence can feel rude. A warm greeting does the job and keeps the mood friendly."
+  - text: "Explain the whole ruling before answering any questions"
+    correct: false
+    feedback: "Not quite. Keep it short. A smile and one friendly sentence is enough."
+```
+
+### 11 · ask_ai
+```yaml
+chips:
+  - "Help me write an email asking for a prayer break"
+  - "What if my manager says no?"
+  - "How do I pray in a car or a small space?"
+  - "What do I say when a coworker asks what I'm doing?"
+```
+
+### 12 · do_today
+```yaml
+pic: icon:MapPin
+text: "Get set to pray at work or school."
+steps:
+  - "Find your prayer spot"
+  - "Check which prayers fall in your day"
+optional_extra: "If you need a break moved, write two sentences you'd say to your manager or teacher."
+```
+
+### 13 · takeaway
+```yaml
+pic: prayer-mat
+text: "Know which prayers fall in your day, have a spot, and ask for what you need in one short, friendly request."
+```
+
+### 14 · closing
+Every prayer you fit into a busy day counts.
+
+---
+
+## Prayer phrase
+```yaml
+arabic: "السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ"
+translit: "As-salamu 'alayna wa 'ala 'ibadillahis-salihin"
+meaning: "Peace be on us, and on all of Allah's righteous servants"
+audio_id: tashahhud-3
+when: "Tashahhud part 3, right after \"…wa rahmatullahi wa barakatuh\". The Prophet ﷺ said this greeting reaches every righteous servant of Allah in the heavens and on earth [Bukhari 831]. Even alone at your desk, you're greeting a huge company."
+```
+
+## Check
+```yaml
+- prompt: "Dhuhr starts at 1:15 and your break is at 11:30. What's the best move?"
+  options:
+    - text: "Ask for a short break inside Dhuhr's window"
+      correct: true
+      feedback: "Right. A prayer can't be prayed before its time begins, so ask for a break that fits."
+    - text: "Pray Dhuhr early at 11:30"
+      correct: false
+      feedback: "Not quite. A prayer prayed before its time isn't valid."
+- prompt: "In the US, which law requires most employers to reasonably accommodate prayer?"
+  options:
+    - text: "Title VII of the Civil Rights Act (enforced by the EEOC)"
+      correct: true
+      feedback: "Right. It covers employers with 15 or more workers, unless the request causes substantial hardship."
+    - text: "There's no such law"
+      correct: false
+      feedback: "Not quite. Title VII protects religious practice at work, including prayer and dress."
+```
+
+## AI guide context
+**Lesson facts**
+- Each prayer has a set time [Q 4:103]; a prayer can't be prayed before its time begins. At work or school, Dhuhr and Asr are the usual ones to plan.
+- Title VII (US): employers with 15+ employees must reasonably accommodate religious practice (prayer time, schedules, dress, grooming) unless it would cause undue hardship, which since *Groff v. DeJoy* (2023) means a substantial burden in the context of the business. Retaliation is illegal. Charges go to the EEOC, usually within 180 days [EEOC].
+- Public schools: students may pray during non-instructional time, such as lunch, as long as it isn't disruptive [US Department of Education guidance, 2023].
+- Handshakes with the opposite sex: the majority of scholars say no (some Hanafis and Hanbalis allow it with the elderly where there's no desire); Dar al-Ifta Egypt allows following the view that permits a handshake without desire, especially in non-Muslim countries; Mathabah (Hanafi) suggests the hand-on-heart greeting at work. Teach the alternative and route the personal decision to the imam [SCHOLAR: Q9].
+- Prayer phrase: tashahhud part 3 [Bukhari 831].
+
+**Likely questions**
+- *"Help me write an email."* 3–4 sentences: the request, the timing, how it works for the employer, thanks. No legal threats in a first request.
+- *"My manager said no."* Ask if there's a different time or place that works. Keep notes. Suggest talking to HR, then their mentor. For legal advice, point to CAIR's legal help or an employment lawyer; don't give legal advice.
+- *"Can I pray in a car or sitting down?"* Beside a parked car on a clean mat, facing the qibla, is fine; the car seat usually isn't, since obligatory prayers need standing, bowing and prostration (Day 5). Praying sitting is only for real inability, not convenience; escalate edge cases to the imam.
+- *"What if the window closes before my break?"* Help them plan; if they truly can't, ask the imam. Never present skipping or delaying as normal.
+
+**Escalate:** a job that refuses all prayer; a school that forbids prayer; a teen whose parents don't know (to {{mentor.name}}); the personal handshake decision (Q9).
+
+**Don't**
+- Don't give legal advice; point to the EEOC, CAIR or a lawyer.
+- Don't suggest praying before the time starts.
+- Don't suggest joining Dhuhr and Asr together to get around work. The Hanafi school doesn't allow it outside Hajj, and other schools allow it only in narrow cases; send it to the imam.
+- Don't present a handshake ruling as settled either way.
+
+**Role-play brief:** Dana is a busy, practical manager (or Ms. Rivera, a teacher). Asks real questions, may hesitate, never mocks. Agrees to a specific, flexible request. Debrief: one strength, one sharper phrase, follow up in writing.
+
+## Sources
+- Qur'an [4:103](https://quran.com/4/103): prayer at set times.
+- [Bukhari 831](https://sunnah.com/bukhari:831): the tashahhud; the greeting reaches every righteous servant.
+- [EEOC: Religious Discrimination](https://www.eeoc.gov/religious-discrimination): Title VII accommodation, undue hardship after *Groff v. DeJoy*, 15-employee threshold, filing deadlines.
+- [US Department of Education: Guidance on Constitutionally Protected Prayer and Religious Expression in Public Schools (2023)](https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-prayer-and-religious-expression-public-schools).
+- CAIR, know-your-rights materials (workplace religious accommodation).
+- [Mathabah via IslamQA.org 133926](https://islamqa.org/hanafi/mathabah/133926/gender-interaction-in-islam-shaking-hands/); [Dar al-Ifta Egypt 6808](https://www.dar-alifta.org/en/fatwa/details/6808): handshakes (via [[Research Notes - Core Essentials and Madhab Map]] §6).
+
+## Scholar flags
+- **Screens 9–10 (Q9).** Teaches the hand-on-heart greeting as the default, says scholars differ, and sends the personal decision to the imam. Doesn't state the handshake is forbidden or allowed.

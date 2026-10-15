@@ -1,0 +1,220 @@
+---
+module: ramadan-2
+phase: null
+unit: null
+title: "Getting ready for Ramadan"
+hook: "Ramadan starts in about three days. A simple plan now makes the first fast much easier."
+minutes: 5
+skills: [B5, S2, T5]
+pain_points: [first-ramadan, family]
+logs: []
+madhab_sensitive: false
+scholar_flags: [Q32]
+status: draft-pending-scholar-review
+glossary: [Ramadan, suhoor, iftar, Fajr, Maghrib]
+sources: [Q 2:183–185, Q 2:186, Q 2:187, Q 31:14–15, Bukhari 1923, Bukhari 1957, First Instructions on Worship Part III, Yaqeen (Ramadan beginner's guide), Revealed Path ch. 5]
+format: 2
+---
+# ramadan-2 · Getting ready for Ramadan
+
+### 1 · hook
+```yaml
+pic: crescent
+text: "**Ramadan starts in about three days.** If you're new, this might be your first fast ever. If you've been learning a while, you already know the rules. Either way, a simple plan today makes day one far easier."
+```
+
+### 2 · widget
+```yaml
+widget: fast-day
+prompt: "The shape of a fast day"
+text: "Eat **suhoor** (the meal before dawn), then nothing to eat or drink from dawn until sunset [Q 2:187]. At sunset, break the fast (**iftar**) with dates or water, pray **Maghrib** (the sunset prayer), then eat. Drag through the day."
+```
+
+### 3 · widget
+```yaml
+widget: prayer-times
+prompt: "Your two key times"
+text: "Your masjid's Ramadan timetable gives two key times for each day. Drag the sun: when **Fajr** time begins at dawn, stop eating. When Maghrib time begins at sunset, break the fast."
+```
+
+### 4 · choice
+```yaml
+pic: icon:Clock
+prompt: "Jordan's timetable says Fajr 5:42 and sunrise 7:01. When does he stop eating?"
+options:
+  - text: "At 5:42, when Fajr time begins"
+    correct: true
+    feedback: "Right. The fast starts at dawn, when Fajr time begins, not at sunrise."
+  - text: "At 7:01, at sunrise"
+    correct: false
+    feedback: "Not quite. By sunrise the fast started over an hour ago. Stop when Fajr time begins."
+  - text: "Whenever he wakes up"
+    correct: false
+    feedback: "Not quite. The fast starts at dawn (Fajr time), whether he's awake or not. Set an alarm for suhoor."
+```
+
+### 5 · steps
+```yaml
+title: "Suhoor is worth getting up for"
+intro: "The Prophet ﷺ said there is blessing in it [Bukhari 1923]."
+steps:
+  - text: "Set an alarm about 30–40 minutes before Fajr time"
+    pic: icon:AlarmClock
+  - text: "Eat something filling: eggs, oats, yogurt, fruit"
+    pic: icon:Utensils
+  - text: "Drink plenty of water. Easy on the salt and coffee"
+    pic: icon:GlassWater
+  - text: "Stop eating and drinking when Fajr time begins"
+    pic: icon:Sunrise
+done_text: "That's suhoor. Ten minutes that carry you through the day."
+```
+
+### 6 · order
+```yaml
+prompt: "Sunset comes. Put iftar in order."
+items:
+  - "Maghrib time begins: don't wait"
+  - "Break your fast with dates or water"
+  - "Pray Maghrib"
+  - "Eat your meal"
+pics: ["icon:Sunset", "icon:GlassWater", "prayer-mat", "icon:Utensils"]
+feedback: "That's iftar. Breaking the fast promptly is part of the Prophet's way ﷺ [Bukhari 1957]."
+```
+
+### 7 · sort
+```yaml
+prompt: "Ana is making her first-Ramadan plan. Good idea, or not?"
+buckets: ["Good idea", "Not quite"]
+items:
+  - text: "Prepare suhoor food the night before, so it's ready in five minutes"
+    bucket: 0
+    why: "A ready breakfast makes the alarm much easier to answer."
+  - text: "Skip suhoor so she can sleep longer"
+    bucket: 1
+    why: "Suhoor carries blessing [Bukhari 1923] and makes the day far easier. Sleep a bit earlier instead."
+  - text: "Put the Fajr and Maghrib times for the week in her phone"
+    bucket: 0
+    why: "Knowing the two times each day takes the guesswork out."
+  - text: "Plan to fast just the weekends this first year"
+    bucket: 1
+    why: "Every day of Ramadan is due for every able adult, new or not. Most people find it doable."
+```
+
+### 8 · learn
+```yaml
+pic: conversation
+text: "**Telling people.** You don't owe anyone a speech. A short heads-up helps, though: \"I'm fasting for Ramadan this month, dawn to sunset. I'm fine, I just won't be eating lunch.\""
+bubbles:
+  - "At work or school, ask for small things: no lunch meetings, a short break at sunset."
+  - "Many people are curious and kind once they know."
+```
+
+### 9 · roleplay
+```yaml
+character: "Your mom (or dad). Loving, a bit worried, not Muslim. Never cruel or threatening."
+setup: "You're at the kitchen table. You say Ramadan starts this week. Your parent frowns: \"No food or water all day? For a month? That can't be healthy. And you won't eat dinner with us?\""
+goal: "Calm their worry, explain what the fast is in simple words, and find a way to keep sharing meals."
+success_looks_like: "You reassure them you'll eat before dawn and after sunset, mention that the sick are excused, and suggest eating together after sunset or inviting them to break the fast with you."
+coach_notes: "The parent pushes on health ('you'll faint'), family time ('you're pulling away from us') and 'is someone making you do this?'. They soften when the convert is calm, specific and warm, and get more worried if lectured. Debrief: one reassuring line that worked, one to try next time, and a reminder that inviting family to an iftar often turns worry into curiosity. If the convert is a teen whose parent forbids fasting, don't coach defiance; suggest talking to the mentor."
+```
+
+### 10 · learn
+```yaml
+pic: family
+text: "**Family time.** Invite your family to break the fast with you, even once. It shows them Ramadan isn't you pulling away. Keep treating your parents well, whatever they believe [Q 31:14–15]."
+bubbles:
+  - "{teen}Under 18 and living with non-Muslim parents? Fasting is due for you too once you've reached puberty.{/teen}"
+  - "{teen}Talk to {{mentor.name}} this week about telling them, and about what to do if they object. `[SCHOLAR: Q32]`{/teen}"
+```
+
+### 11 · ask_ai
+```yaml
+chips:
+  - "What should I eat for suhoor?"
+  - "How do I tell my boss I'm fasting?"
+  - "My family doesn't know I'm Muslim yet. How do I fast?"
+  - "Can I work out while fasting?"
+```
+
+### 12 · reflect
+```yaml
+prompt: "Who in your life needs to know you're fasting, and who doesn't (yet)? Write one sentence you could say to the first person."
+share_with_mentor: optional
+```
+
+### 13 · do_today
+```yaml
+pic: icon:ListChecks
+text: "Make your Ramadan plan."
+steps:
+  - "Put this week's Fajr and Maghrib times in your phone"
+  - "Stock up on suhoor food"
+  - "Set your first suhoor alarm"
+log: null
+optional_extra: "Tell one person at work or school that you'll be fasting, and invite your family to break the fast with you one evening."
+```
+
+### 14 · takeaway
+```yaml
+pic: icon:Sunset
+text: "Eat suhoor before Fajr time, fast until sunset, break it promptly. Tell people simply, and bring your family in where you can."
+```
+
+### 15 · closing
+Three days to go. You've got a plan, and that's most of the battle.
+
+---
+
+## Check
+```yaml
+- prompt: "When does each day's fast begin?"
+  options:
+    - text: "At dawn, when Fajr time begins"
+      correct: true
+      feedback: "Right. Eat suhoor before then, and stop when Fajr time begins [Q 2:187]."
+    - text: "At sunrise"
+      correct: false
+      feedback: "Not quite. It begins at dawn (Fajr time), well before sunrise."
+- prompt: "Why get up for suhoor?"
+  options:
+    - text: "There's blessing in it, and it makes the fast easier"
+      correct: true
+      feedback: "Right. The Prophet ﷺ said there is blessing in suhoor [Bukhari 1923]."
+    - text: "It's when you make up missed prayers"
+      correct: false
+      feedback: "Not quite. Suhoor is the pre-dawn meal, and it carries blessing [Bukhari 1923]."
+```
+
+## AI guide context
+**Lesson facts**
+- A fast day: suhoor before dawn; no food, drink or sex from dawn (start of Fajr time) to sunset; iftar at sunset with dates or water; Maghrib, then the meal [Q 2:187; First Instructions Part III].
+- Suhoor has blessing [Bukhari 1923]; hastening iftar is the right way [Bukhari 1957]. Allah intends ease, not hardship [Q 2:185], and is near to those who call on Him [Q 2:186].
+- Every adult Muslim who is able fasts, including new Muslims [Q 2:183–185]. Excused with make-up: illness, travel, menstruation and postnatal bleeding, pregnancy or nursing with fear of harm.
+- Good treatment of non-Muslim parents continues [Q 31:14–15].
+
+**Likely questions**
+- *"What should I eat for suhoor?"* Slow foods (oats, eggs, whole grains, yogurt, fruit), plenty of water, less salt and caffeine. Practical, not preachy.
+- *"How do I tell my boss or teacher?"* A short, calm heads-up; ask for small adjustments (break near sunset, no lunch meetings, flexible start). No legal advice beyond "many workplaces and schools accommodate religious practice; HR or a counselor can help."
+- *"My family doesn't know."* Fasting is still due. Suggest small honest steps (eating before dawn quietly, skipping lunch away from home) and talking to the mentor. Never coach lying.
+- *"Exercise?"* Light exercise near iftar or after it is easiest. Health first; a doctor for anything medical.
+- *"I'm under 18 and my parents might forbid it."* Fasting is due after puberty. Teach kindness and respect toward parents [Q 31:14–15], and route to the mentor and imam before any standoff (see Scholar flags). Never coach a minor to deceive or defy parents.
+
+**Escalate:** medical conditions and medication; eating disorders (respond with care, encourage professional help, never push fasting); a teen whose parents forbid fasting; anyone who fears for their safety at home (safety rule).
+
+**Don't**
+- Don't suggest fasting fewer days "to ease in."
+- Don't script deception for converts who haven't told their family.
+
+**Role-play brief:** A loving, worried parent. Pushes on health, family dinners and "who's making you do this." Softens with calm, specific answers and an invitation to iftar. Debrief on warmth and specifics.
+
+## Sources
+- Qur'an [2:183–185](https://quran.com/2/183-185), [2:186](https://quran.com/2/186), [2:187](https://quran.com/2/187), [31:14–15](https://quran.com/31/14-15).
+- [Bukhari 1923](https://sunnah.com/bukhari:1923): there is blessing in suhoor.
+- [Bukhari 1957](https://sunnah.com/bukhari:1957): people remain in good while they hasten to break the fast.
+- [[Source - First Instructions on Worship]] Part III (how to fast a day; who must fast; who is excused).
+- [Yaqeen Institute: How does Ramadan work? A beginner's guide](https://yaqeeninstitute.org/read/paper/how-does-ramadan-work-a-beginners-guide).
+- [[Source - The Revealed Path]] ch. 5 (fasting).
+- Convert need: [[Research Notes - Retention and Convert Voices]] (V9: a convert who couldn't fast because her family didn't know).
+
+## Scholar flags
+- **Screen 10, teen line ([SCHOLAR: Q32]).** A minor living with non-Muslim parents who forbid fasting, or would if they knew. Drafted as the most cautious mainstream position: fasting is due after puberty; the app doesn't tell the teen to defy or deceive their parents, and routes them to the mentor and imam before any standoff. Question for the scholar: what should the app tell a teen whose parents forbid fasting (is there an excuse, and may they fast discreetly)?
